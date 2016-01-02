@@ -1,5 +1,5 @@
 # Setup
-name:             They Katydids
+name:             The Katydids
 title:            "The Katydids"
 tagline:          "The Katydids"
 description:      "Official website of The Katydids"
@@ -37,8 +37,6 @@ sass:
 
 # Navigation
 nav:
-  - title: Hire Me
-    url: /hire-me/
   - title: About
     url: /about/
   - title: Teachers
