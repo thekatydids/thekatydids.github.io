@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Kathryn Renée Thomas</title>
-    <description>Official website of Kathryn Renée Thomas, writer, actor and executive producer in Los Angeles.</description>
-    <link>http://kathrynreneethomas.com/</link>
-    <atom:link href="http://kathrynreneethomas.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 30 Dec 2015 23:58:26 -0600</pubDate>
-    <lastBuildDate>Wed, 30 Dec 2015 23:58:26 -0600</lastBuildDate>
+    <title>The Katydids</title>
+    <description>Official website of The Katydids</description>
+    <link>http://thekatydids.github.io/</link>
+    <atom:link href="http://thekatydids.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sat, 02 Jan 2016 14:47:26 -0800</pubDate>
+    <lastBuildDate>Sat, 02 Jan 2016 14:47:26 -0800</lastBuildDate>
     <generator>Jekyll v3.0.0</generator>
     
   </channel>

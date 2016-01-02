@@ -6,24 +6,9 @@
   
     
     <url>
-      <loc>http://kathrynreneethomas.com/about/</loc>
+      <loc>http://thekatydids.github.io/about/</loc>
       
-        <lastmod>2015-12-30T23:58:26-06:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://kathrynreneethomas.com/contact/</loc>
-      
-        <lastmod>2015-12-30T23:58:26-06:00</lastmod>
+        <lastmod>2016-01-02T14:47:26-08:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -36,24 +21,9 @@
   
     
     <url>
-      <loc>http://kathrynreneethomas.com/feed.xml</loc>
+      <loc>http://thekatydids.github.io/calendar/</loc>
       
-        <lastmod>2015-12-30T23:58:26-06:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://kathrynreneethomas.com/hire-me/</loc>
-      
-        <lastmod>2015-12-30T23:58:26-06:00</lastmod>
+        <lastmod>2016-01-02T14:47:26-08:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -66,24 +36,9 @@
   
     
     <url>
-      <loc>http://kathrynreneethomas.com/</loc>
+      <loc>http://thekatydids.github.io/contact/</loc>
       
-        <lastmod>2015-12-30T23:58:26-06:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://kathrynreneethomas.com/css/main.css</loc>
-      
-        <lastmod>2015-12-30T23:58:26-06:00</lastmod>
+        <lastmod>2016-01-02T14:47:26-08:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -96,9 +51,9 @@
   
     
     <url>
-      <loc>http://kathrynreneethomas.com/media/</loc>
+      <loc>http://thekatydids.github.io/feed.xml</loc>
       
-        <lastmod>2015-12-30T23:58:26-06:00</lastmod>
+        <lastmod>2016-01-02T14:47:26-08:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -111,9 +66,54 @@
   
     
     <url>
-      <loc>http://kathrynreneethomas.com/press/</loc>
+      <loc>http://thekatydids.github.io/</loc>
       
-        <lastmod>2015-12-30T23:58:26-06:00</lastmod>
+        <lastmod>2016-01-02T14:47:26-08:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://thekatydids.github.io/css/main.css</loc>
+      
+        <lastmod>2016-01-02T14:47:26-08:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://thekatydids.github.io/media/</loc>
+      
+        <lastmod>2016-01-02T14:47:26-08:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://thekatydids.github.io/press/</loc>
+      
+        <lastmod>2016-01-02T14:47:26-08:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -128,9 +128,9 @@
   
     
     <url>
-      <loc>http://kathrynreneethomas.com/teachers/</loc>
+      <loc>http://thekatydids.github.io/teachers/</loc>
       
-        <lastmod>2015-12-30T23:58:26-06:00</lastmod>
+        <lastmod>2016-01-02T14:47:26-08:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
