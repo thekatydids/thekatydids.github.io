@@ -47,6 +47,8 @@ nav:
     url: /press/
   - title: Media
     url: /media/
+  - title: Calendar
+    url: /calendar/
   - title: Contact
     url: /contact/
 

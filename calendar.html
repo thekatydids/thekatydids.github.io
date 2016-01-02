@@ -1,0 +1,59 @@
+---
+layout: default
+
+meta_title: The Katydids Events Calendar
+meta_description: "Upcoming Events featuring The Katydids"
+
+title: Calendar
+permalink: /calendar/
+
+masthead:
+  type:             background-image
+  featured-image:   "partition-press.jpg"
+  background-image: "partition-press.jpg"
+---
+
+{% for entry in site.data.events %}
+
+  <article class="entry-type-event">
+
+    <span class="entry-date">{{ entry.date }}</span>
+    <span class="entry-time">{{ entry.time }}</span>
+
+    <span class="entry-category">{{ entry.category }}</span>
+
+    <h2 class="entry-title"><a href="{{ entry.link }}" target="_blank">{{ entry.title }}</a></h2>
+
+    <p class="entry-description">{{ entry.description }}</p>
+
+    <p><a class="entry-link" href="{{ entry.link }}" target="_blank">Read More</a></p>
+
+    {% if entry.venue %}
+
+      <h4>Venue</h4>
+
+      {% for venue in entry.venue %}
+        <p class="entry-venue">Name: {{ venue.name }}</p>
+
+        {% if venue.phone %}
+          <p class="entry-address">Address: {{ venue.address }}</p>
+        {% endif %}
+
+        {% if venue.phone %}
+          <p class="entry-phone">Phone: {{ venue.phone }}</p>
+        {% endif %}
+
+        {% if venue.sitelink %}
+          <p class="entry-venue-link"><a href="{{ venue.sitelink }}" target="_blank">Venue Website</a></p>
+        {% endif %}
+
+        {% if venue.maplink %}
+          <p class="entry-map-link"><a href="{{ venue.maplink }}" target="_blank">Map to Venue</a></p>
+        {% endif %}
+
+      {% endfor %}
+    {% endif %}
+
+  </article>
+
+{% endfor %}

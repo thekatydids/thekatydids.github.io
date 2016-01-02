@@ -1,0 +1,130 @@
+- title:        "The Katydids on the Today Show"
+  date:         "Monday, January 11, 2016"
+  time:         ""
+  description:  ""
+  category:     Television
+  link:         "http://www.today.com/"
+
+
+- title:        "The Katydids on Windy City Live"
+  date:         "Thursday, January 14, 2016"
+  time:         ""
+  description:  ""
+  category:     Television
+  link:         "http://abc7chicago.com/windycitylive/"
+
+
+- title:        "The Katydids on OK! TV"
+  date:         "TBD"
+  time:         ""
+  description:  ""
+  category:     Television
+  link:         "http://www.reelz.com/oktv/"
+
+
+- title:        "The Katydids on Team Coco’s Monday Melee"
+  date:         "TBD"
+  time:         ""
+  description:  ""
+  category:     Streaming Video
+  link:         "http://www.twitch.tv/teamcoco/v/19275451"
+
+
+- title:        "Teachers Premier Party at the iO Theater"
+  date:         "Wednesday, January 13, 2016"
+  time:         "8:00pm-10:00pm"
+  description:  ""
+  category:     Live Event
+  link:         "http://ioimprov.com/chicago/show/teachers/"
+  venue:
+    - name:    iO
+      address:  ""
+      phone:
+      sitelink: "http://www.ioimprov.com"
+      maplink:  #
+
+
+
+- title:        "Riot LA: LA’s Alternative Comedy Festival"
+  date:         "Saturday, January 30, 2016"
+  time:         "1:00pm - 2:30pm"
+  description:  A Watch and Talk with The Katydids
+  category:     Live Show
+  link:         "http://riotla.com/event/a-watch-and-talk-with-the-katydids/"
+  venue:
+    - name:    The Downtown Independent
+      address:  "251 S. Main St, Los Angeles, CA, 90012"
+      phone:    (213) 617-1033
+      sitelink: http://www.downtownindependent.com
+      maplink:  #
+
+
+- title:        "Teachers: Episode 101 Airs"
+  date:         "Wednesday, January 13, 2016"
+  time:         ""
+  description:  ""
+  category:     Television
+  link:         "http://www.tvland.com/shows/teachers"
+
+- title:        "Teachers: Episode 102 Airs"
+  date:         "Wednesday, January 20, 2016"
+  time:         ""
+  description:  ""
+  category:     Television
+  link:         "http://www.tvland.com/shows/teachers"
+
+- title:        "Teachers: Episode 103 Airs"
+  date:         "Wednesday, January 27, 2016"
+  time:         ""
+  description:  ""
+  category:     Television
+  link:         "http://www.tvland.com/shows/teachers"
+
+- title:        "Teachers: Episode 104 Airs"
+  date:         "Wednesday, February 3, 2016"
+  time:         ""
+  description:  ""
+  category:     Television
+  link:         "http://www.tvland.com/shows/teachers"
+
+- title:        "Teachers: Episode 105 Airs"
+  date:         "Wednesday, February 10, 2016"
+  time:         ""
+  description:  ""
+  category:     Television
+  link:         "http://www.tvland.com/shows/teachers"
+
+- title:        "Teachers: Episode 106 Airs"
+  date:         "Wednesday, February 17, 2016"
+  time:         ""
+  description:  ""
+  category:     Television
+  link:         "http://www.tvland.com/shows/teachers"
+
+- title:        "Teachers: Episode 107 Airs"
+  date:         "Wednesday, February 24, 2016"
+  time:         ""
+  description:  ""
+  category:     Television
+  link:         "http://www.tvland.com/shows/teachers"
+
+- title:        "Teachers: Episode 108 Airs"
+  date:         "Wednesday, March 2, 2016"
+  time:         ""
+  description:  ""
+  category:     Television
+  link:         "http://www.tvland.com/shows/teachers"
+
+- title:        "Teachers: Episode 109 Airs"
+  date:         "Wednesday, March 9, 2016"
+  time:         ""
+  description:  ""
+  category:     Television
+  link:         "http://www.tvland.com/shows/teachers"
+
+- title:        "Teachers: Episode 110 Airs"
+  date:         "Wednesday, March 16, 2016"
+  time:         ""
+  description:  ""
+  category:     Television
+  link:         "http://www.tvland.com/shows/teachers"
