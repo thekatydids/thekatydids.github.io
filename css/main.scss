@@ -1,0 +1,113 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+// Import Bootstrap SCSS files as components
+
+// Bootstrap Core variables
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_variables.scss";
+
+// Bootstrap Reset and Dependencies
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_normalize.scss";
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_print.scss";
+//@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_glyphicons.scss";
+
+// Theme Variables - Override Bootstrap variables
+@import "base/_variables.scss";
+
+ // Bootstrap Mixins - Load after Variable Override
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_mixins.scss";
+
+// Bootstrap Core CSS
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_scaffolding.scss";
+// @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_type.scss";
+// @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_code.scss";
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_grid.scss";
+//@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_tables.scss";
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_forms.scss";
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_buttons.scss";
+
+// Bootstrap Components
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_component-animations.scss";
+//@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_dropdowns.scss";
+//@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_button-groups.scss";
+//@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_input-groups.scss";
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navs.scss";
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss";
+//@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_breadcrumbs.scss";
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_pagination.scss";
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_pager.scss";
+//@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_labels.scss";
+//@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_badges.scss";
+//@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_jumbotron.scss";
+//@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_thumbnails.scss";
+//@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_alerts.scss";
+//@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_progress-bars.scss";
+//@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_media.scss";
+//@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_list-group.scss";
+//@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_panels.scss";
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_responsive-embed.scss";
+//@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_wells.scss";
+//@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_close.scss";
+
+// Bootstrap Components w/ JavaScript
+//@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_modals.scss";
+//@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_tooltip.scss";
+//@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_popovers.scss";
+// @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_carousel.scss";
+
+// Bootstrap Utility classes
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_utilities.scss";
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_responsive-utilities.scss";
+
+//-----------------------------------------
+// Theme SCSS Files
+//-----------------------------------------
+
+// Theme Variables override some Bootstrap Variables at the top of this file
+
+// Base Styles
+@import "base/_mixins.scss";
+@import "base/_utilities.scss";
+@import "base/_typography.scss";
+
+// Global Styles
+@import "global/_global.scss";
+
+// Include Styles
+@import "includes/_navigation.scss";
+@import "includes/_header.scss";
+@import "includes/_footer.scss";
+@import "includes/_sidebar.scss";
+
+// Component Styles
+@import "components/_buttons.scss";
+@import "components/_callouts.scss";
+@import "components/_gallery.scss";
+@import "components/_filmstrip.scss";
+@import "components/_mastheads.scss";
+@import "components/_sections.scss";
+
+// Layouts
+@import "layouts/_fullbleed.scss";
+@import "layouts/_archive.scss";
+@import "layouts/_default.scss";
+@import "layouts/_entry.scss";
+@import "layouts/_page.scss";
+@import "layouts/_404.scss";
+@import "layouts/_style-guide.scss";
+@import "layouts/_page-index.scss";
+@import "layouts/_page-about.scss";
+@import "layouts/_page-contact.scss";
+@import "layouts/_page-teachers.scss";
+@import "layouts/_page-press.scss";
+@import "layouts/_page-media.scss";
+@import "layouts/_page-work.scss";
+@import "layouts/_page-hire-me.scss";
+
+
+//-----------------------------------------
+// 3rd Party Components
+//-----------------------------------------
+
+@import "../bower_components/photoswipe/src/css/main.scss";
+@import "../bower_components/photoswipe/src/css/default-skin/default-skin.scss";

@@ -1,0 +1,84 @@
+/*!
+*
+* Layouts for Main Content
+*
+*/
+
+/*!
+*
+* Wrapper Styles
+*
+*/
+
+.site-wrapper{
+	// wraps the entire site
+	// always full-width
+	// useful for coloring background of entire site
+}
+
+	.site-container{
+		// alternates between .container and .container-fluid styles
+		// can be fixed width or fluid width, depending on the needs of the page
+		// generally affected by applying the appropriate mixin, although can
+		// also be hard-coded into the classes of the template file in question
+	}
+
+		.site-content-area{
+			// almost always a row
+			// contains the main content areas:
+			// primary content and any sidebars
+		}
+
+			.site-main{
+				// columns
+				// contains the main content on each page
+				// might be a full-width section, or a number of columns
+			}
+
+			.sidebar{
+				// columns
+				// contains the supplemental content on some pages
+				// can be varying sizes
+				// number of sidebars can vary by page
+			}
+
+
+// HTML Structure for Layouts
+
+//		.site-wrapper
+// 			.site-container
+// 				.site-content
+// 					.content-area
+
+// 						.site-main
+// 							article.hentry
+// 								.entry-header
+// 								.entry-content
+// 								.entry-footer
+
+// 						.sidebar.sidebar-main
+// 						.sidebar.sidebar-nav
+
+// # Both Contained and non-Contained versions of each.
+
+// # Content only
+// - full width
+// - centered
+
+// # Content sidebar
+// - 2/3 x 1/3
+// - 3/4 x 1/4
+
+// # Sidebar content
+// - 1/3 x 2/3
+// - 1/4 x 3/4
+
+// # Content sidebar sidebar
+// - 1/2 x 1/4 x 1/4
+// - 1/3 x 1/3 x 1/3
+// - 4/6 x 1/6 x 1/6
+
+// #Sidebar content sidebar
+// - 1/4 x 1/2 x 1/4
+// - 1/3 x 1/3 x 1/3
+// - 1/6 x 4/6 x 1/6

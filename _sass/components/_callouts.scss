@@ -1,0 +1,72 @@
+/*!
+*
+* Callouts
+*
+*/
+
+/*!
+*
+* Spotlight Styles
+*
+*/
+
+.spotlight-header{
+  @include make-row();
+
+  .spotlight-header-content{
+    @include make-md-column(8);
+    @include make-md-column-offset(2);
+  }
+}
+
+.spotlights-2{
+  @include make-row();
+
+  .spotlight{
+    @include make-sm-column(6);
+    @include make-md-column(6);
+  }
+}
+
+.spotlights-3{
+  @include make-row();
+
+  .spotlight{
+    @include make-sm-column(6);
+    @include make-md-column(4);
+  }
+}
+
+.spotlights-4{
+  @include make-row();
+
+  .spotlight{
+    @include make-sm-column(6);
+    @include make-md-column(3);
+  }
+}
+
+.spotlights-5{
+  @include make-row();
+
+  .spotlight{
+    @include make-xs-column(4);
+    @include make-sm-column(3);
+    @include make-md-column(2);
+  }
+
+  .first-spotlight{
+    @include make-xs-column-offset(0);
+    @include make-md-column-offset(1);
+  }
+}
+
+.spotlights-6{
+  @include make-row();
+
+  .spotlight{
+    @include make-xs-column(2);
+    @include make-sm-column(2);
+    @include make-md-column(2);
+  }
+}

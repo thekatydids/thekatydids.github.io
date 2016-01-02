@@ -1,0 +1,31 @@
+/*!
+*
+* Page Template: Full Width Centered
+*
+*/
+
+.page-template-full-width-centered,
+.page-template-templates-pagesfull-width-centered-php{
+
+	.site-wrapper{
+	}
+
+		.site-container{
+			@extend .container;
+		}
+
+			.site-content{
+				@include make-row();
+			}
+
+				.content-area{
+					@include make-md-column(8);
+					@include make-md-column-offset(2);
+				}
+
+					.site-main{ 
+					}
+
+						article{
+						}
+}

@@ -1,0 +1,140 @@
+/*!
+*
+* Page: Work
+*
+*/
+
+.layout-work{
+
+.site-wrapper{
+  }
+
+    .site-container{
+//      @extend .container-fluid;
+    }
+
+      .site-content{
+  //      @include make-row();
+      }
+
+        .content-area{
+    //      @include make-md-column(12);
+      //    @include make-md-column-offset(0);
+        }
+
+          .site-main{
+          }
+
+          .archive-header{
+            border-bottom: 0;
+            padding-bottom: 0;
+//            @include make-sm-column(12);
+//            @include make-sm-column-offset(0);
+          }
+
+          .archive-title{
+          }
+
+            article{
+            }
+
+            .work--entry{
+              background: #333;
+              padding-top: 3em;
+              padding-bottom: 3em;
+              margin-bottom: 0.5em;
+              background-repeat: no-repeat;
+              background-position: 50% 50%;
+              background-size: cover;
+              min-height: 540px;
+              position: relative;
+            }
+
+            .work__container{
+              @extend .container;
+              position: relative;
+              z-index: 3;
+            }
+
+            .work__body{
+              @include make-row();
+            }
+
+            .work__meta{
+//              @include make-sm-column(3);
+//              @include make-sm-column-offset(2);
+//              color: $gray-light;
+//              text-align: right;
+            }
+
+            .work__link{
+              color: $white;
+              text-shadow: 0px 2px 3px rgba(0,0,0,0.60);
+            }
+
+            .work__summary{
+              @include make-sm-column(8);
+              @include make-md-column(6);
+              @include make-sm-column-offset(0);
+              color: $white;
+              text-shadow: 0px 2px 3px rgba(0,0,0,0.60);
+            }
+
+            .work__category{
+            }
+
+            .work__readmore{
+              @extend .btn;
+              @extend .btn-primary;
+              background: $brand-primary;
+              border-color: lighten($brand-primary, 5%);
+              font-family: $font-family-sans-serif;
+              text-shadow: none;
+              font-weight: $font-weight-bold;
+
+              &:hover{
+                background: lighten($brand-primary, 10%);
+                border-color: lighten($brand-primary, 10%);
+                  &:active,
+                  &:focus{
+                    background: lighten($brand-primary, 10%);
+                    border-color: lighten($brand-primary, 10%);
+                  }
+              }
+            }
+
+            .work__livelink{
+              color: $white;
+              font-family: $font-family-sans-serif;
+            }
+
+            #work--mapandfire{
+              background-image: url('../img/work/work-bg-map-and-fire.jpg');
+            }
+
+            #work--chickenbone{
+              background-image: url('../img/work/work-bg-chicken-bone.jpg');
+            }
+
+            #work--failbetter{
+              background-image: url('../img/work/work-bg-fail-better.jpg');
+            }
+
+            #work--bemis-james{
+              background-image: url('../img/work/work-bg-bemis-james.jpg');
+            }
+
+            #work--jdrf{
+              background-image: url('../img/work/work-bg-jdrf.jpg');
+            }
+
+            #work--polymyth{
+              background-image: url('../img/work/work-bg-polymyth.jpg');
+              margin-bottom: 0;  // Last one
+            }
+
+  .site-footer{
+    margin-top: 0;
+  }
+
+}

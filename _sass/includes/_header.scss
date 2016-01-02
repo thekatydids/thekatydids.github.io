@@ -1,0 +1,49 @@
+/*!
+*
+* Header Styles
+*
+*/
+
+.site-header{
+  font-family: $font-family-sans-serif;
+}
+
+// Branding
+
+.site-branding-container{
+  @extend %margin-top-1-baseline;
+  @extend %margin-bottom-1-baseline;
+
+  .site-branding{
+    @include make-row();
+
+    @extend .text-center;
+
+    @media (min-width: $screen-sm-min) {
+      text-align: left;
+    }
+
+    .site-logo {
+      @include make-sm-column(3);
+      @include make-md-column(2);
+    }
+
+    .site-name {
+      @include make-sm-column(9);
+      @include make-md-column(8);
+    }
+
+    .site-title{
+      a{
+      }
+    }
+
+    .site-description{
+    }
+
+    .site-header-ctas {
+      @include make-sm-column(12);
+      @include make-md-column(2);
+    }
+  }
+}

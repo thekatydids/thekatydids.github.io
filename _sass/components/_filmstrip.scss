@@ -1,0 +1,124 @@
+/*!
+*
+* Filmstrip
+*
+*/
+
+.filmstrip{
+  @extend .clearfix;
+
+  margin: auto;
+//  background: #eee;
+  overflow-y: hidden;
+  overflow-x: scroll;
+
+  max-height: 300px;
+
+  margin-bottom: $baseline * 4;
+
+  @media (min-width: $screen-md-min) {
+    max-height: 100%;
+    height: 100%;
+
+    overflow-y: visible;
+    overflow-x: visible;
+    overflow: hidden;
+  }
+
+  .my-gallery {
+    @extend .clearfix;
+
+//    @include make-row();
+
+    float: left;
+    white-space: nowrap;
+    list-style: none;
+    margin-right: -999em;
+
+    @media (min-width: $screen-md-min) {
+      height: auto;
+      width: 100%;
+      overflow-y: visible;
+      overflow-x: visible;
+      overflow: hidden;
+    }
+
+    @media (min-width: $screen-lg-min) {
+      width: 100%;
+      max-width: 1600px;
+    }
+
+  }
+
+  .my-gallery figure {
+    @extend .clearfix;
+
+    margin: 0;
+    margin-right: 10px;
+    float: left;
+    display: inline;
+
+    position: relative;
+    overflow: hidden;
+
+    width: 300px;
+    height: 265px;
+
+    &:last-child {
+      margin-right:0;
+    }
+
+    @media (min-width: $screen-md-min) {
+      @include make-md-column(3);
+      padding: 0;
+      margin-right: 0;
+    }
+
+    @media (min-width: $screen-lg-min) {
+      @include make-lg-column(3);
+      padding: 0;
+    }
+  }
+
+  .my-gallery figure img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+//    height: 100%;
+//    width: auto;
+    -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+
+    &.img-portrait{
+//      width: 100%;
+//      height: auto;
+
+      -webkit-transform: translate(-50%,-30%);
+          -ms-transform: translate(-50%,-30%);
+              transform: translate(-50%,-30%);
+    }
+  }
+
+  span {
+    padding: 10px 0px;
+    display: block;
+  }
+
+  &.filmstrip-wide {
+    margin-left: -15px;
+    margin-right: -15px;
+
+    @media (min-width: $screen-md-min) {
+    }
+
+    @media (min-width: 1600px) {
+      max-width: 1600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+
+  }
+
+}

@@ -1,0 +1,37 @@
+/*!
+*
+* Page: About
+*
+*/
+
+.page-about{
+
+  .masthead{
+    @extend .masthead-navbar-overlap;
+  }
+
+  .masthead.masthead-background-image{
+  }
+
+  .site-wrapper{
+    }
+
+    .site-container{
+      @extend .container;
+    }
+
+      .site-content{
+        @include make-row();
+      }
+
+        .content-area{
+          @include make-md-column(10);
+          @include make-md-column-offset(1);
+        }
+
+          .site-main{
+          }
+
+            article{
+            }
+}

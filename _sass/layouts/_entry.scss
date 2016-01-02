@@ -1,0 +1,33 @@
+/*!
+*
+* Entry Styles
+*
+*/
+
+.entry{
+
+  .site-wrapper{
+  }
+
+    .site-container{
+      @extend .container;
+    }
+
+      .site-content{
+        @include make-row();
+      }
+
+        .content-area{
+//          @include make-sm-column(12);
+  //        @include make-sm-column-offset(0);
+
+          @include make-md-column(10);
+          @include make-md-column-offset(1);
+          }
+
+          .site-main{
+          }
+
+          article{
+          }
+}

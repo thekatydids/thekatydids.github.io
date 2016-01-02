@@ -1,0 +1,33 @@
+/*!
+*
+* Page: Contact (and Thank you)
+*
+*/
+
+.page-contact{
+
+  .masthead{
+    @extend .masthead-navbar-overlap;
+  }
+
+  .google-form{
+    width: 100%;
+    min-height: 500px;
+  }
+
+}
+
+
+.page-thank-you{
+
+  hr{
+    border-color: $gray-lighter;
+  }
+
+  h3{
+    margin-top: $baseline * 2;
+    border-bottom: 1px solid $gray-lighter;
+    padding-bottom: $baseline * 2;
+    margin-bottom: $baseline * 2;
+  }
+}

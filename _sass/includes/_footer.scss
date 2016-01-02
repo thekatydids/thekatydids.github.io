@@ -1,0 +1,55 @@
+/*!
+*
+* Footer Styles
+*
+*/
+
+.site-footer{
+	font-family: $font-family-sans-serif;
+	margin-top: ($baseline-xs * 2);
+
+	font-size: $font-size-small;
+
+	@media(min-width: $screen-md-min) {
+		margin-top: $baseline-md * 2;
+	}
+}
+
+.site-info{
+	@extend %padding-top-2-baseline;
+	@extend %padding-bottom-2-baseline;
+	-webkit-font-smoothing: antialiased;
+	text-align: right;
+
+	background: $gray-lighter;
+	color: $gray;
+
+	a{
+		color: $brand-primary;
+		text-decoration: underline;
+	}
+}
+
+.site-copyright{
+	text-align: center;
+	margin-bottom: $baseline;
+	@include center-block();
+
+	@media (min-width: $screen-sm-min) {
+		display: inline;
+		text-align: left;
+		margin-bottom: 0;
+		float: left;
+	}
+}
+
+.site-credits{
+	text-align: center;
+	@include center-block();
+
+	@media (min-width: $screen-sm-min) {
+		display: inline;
+		text-align: right;
+		float: right;
+	}
+}

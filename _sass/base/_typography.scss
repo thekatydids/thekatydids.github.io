@@ -1,0 +1,700 @@
+/*!
+ *
+ * Montrose Typography & Baseline
+ *
+ */
+
+// Base Font Size
+// Re-define in pixels to overwrite bootstrap's pixel-based reset
+html{
+    font-size: $font-size-base;
+}
+
+body{
+    font-family: $font-family-sans-serif;
+    font-size: $font-size-base-xs;
+    line-height: $line-height-base-xs;
+
+    @media (min-width: $screen-sm-min) {
+      font-size: $font-size-base-sm;
+      line-height: $line-height-base-sm;
+    }
+
+    @media (min-width: $screen-md-min) {
+      font-size: $font-size-base-md;
+      line-height: $line-height-base-md;
+    }
+
+    @media (min-width: $screen-lg-min) {
+      font-size: $font-size-base-lg;
+      line-height: $line-height-base-lg;
+    }
+}
+
+// Headings
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  text-rendering: optimizeLegibility;
+  small,
+  .small {
+    line-height: 1;
+    color: $headings-small-color;
+    font-size: 80%;
+  }
+}
+
+h1, .h1{
+  font-family: $font-family-serif;
+}
+
+h2, .h2{
+  font-family: $font-family-serif;
+  color: $gray-dark;
+}
+
+h3, .h3,
+h4, .h4{
+  font-family: $font-family-serif;
+  color: $gray-dark;
+}
+
+
+h1, .h1{
+    margin-top: 0;
+    margin-bottom: 0;
+
+    font-size: $font-size-h1-xs;
+    line-height: $line-height-h1-xs;
+    margin-bottom: $baseline-xs;
+
+    @media (min-width: $screen-sm-min) {
+     font-size: $font-size-h1-sm;
+     line-height: $line-height-h1-sm;
+     margin-bottom: $baseline-sm;
+    }
+
+    @media (min-width: $screen-md-min) {
+      font-size: $font-size-h1-md;
+      line-height: $line-height-h1-md;
+      margin-bottom: $baseline-md;
+    }
+
+    @media (min-width: $screen-lg-min) {
+      font-size: $font-size-h1-lg;
+      line-height: $line-height-h1-lg;
+      margin-bottom: $baseline-lg;
+    }
+
+  &.display-title{
+    font-family: $font-family-display;
+  }
+
+}
+
+h2, .h2{
+    margin-top: 0;
+    margin-bottom: 0;
+
+    font-size: $font-size-h2-xs;
+    line-height: $line-height-h2-xs;
+    margin-bottom: $baseline-xs;
+
+    @media (min-width: $screen-sm-min) {
+     font-size: $font-size-h2-sm;
+     line-height: $line-height-h2-sm;
+     margin-bottom: $baseline-sm;
+    }
+
+    @media (min-width: $screen-md-min) {
+      font-size: $font-size-h2-md;
+      line-height: $line-height-h2-md;
+      margin-bottom: $baseline-md;
+    }
+
+    @media (min-width: $screen-lg-min) {
+      font-size: $font-size-h2-lg;
+      line-height: $line-height-h2-lg;
+      margin-bottom: $baseline-lg;
+    }
+}
+
+h3, .h3{
+    margin-top: 0;
+    margin-bottom: 0;
+
+    font-size: $font-size-h3-xs;
+    line-height: $line-height-h3-xs;
+    margin-bottom: $baseline-xs;
+
+    @media (min-width: $screen-sm-min) {
+     font-size: $font-size-h3-sm;
+     line-height: $line-height-h3-sm;
+     margin-bottom: $baseline-sm;
+    }
+
+    @media (min-width: $screen-md-min) {
+      font-size: $font-size-h3-md;
+      line-height: $line-height-h3-md;
+      margin-bottom: $baseline-md;
+    }
+
+    @media (min-width: $screen-lg-min) {
+      font-size: $font-size-h3-lg;
+      line-height: $line-height-h3-lg;
+      margin-bottom: $baseline-lg;
+    }
+}
+
+h4, .h4{
+    margin-top: 0;
+    margin-bottom: 0;
+
+    font-weight: $font-weight-bold;
+
+
+    font-size: $font-size-h4-xs;
+    line-height: $line-height-h4-xs;
+    margin-bottom: $baseline-xs;
+
+    @media (min-width: $screen-sm-min) {
+     font-size: $font-size-h4-sm;
+     line-height: $line-height-h4-sm;
+     margin-bottom: $baseline-sm;
+    }
+
+    @media (min-width: $screen-md-min) {
+      font-size: $font-size-h4-md;
+      line-height: $line-height-h4-md;
+      margin-bottom: $baseline-md;
+    }
+
+    @media (min-width: $screen-lg-min) {
+      font-size: $font-size-h4-lg;
+      line-height: $line-height-h4-lg;
+      margin-bottom: $baseline-lg;
+    }
+
+}
+
+// Body text
+// -------------------------
+
+
+// Open Type Features
+p {
+  text-rendering: optimizeLegibility;
+
+  // Hyphens
+  -webkit-hyphens: auto; /* Safari 5.1 thru 6, iOS 4.2 thru 6 */
+  -moz-hyphens: auto; /* Firefox 16 thru 20 */
+  -ms-hyphens: auto; /* IE10 */
+  -o-hyphens: auto; /* PRESTO...haha LOL */
+  hyphens: auto;   /* W3C standard */
+
+  @media (min-width: $screen-sm-min) {
+      -webkit-hyphens: none;
+      -moz-hyphens: none;
+      -ms-hyphens: none;
+      -o-hyphens: none;
+      hyphens: none;
+  }
+}
+
+p, ul, ol, blockquote {
+  margin: 0 0 $baseline-xs + 4;
+
+  @media (min-width: $screen-md-min) {
+     margin: 0 0 $baseline-md + 4;
+  }
+}
+
+// Top margins for sub-headings that follow paragraphs
+p + h2,
+ul + h2,
+figure + h2 {
+  margin-top: ($baseline-xs * 3);
+
+  @media(min-width: $screen-md-min){
+    margin-top: ($baseline-md * 3);
+  }
+}
+
+p + h3, p + h4,
+ul + h3, ul + h4,
+figure + h3, figure + h4 {
+  margin-top: ($baseline-xs * 2);
+
+  @media(min-width: $screen-md-min){
+    margin-top: ($baseline-md * 2);
+  }
+}
+
+// Lead Paragraph Styles
+.lead {
+    margin-bottom: ($baseline * 2);
+
+    font-family: $font-family-sans-serif;
+    font-weight: $font-weight-normal;
+
+    font-size: $font-size-lead-xs;
+    line-height: $line-height-lead-xs;
+
+    @media (min-width: $screen-sm-min) {
+ //       font-size: $font-size-lead-sm;
+ //       line-height: $line-height-lead-sm;
+    }
+
+    @media (min-width: $screen-md-min) {
+        font-size: $font-size-lead-md;
+        line-height: $line-height-lead-md;
+    }
+
+    @media (min-width: $screen-lg-min) {
+  //      font-size: $font-size-lead-lg;
+  //      line-height: $line-height-lead-lg;
+    }
+}
+
+small,
+.small {
+    font-size: $font-size-small-xs;
+    line-height: $line-height-base-xs;
+
+    @media (min-width: $screen-md-min) {
+      font-size: $font-size-small-md;
+      line-height: $line-height-base-md;
+    }
+}
+
+
+// Blockquotes
+
+blockquote {
+  padding: 0;
+  margin-bottom: ($baseline * 2);
+  margin-top: ($baseline * 2);
+  border-width: 0;
+  border-style: solid;
+  border-color: $gray-light;
+
+  p,
+  ul,
+  ol {
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+}
+
+blockquote p {
+    font-family: $font-family-sans-serif;
+    font-weight: $font-weight-normal;
+
+    color: $brand-primary;
+    text-indent: -0.4em;
+
+    font-size: $font-size-blockquote-xs;
+    line-height: $line-height-blockquote-xs;
+
+    @media (min-width: $screen-sm-min) {
+//        font-size: $font-size-blockquote-sm;
+  //      line-height: $line-height-blockquote-sm;
+    }
+
+    @media (min-width: $screen-md-min) {
+        font-size: $font-size-blockquote-md;
+        line-height: $line-height-blockquote-md;
+    }
+
+    @media (min-width: $screen-lg-min) {
+    //    font-size: $font-size-blockquote-lg;
+      //  line-height: $line-height-blockquote-lg;
+    }
+}
+
+blockquote footer{
+  color: $gray;
+  font-weight: $font-weight-bold;
+}
+
+blockquote.blockquote-reverse{
+    footer:before{
+    content: '\2014 \00A0';
+  }
+
+  footer:after{
+    content: '';
+  }
+}
+
+
+// Lists
+// -------------------------
+
+// Unordered and Ordered lists
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: $baseline;
+  ul,
+  ol {
+    margin-bottom: 0;
+  }
+}
+
+// List options
+
+// [converter] extracted from `.list-unstyled` for libsass compatibility
+@mixin list-unstyled {
+  padding-left: 0;
+  list-style: none;
+}
+// [converter] extracted as `@mixin list-unstyled` for libsass compatibility
+.list-unstyled {
+  @include list-unstyled;
+}
+
+
+// Inline turns list items into inline-block
+.list-inline {
+  @include list-unstyled;
+  margin-left: -5px;
+
+  > li {
+    display: inline-block;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+
+// Description Lists
+dl {
+  margin-top: 0; // Remove browser default
+  margin-bottom: $baseline/2;
+}
+dt,
+dd {
+  line-height: $baseline/2;
+}
+dt {
+  font-weight: bold;
+}
+dd {
+  margin-left: 0; // Undo browser default
+}
+
+// Horizontal description lists
+//
+// Defaults to being stacked without any of the below styles applied, until the
+// grid breakpoint is reached (default of ~768px).
+
+.dl-horizontal {
+  dd {
+    @include clearfix; // Clear the floated `dt` if an empty `dd` is present
+  }
+
+  @media (min-width: $grid-float-breakpoint) {
+    dt {
+      float: left;
+      width: ($dl-horizontal-offset - 20);
+      clear: left;
+      text-align: right;
+      @include text-overflow;
+    }
+    dd {
+      margin-left: $dl-horizontal-offset;
+    }
+  }
+}
+
+
+// Lists
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: ($baseline * 2);
+  ul,
+  ol {
+    margin-bottom: 0;
+  }
+}
+
+ul {
+ list-style: disc;
+}
+
+ol {
+ list-style: decimal;
+}
+
+// Font smoothing on buttons
+
+input,
+button,
+.btn{
+  -webkit-font-smoothing: antialiased;
+}
+
+
+
+// Definition Lists
+
+dl{
+}
+
+dt,
+dd {
+  display: inline;
+  margin: 0;
+}
+
+dt + dt:before,
+dd + dt:before {
+  content: "\A";
+  white-space: pre;
+}
+
+dd + dd:before {
+  content: ", ";
+}
+
+dd:before {
+  content: ": ";
+  margin-left: -0.2em;
+}
+
+// Pull Quotes
+
+// Pull Quotes Markup
+//
+//  <aside class="pull-quote">
+//    <blockquote>
+//      <p></p>
+//    </blockquote>
+//  </aside>
+
+.pull-quote {
+  position: relative;
+  padding: $baseline;
+}
+.pull-quote:before,
+.pull-quote:after {
+  height: $baseline;
+  opacity: 0.15;
+  position: absolute;
+  font-size: $baseline * 3;
+  color: #dc976e;
+}
+.pull-quote:before {
+  content: '';
+  top: 0;
+  left: 0;
+}
+.pull-quote:after {
+  content: '';
+  bottom: 0;
+  right: 0;
+}
+
+
+
+// Emphasis & misc
+// -------------------------
+
+mark,
+.mark {
+  background-color: $state-warning-bg;
+  padding: .2em;
+}
+
+// Alignment
+.text-left           { text-align: left; }
+.text-right          { text-align: right; }
+.text-center         { text-align: center; }
+.text-justify        { text-align: justify; }
+.text-nowrap         { white-space: nowrap; }
+
+// Transformation
+.text-lowercase      { text-transform: lowercase; }
+.text-uppercase      { text-transform: uppercase; }
+.text-capitalize     { text-transform: capitalize; }
+
+// Contextual colors
+.text-muted {
+  color: $text-muted;
+}
+
+@include text-emphasis-variant('.text-primary', $brand-primary);
+
+@include text-emphasis-variant('.text-success', $state-success-text);
+
+@include text-emphasis-variant('.text-info', $state-info-text);
+
+@include text-emphasis-variant('.text-warning', $state-warning-text);
+
+@include text-emphasis-variant('.text-danger', $state-danger-text);
+
+// Contextual backgrounds
+// For now we'll leave these alongside the text classes until v4 when we can
+// safely shift things around (per SemVer rules).
+.bg-primary {
+  // Given the contrast here, this is the only class to have its color inverted
+  // automatically.
+  color: #fff;
+}
+@include bg-variant('.bg-primary', $brand-primary);
+
+@include bg-variant('.bg-success', $state-success-bg);
+
+@include bg-variant('.bg-info', $state-info-bg);
+
+@include bg-variant('.bg-warning', $state-warning-bg);
+
+@include bg-variant('.bg-danger', $state-danger-bg);
+
+
+
+
+// Misc
+// -------------------------
+
+// Abbreviations and acronyms
+abbr[title],
+// Add data-* attribute to help out our tooltip plugin, per https://github.com/twbs/bootstrap/issues/5257
+abbr[data-original-title] {
+  cursor: help;
+  border-bottom: 1px dotted $abbr-border-color;
+}
+.initialism {
+  font-size: 90%;
+  @extend .text-uppercase;
+}
+
+// Addresses
+address {
+  margin-bottom: ($baseline * 2);
+  font-style: normal;
+  line-height: $line-height-base;
+}
+
+
+
+// Misc Elements
+
+hr {
+  margin-bottom: $baseline;
+  display: block;
+  clear: both;
+
+//  border-top: 1px;
+  border-style: solid;
+  border-color: #dadada;
+ }
+
+address {
+  display: block;
+  margin-bottom: $baseline;
+  font-style: normal;
+  line-height: 1.5;
+}
+
+cite {
+  font-style: normal;
+}
+
+.center-text{
+  text-align: center;
+}
+
+// Word Wrap
+
+.breakword {
+  word-wrap: break-word;
+}
+
+.normal-wrap {
+  word-wrap: normal;
+}
+
+.inherit-wrap {
+  word-wrap: auto;
+}
+
+// Code Blocks
+
+pre code {
+  word-wrap: normal;
+  white-space: -moz-pre-wrap;
+  white-space: pre-wrap; /* http://css-tricks.com/almanac/properties/w/whitespace */
+}
+
+pre {
+  white-space: pre;
+  display: block;
+}
+
+code {
+  white-space: pre;
+  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+// Unicode Ampersand
+
+@font-face {
+  font-family: "Ampersand";
+  src: local("Georgia"), local("Garamond"), local("Palatino"), local("Book Antiqua");
+  unicode-range: U+0026;
+}
+
+@font-face {
+  font-family: "Ampersand";
+  src: local("Georgia");
+  unicode-range: U+270C;
+}
+
+/**
+ *
+ * Extend this class on any element of your
+ * choice for ampersands.
+ *
+ * For example:
+
+  <h6 class="ampersand">Dewey Cheat 'em & Howe</h6>
+
+  */
+
+.ampersand {
+  font-family: "Ampersand", Verdana, sans-serif;
+}
+
+.amp{
+  font-family: baskerville !important;
+  font-style: italic;
+  font-weight: 100;
+}
+
+// Where to Avoid Hyphenation
+/* http://meyerweb.com/eric/thoughts/2012/12/17/where-to-avoid-css-hyphenation */
+
+ abbr,
+ acronym,
+ blockquote,
+ code,
+ dir,
+ kbd,
+ listing,
+ plaintext,
+ q,
+ samp,
+ tt,
+ var,
+ xmp {
+  -webkit-hyphens: none; /* Safari 5.1 thru 6, iOS 4.2 thru 6 */
+  -moz-hyphens: none; /* Firefox 16 thru 20 */
+  -ms-hyphens: none; /* IE10 */
+  -o-hyphens: none; /* PRESTO...haha LOL */
+  hyphens: none;   /* W3C standard */
+}

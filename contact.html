@@ -1,0 +1,69 @@
+---
+layout: default
+
+meta_title: Contact The Katydids
+meta_description: "Contact The Katydids"
+
+title: Contact The Katydids
+permalink: /contact/
+
+masthead:
+  type: background-image
+  featured-image:   "masthead-contact-a.jpg"
+  background-image: "masthead-contact-a.jpg"
+---
+
+<h2>Representation</h2>
+<h3>Literary</h3>
+
+<p><strong>Jonny Gutman</strong>
+<br>William Morris Endeavor
+<br><a href="mailto:GUT@wmeentertainment.com">GUT@wmeentertainment.com</a>
+</p>
+
+<h3>Booking</h3>
+<p><strong>Silvio Lund</strong>
+<br>William Morris Endeavor
+<br><a href="mailto:SRL@wmeentertainment.com">mailto:SRL@wmeentertainment.com</a>
+</p>
+
+<h3>Direct Email</h3>
+<a href="mailto:info@thekatydids.com">info@thekatydids.com</a>
+
+<h3>Send Us a Message</h3>
+
+<form action="//formspree.io/kathrynrenee@gmail.com"
+      method="POST">
+
+  <div class="form-group">
+    <label for="input-name">Your Name</label>
+    <input class="form-control" type="text" name="name" id="input-name" placeholder="">
+  </div>
+
+  <div class="form-group">
+    <label for="input-email">Email</label>
+    <input class="form-control" type="email" name="_replyto" id="input-email" placeholder="" />
+  </div>
+
+  <div class="form-group">
+    <label for="input-message">Your Message</label>
+    <textarea class="form-control" type="textarea" rows="5" name="message" id="input-message" placeholder=""></textarea>
+  </div>
+
+  <input type="text" name="_gotcha" style="display:none" />
+
+  <input type="hidden" name="_subject" value="New Contact Form Message" />
+  <input type="hidden" name="_next" value="{{site.baseurl}}/thank-you/" />
+
+  <button type="submit" class="btn btn-primary btn-lg btn-block">Send Message</button>
+</form>
+
+<hr>
+
+<h4>Connect with The Katydids</h4>
+
+<ul class="list-unstyled list-social-links list-inline">
+  <li><a href="https://twitter.com/{{ site.twitter }}" target="_blank"><i class="fa fa-twitter-square"></i> Twitter</a></li>
+  <li><a href="https://www.facebook.com/{{ site.facebook }}/" target="_blank"><i class="fa fa-facebook-official"></i> Facebook</a></li>
+  <li><a href="https://www.youtube.com/user/{{ site.youtube }}" target="_blank"><i class="fa fa-youtube-play"></i> YouTube</a></li>
+</ul>

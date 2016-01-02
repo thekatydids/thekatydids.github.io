@@ -1,0 +1,257 @@
+/*!
+*
+* Hire Me / Resume Page Layouts
+*
+*/
+
+.page-hire-me{
+
+  .site-container{
+  }
+
+    .site-content{
+    }
+
+      .content-area{
+      }
+
+        .site-main{
+        }
+
+        .entry-header.post-header{
+          display: none;
+        }
+
+        .entry-content{
+        }
+
+      .masthead.masthead-partitions{
+
+        .masthead-partition-content{
+          @include make-sm-column(6);
+          @include make-sm-column-pull(6);
+
+          @include make-md-column(7);
+          @include make-md-column-pull(5);
+
+          text-align: left;
+
+          height: 380px;
+
+          @media (min-width: $screen-sm-min) {
+            height: 500px;
+          }
+        }
+
+        .masthead-partition-image{
+          @include make-sm-column(6);
+          @include make-sm-column-push(6);
+
+          @include make-md-column(5);
+          @include make-md-column-push(7);
+
+          background-position: 50% 50%;
+          background-size: 414px;
+
+          padding-left: 0;
+          padding-right: 0;
+
+          height: 320px;
+
+          @media (min-width: $screen-sm-min) {
+            height: 500px;
+            background-size: cover;
+          }
+
+        }
+      }
+
+
+
+// Resume
+
+  .resume-profile{
+  }
+
+  .resume-profile-header{
+    text-align: center;
+    margin-bottom: $baseline * 2;
+    padding-bottom: $baseline;
+    border-bottom: 1px solid $gray-lighter;
+  }
+
+  .resume-profile-photo{
+    margin-bottom: $baseline * 2;
+  }
+
+  .resume-profile-title{
+  }
+
+  .resume-profile-download{
+    a{
+      text-decoration: none;
+    }
+  }
+
+  .resume-profile-details{
+    @include make-row();
+  }
+
+  .resume-profile-management{
+    @include make-xs-column(12);
+    @include make-xs-column-offset(0);
+
+    @include make-sm-column(4);
+    @include make-sm-column-offset(1);
+
+    @include make-md-column(4);
+    @include make-md-column-offset(1);
+
+    text-align: center;
+
+    @media (min-width: $screen-sm-min) {
+      text-align: left;
+    }
+
+  }
+
+  .resume-profile-personal{
+    @include make-xs-column(6);
+    @include make-xs-column-offset(0);
+
+    @include make-sm-column(3);
+    @include make-sm-column-offset(0);
+
+    @include make-md-column(3);
+    @include make-md-column-offset(0);
+
+    text-align: left;
+
+    @media (min-width: $screen-sm-min) {
+      text-align: left;
+    }
+  }
+
+  .resume-profile-additional{
+    @include make-xs-column(6);
+    @include make-xs-column-offset(0);
+
+    @include make-sm-column(3);
+    @include make-sm-column-offset(0);
+
+    @include make-md-column(3);
+    @include make-md-column-offset(0);
+
+//    text-align: right;
+
+    @media (min-width: $screen-sm-min) {
+      text-align: left;
+    }
+  }
+
+
+// Resume Sections General Styles
+  .resume-section{
+    @include make-row();
+  }
+
+  .resume-section-header,
+  .resume-profile-header{
+  }
+
+  .resume-section-header{
+    @extend .h4;
+    text-transform: uppercase;
+    line-height: 1.2;
+
+    margin-top: $baseline * 4;
+    margin-bottom: $baseline * 2;
+    padding-bottom: $baseline;
+
+    border-bottom: 1px solid $gray-lighter;
+
+    color: $brand-primary;
+    letter-spacing: 2px;
+  }
+
+
+// General Resume Entry Styles
+
+  .resume-detail-list{
+    @extend .list-unstyled;
+  }
+
+  .resume-gig,
+  .resume-training,
+  .resume-award{
+    @include make-row();
+    margin-bottom: $baseline;
+  }
+
+
+// Gig-Specific Styles
+
+  .resume-gig-title{
+    @include make-sm-column(4);
+    font-weight: $font-weight-bold;
+  }
+
+  .resume-gig-role{
+    @include make-sm-column(3);
+  }
+
+  .resume-gig-production-team{
+    @include make-sm-column(5);
+  }
+
+
+// Training-Specific Styles
+
+.resume-training-title{
+  @include make-sm-column(4);
+  font-weight: $font-weight-bold;
+}
+
+.resume-training-details{
+  @include make-sm-column(8);
+}
+
+
+// Skill-Specific Styles
+
+.resume-skill-list{
+  @extend .list-inline;
+
+  li{
+    padding-left: 0;
+    padding-right: 2px;
+  }
+
+  li:after{
+    content: ", ";
+  }
+
+li:last-child:after{
+    content: "";
+  }
+}
+
+// Award-Specific Styles
+
+.resume-award-list{
+  @extend .list-unstyled;
+}
+
+.resume-award{
+}
+
+.resume-award-title {
+  @include make-sm-column(4);
+  font-weight: $font-weight-bold;
+}
+
+.resume-award-details {
+  @include make-sm-column(8);
+}
+
+}

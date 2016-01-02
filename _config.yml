@@ -1,0 +1,86 @@
+# Setup
+name:             They Katydids
+title:            "The Katydids"
+tagline:          "The Katydids"
+description:      "Official website of The Katydids"
+url:              "http://thekatydids.github.io" # the base hostname & protocol for your site
+baseurl:          "" # the subpath of your site, e.g. /blog/
+# canonical:        ""
+keywords:         "The Katydids"
+locale:           "United States"
+avatar:           "kathryn-renee-thomas-avatar.jpg"
+
+# Facebook Open Graph
+#fb_admins:
+#fb_appid:
+
+# Social Media
+twitter:  thekatydids
+facebook: thekatydids
+youtube:  thekatydids
+
+# Permalinks
+permalink: /:title
+# relative_permalinks: true
+
+# Build settings
+markdown: kramdown
+include: [".htaccess"]
+
+# Assets
+#
+# We specify the directory for Jekyll so we can use @imports.
+sass:
+  sass_dir:          _sass
+#  style:            :compressed
+
+
+# Navigation
+nav:
+  - title: Hire Me
+    url: /hire-me/
+  - title: About
+    url: /about/
+  - title: Teachers
+    url: /teachers/
+  - title: Press
+    url: /press/
+  - title: Media
+    url: /media/
+  - title: Contact
+    url: /contact/
+
+
+# About / Contact
+authors:
+  thekatydids:
+    name: The Katydids
+    bio:  The Katydids.
+
+    url:              http://thekatydids.com
+    email:            info@thekatydids.com
+    twitter_username: thekatydids
+    img:              http://placehold.it/300
+
+
+# Defaults
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "posts" # previously `post` in Jekyll 2.2.
+    values:
+      author: "thekatydids"
+      layout: "post"
+      category: articles
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "pages" #
+    values:
+      layout: "page"
+
+# Custom Vars
+version:            1.0
+github:
+  repo:

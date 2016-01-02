@@ -1,0 +1,34 @@
+/*!
+*
+* Page Template: Content : Sidebar
+*
+*/
+
+.page-template-page-templatescontent-sidebar-php{
+
+	.site-wrapper{
+	}
+
+		.site-container{
+			@extend .container;
+		}
+
+			.site-content{
+				@include make-row();
+			}
+
+				.content-area{
+					@include make-md-column(7);
+				}
+
+					.site-main{
+					}
+		 
+						article{
+						}
+
+				.sidebar.sidebar-main{
+					@include make-md-column(3);
+					@include make-md-column-push(2);
+				}
+}

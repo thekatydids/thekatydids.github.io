@@ -1,0 +1,46 @@
+/*!
+*
+* 404 Error Page
+*
+*/
+
+.page-404{
+
+	background-color: $white;
+
+	background-image: url(../img/kathryn-renee-thomas-headshot-home.jpg);
+	background-repeat: no-repeat;
+	background-position: 83% 0%;
+	background-size: cover;
+
+ 	@media (min-width: $screen-sm-min) {
+ 	}
+
+ 	@media (min-width: $screen-md-min) {
+ 	}
+
+	.site-container{
+		@extend .container-fluid;
+	}
+
+	.site-content{
+		@include make-row();
+	}
+
+	.content-area{
+		@include make-sm-column(6);
+		@include make-md-column(5);
+		@include make-md-column-offset(1);
+
+		color: $brand-primary;
+		margin-top: 400px;
+
+	 	@media (min-width: $screen-sm-min) {
+			margin-top: $baseline * 4;
+	 	}
+	}
+
+	.site-footer{
+		display: none;
+	}
+}

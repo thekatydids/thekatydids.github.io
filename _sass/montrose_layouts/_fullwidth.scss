@@ -1,0 +1,29 @@
+/*!
+*
+* Page Template: Full Width
+*
+*/
+
+.layout-full-width{
+
+	.site-wrapper{
+	}
+
+		.site-container{
+			@extend .container;
+		}
+
+			.site-content{
+				@include make-row();
+			}
+
+				.content-area{
+					@include make-md-column(12);
+				}
+
+					.site-main{
+					}
+
+						article{
+						}
+}

@@ -1,0 +1,202 @@
+/*!
+*
+* Gallery
+*
+*/
+
+$pswp__assets-path: '../bower_components/photoswipe/src/css/default-skin/' !default; // path to skin assets folder (preloader, PNG and SVG sprite)
+
+.my-gallery {
+//  width: 100%;
+//  float: left;
+}
+.my-gallery img {
+//  width: 100%;
+//  height: auto;
+}
+.my-gallery figure {
+//  display: block;
+//  float: left;
+//  margin: 0 5px 5px 0;
+//  width: 150px;
+}
+.my-gallery figcaption {
+  display: none;
+}
+
+
+// Bootstrap Carousel
+
+.carousel-control.left,
+.carousel-control.right{
+  background: none;
+}
+
+.carousel-inner > .item > img{
+  width: 100%;
+  height: auto;
+}
+
+
+// SLY Horizontal Gallery
+
+/* Example wrapper */
+.wrap {
+  position: relative;
+  margin: 3em 0;
+}
+
+/* Frame */
+.frame {
+  height: 250px;
+  line-height: 250px;
+  overflow: hidden;
+}
+.frame ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-size: 50px;
+}
+.frame ul li {
+  float: left;
+  width: 227px;
+  height: 100%;
+  margin: 0 1px 0 0;
+  padding: 0;
+  background: #333;
+  color: #ddd;
+  text-align: center;
+  cursor: pointer;
+}
+.frame ul li.active {
+  color: #fff;
+  background: #a03232;
+}
+
+/* Scrollbar */
+.scrollbar {
+  margin: 0 0 1em 0;
+  height: 2px;
+  background: #ccc;
+  line-height: 0;
+}
+.scrollbar .handle {
+  width: 100px;
+  height: 100%;
+  background: #292a33;
+  cursor: pointer;
+}
+.scrollbar .handle .mousearea {
+  position: absolute;
+  top: -9px;
+  left: 0;
+  width: 100%;
+  height: 20px;
+}
+
+/* Pages */
+.pages {
+  list-style: none;
+  margin: 20px 0;
+  padding: 0;
+  text-align: center;
+}
+.pages li {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  margin: 0 4px;
+  text-indent: -999px;
+  border-radius: 10px;
+  cursor: pointer;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: inset 0 0 0 1px rgba(0,0,0,.2);
+}
+.pages li:hover {
+  background: #aaa;
+}
+.pages li.active {
+  background: #666;
+}
+
+/* Controls */
+.controls { margin: 25px 0; text-align: center; }
+
+/* One Item Per Frame example*/
+.oneperframe { height: 300px; line-height: 300px; }
+.oneperframe ul li { width: 1140px; }
+.oneperframe ul li.active { background: #333; }
+
+/* Crazy example */
+.crazy ul li:nth-child(2n) { width: 100px; margin: 0 4px 0 20px; }
+.crazy ul li:nth-child(3n) { width: 300px; margin: 0 10px 0 5px; }
+.crazy ul li:nth-child(4n) { width: 400px; margin: 0 30px 0 2px; }
+
+
+
+
+// Efficient YouTube Embeds
+
+.youtube-container {
+  display: block;
+//  width: 100%;
+  width: auto;
+
+  margin-top: $baseline;
+  margin-bottom: $baseline * 2;
+
+  margin-left: -15px;
+  margin-right: -15px;
+
+  @media (min-width: $screen-sm-min){
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.youtube-player {
+  display: block; width: 100%; /* assuming that the video has a 16:9 ratio */
+  padding-bottom: 56.25%;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  cursor: hand;
+  cursor: pointer;
+  display: block;
+}
+
+img.youtube-thumb {
+  bottom: 0;
+  display: block;
+  left: 0;
+  margin: auto;
+  max-width: 100%;
+  width: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: auto;
+}
+
+div.play-button {
+  height: 72px;
+  width: 72px;
+  left: 50%;
+  top: 50%;
+  margin-left: -36px;
+  margin-top: -36px;
+  position: absolute;
+  background: url("http://i.imgur.com/TxzC70f.png") no-repeat;
+}
+
+#youtube-iframe {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
