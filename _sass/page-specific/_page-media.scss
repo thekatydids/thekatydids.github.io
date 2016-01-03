@@ -1,0 +1,166 @@
+/*!
+*
+* Page: Media
+*
+*/
+
+.page-media{
+
+  .entry-header-container{
+    @extend .container;
+  }
+
+  .entry-header{
+//                margin-top: $baseline * 4;
+
+    @media (min-width: $screen-md-min) {
+      margin-top: $baseline * 4;
+    }
+  }
+
+  .section-header{
+    margin-bottom: $baseline * 2;
+  }
+
+  h4, h3{
+    margin-top: $baseline * 4;
+    text-align: center;
+  }
+
+  p.lead{
+    text-align: center;
+    color: $gray;
+  }
+
+  #media-intro{
+    h3, h4{
+      text-align: left;
+      margin-top: 0;
+    }
+  }
+
+
+  .gallery-list{
+    @include make-sm-column(6);
+
+    ul{
+      @include make-xs-column(6);
+      @extend .list-unstyled;
+      margin-bottom: $baseline
+    }
+  }
+
+  .gallery-list-photos{
+  }
+
+  .gallery-list-videos{
+  }
+
+  hr{
+    margin-top: $baseline;
+    border-color: $gray-lighter;
+  }
+
+  .my-gallery{
+    figure{
+      img{
+        max-width: none !important;
+        width: auto;
+      }
+    }
+  }
+
+  #gallery-headshots{
+
+   #figure-5 img{
+      -webkit-transform: translate(-50%,-50%);
+          -ms-transform: translate(-50%,-50%);
+              transform: translate(-50%,-50%);
+    }
+  }
+
+  #gallery-teachers{
+
+    #figure-11 img{
+      -webkit-transform: translate(-50%,-35%);
+          -ms-transform: translate(-50%,-35%);
+              transform: translate(-50%,-35%);
+    }
+
+    #figure-12 img{
+      -webkit-transform: translate(-50%,-25%);
+          -ms-transform: translate(-50%,-25%);
+              transform: translate(-50%,-25%);
+    }
+
+    #figure-13 img{
+      -webkit-transform: translate(-50%,-60%);
+          -ms-transform: translate(-50%,-60%);
+              transform: translate(-50%,-60%);
+    }
+
+    #figure-14 img{
+      -webkit-transform: translate(-50%,-35%);
+          -ms-transform: translate(-50%,-35%);
+              transform: translate(-50%,-35%);
+    }
+  }
+
+  #gallery-teachers-candids{
+
+    #figure-1 img{
+      -webkit-transform: translate(-50%,-40%);
+          -ms-transform: translate(-50%,-40%);
+              transform: translate(-50%,-40%);
+    }
+
+    #figure-11 img{
+      -webkit-transform: translate(-50%,-41%);
+          -ms-transform: translate(-50%,-41%);
+              transform: translate(-50%,-41%);
+    }
+  }
+
+
+  #gallery-publicity{
+
+    #figure-1 img{
+      -webkit-transform: translate(-52%,-35%);
+          -ms-transform: translate(-52%,-35%);
+              transform: translate(-52%,-35%);
+    }
+
+    #figure-11 img{
+      -webkit-transform: translate(-50%,-25%);
+          -ms-transform: translate(-50%,-25%);
+              transform: translate(-50%,-25%);
+    }
+  }
+
+  #gallery-fun{
+
+    #figure-1 img{
+      -webkit-transform: translate(-50%,-45%);
+          -ms-transform: translate(-50%,-45%);
+              transform: translate(-50%,-45%);
+    }
+
+    #figure-2 img{
+      -webkit-transform: translate(-50%,-55%);
+          -ms-transform: translate(-50%,-55%);
+              transform: translate(-50%,-55%);
+    }
+
+    #figure-4 img{
+      -webkit-transform: translate(-50%,-42%);
+          -ms-transform: translate(-50%,-42%);
+              transform: translate(-50%,-42%);
+    }
+  }
+
+
+
+  .figure-video{
+    margin-top: $baseline;
+  }
+}

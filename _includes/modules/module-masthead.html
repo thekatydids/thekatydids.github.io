@@ -1,0 +1,102 @@
+{% if page.masthead %}
+
+  <div id="masthead" class="masthead masthead-{{page.masthead[0].type}} carousel slide carousel-fade" data-ride="">
+    <div class="carousel-inner masthead-inner">
+
+      {% for slide in page.masthead %}
+      {% assign nslides = forloop.length %}
+
+        <div  class="item masthead-item masthead-item-type-{{ slide.type }} {% if forloop.first %}active{% endif %} item-n{{ forloop.index0 }}"
+              style="{% if slide.background-color %}background-color: {{slide.background-color}};{% endif %}
+                    {% if slide.background-image %}background-image: url({{site.baseurl}}/img/{{slide.background-image }});{% endif %}">
+
+          <div class="masthead-item-container">
+            <div class="masthead-item-body">
+              <div class="masthead-item-partition">
+                <div class="masthead-item-content">
+
+                  {% if slide.featured-image %}
+                    <figure class="masthead-figure">
+                      <img src="{{site.baseurl}}/img/{{ slide.featured-image }}" class="masthead-image">
+                    </figure>
+                  {% endif %}
+
+                  {% if slide.background-video-webm %}
+                    <figure class="masthead-figure">
+                      <video id="bgvid" autoplay loop poster="{{site.baseurl}}/img/{{ slide.poster }}"> <source src="{{site.baseurl}}/img/{{ slide.background-video-webm }}" type="video/webm">
+                        <source src="{{site.baseurl}}/img/{{ slide.background-video-mp4 }}" type="video/mp4">
+                      </video>
+      <!--                   <button id="vidpause">Pause</button> -->
+                    </figure>
+                  {% endif %}
+
+                  {% if slide.featured-video-id %}
+                    <figure class="masthead-figure youtube-container featured-video">
+                      <div class="youtube-player" data-id="{{ slide.featured-video-id }}"></div>
+                    </figure>
+                  {% endif %}
+
+                  {% if slide.headline %}
+                    <h1 class="masthead-headline">{{ slide.headline }}</h1>
+                  {% endif %}
+
+                  {% if slide.subheadline %}
+                    <hr class="masthead-divider">
+                    <p class="masthead-subheadline">{{ slide.subheadline }}</p>
+                  {% endif %}
+
+                  {% if slide.cta-text %}
+                    <a href="{{ slide.cta-url }}" class="masthead-button">{{ slide.cta-text }}</a>
+                  {% endif %}
+
+                  {% if slide.background-image %}
+                    <!-- Background Image Applied to Parent; preload image here. -->
+                    <img src="{{site.baseurl}}/img/{{ slide.background-image }}" style="display: none !important; visibility: hidden !important;">
+                  {% endif %}
+
+                  <!-- Partitions - Still WIP -->
+                  {% if slide.partitions %}
+                    <div class="row">
+                      {% for partition in slide.partitions %}
+                        <div class="masthead-partition-{{ forloop.index }} col-sm-4">
+                          <h1>{{ partition.text }}</h1>
+                        </div>
+                      {% endfor %}
+                    </div>
+                  {% endif %}
+
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+
+      <!-- Indicators - only add if more than 1 slide -->
+      {% if nslides > 1 %}
+      <ol class="carousel-indicators">
+          {% for slide in page.masthead %}
+            <li data-target="#masthead" data-slide-to="{{ forloop.index0 }}" {% if forloop.first %}class="active"{% endif %}></li>
+          {% endfor %}
+      </ol>
+
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="#masthead" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+        <i class="fa fa-arrow-left"></i>
+      </a>
+
+      <a class="right carousel-control" href="#masthead" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+        <i class="fa fa-arrow-right"></i>
+      </a>
+      {% endif %}
+
+
+    </div> <!-- carousel-inner / masthead-inner -->
+  </div> <!-- masthead -->
+
+{% endif %}

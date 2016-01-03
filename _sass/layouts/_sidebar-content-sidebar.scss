@@ -1,0 +1,31 @@
+/*!
+*
+* Layout: Sidebar / Content / Sidebar
+*
+*/
+
+.layout-sidebar-content-sidebar {
+
+	.site-container {
+		@extend .container;
+	}
+
+	.site-content {
+		@include make-row();
+	}
+
+	.site-main {
+		@include make-md-column(7);
+		@include make-md-column-push(2);
+	}
+
+	.sidebar-primary {
+		@include make-md-column(3);
+		@include make-md-column-push(2);
+	}
+
+	.sidebar-secondary {
+		@include make-md-column(2);
+		@include make-md-column-pull(10);
+	}
+}

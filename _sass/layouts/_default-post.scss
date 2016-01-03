@@ -1,0 +1,21 @@
+/*!
+*
+* Layout: Default Post
+*
+*/
+
+.layout-default-post {
+
+  .site-container {
+    @extend .container;
+  }
+
+  .site-content {
+    @include make-row();
+  }
+
+  .site-main {
+    @include make-md-column(8);
+    @include make-md-column-offset(2);
+  }
+}

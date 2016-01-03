@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: default-page
 
 meta_title: The Katydids Events Calendar
 meta_description: "Upcoming Events featuring The Katydids"
@@ -8,9 +8,10 @@ title: Calendar
 permalink: /calendar/
 
 masthead:
-  type:             background-image
-  featured-image:   "partition-press.jpg"
-  background-image: "partition-press.jpg"
+  - slide:
+    type:             background-image
+    background-image: mastheads/masthead-katie-b.jpg
+
 ---
 
 {% for entry in site.data.events %}

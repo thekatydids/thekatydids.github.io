@@ -1,0 +1,53 @@
+---
+layout: fullwidth
+
+title: "Test Page: Masthead"
+permalink: /test-mastheads/
+
+masthead:
+  - slide:
+    type:             html
+    headline:         Masthead Test Page
+    subheadline:      Ongoing tests of all masthead optionss.
+    cta-text:         Call to Action
+    cta-url:          #
+    background-image: placeholders/placeholder-1280x720.jpg
+
+  - slide:
+    type:             background-color
+    background-color: "#453c5c"
+    headline:         This slide has a solid background color and a headline only.
+
+  - slide:
+    type:             background-image
+    background-image: placeholders/placeholder-1280x720.jpg
+    cta-text:         Background Image with a CTA Only
+    cta-url:          #
+
+  - slide:
+    type:            featured-image
+    featured-image:  placeholders/placeholder-1280x720.jpg
+
+  - slide:
+    type:              featured-video
+    featured-video-id: 9LssTi4X8jY
+
+  - slide:
+    type:                   background-video
+    background-video-webm:  placeholders/placeholder-video.webm
+    background-video-mp4:   placeholders/placeholder-video.mp4
+    poster:                 placeholders/placeholder-video-poster.jpg
+
+  - slide:
+    type:             partitions
+    background-color: "#453c5c"
+    partitions:
+      - partition:
+        text: "Partition Test 1"
+      - partition:
+        text: "Partition Test 2"
+      - partition:
+        text: "Partition Test 3"
+---
+
+{% include content-blocks/block-layout-test.html %}

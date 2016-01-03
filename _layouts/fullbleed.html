@@ -2,42 +2,35 @@
 <html class="no-js" lang="en-us">
 
   {% include head.html %}
+  {% include capture-body-classes.html %}
 
-  <body class="layout-{{ page.layout }} page-{{page.url | remove:'/' | remove: '.html' }} {% if page.categories %}cat-{{page.categories}}{% endif %}">
+  <body class="{{ layout }} {{ path }} {{ masthead }}">
 
     {% include header.html %}
 
-    <div class="site-wrapper" id="site-wrapper">
-      <div class="site-container" id="site-container">
-        <div class="site-content" id="site-content">
-          <div class="site-content-area content-area" id="primary">
-            <main class="site-main" id="main" role="main">
+    <div class="site-container" id="site-container">
+      <div class="site-content" id="site-content">
+        <main class="site-main" id="site-main" role="main">
 
-              <article class="entry entry-type-page">
+          <article class="entry entry-type-page">
+            <div class="entry-header-container"> <!-- Keep header contained on fullbleed template -->
+              <header class="entry-header">
+                <h1 class="entry-title">{{ page.title }}</h1>
+              </header>
+            </div>
 
-                <div class="entry-header-container"> <!-- Keep header contained on fullbleed template -->
-                  <header class="entry-header post-header">
-                    <h1 class="entry-title post-title">{{ page.title }}</h1>
-                  </header>
-                </div>
+            <div class="entry-content">
+              {{ content }}
+            </div>
+          </article>
 
-                <div class="entry-content post-content">
-                  {{ content }}
-                </div>
-              </article>
-
-            </main>
-          </div>
-        </div>
+        </main>
       </div>
     </div>
 
     {% include footer.html %}
-
-    {% include nav-overlay.html %}
-
-    {% include photoswipe-root.html %}
-
+    {% include modules/module-nav-overlay.html %}
+    {% include modules/module-photoswipe-root.html %}
     {% include javascripts.html %}
 
   </body>

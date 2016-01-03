@@ -1,0 +1,19 @@
+<!doctype html>
+<html class="no-js" lang="en-us">
+
+  {% include head.html %}
+  {% include capture-body-classes.html %}
+
+  <body class="{{ layout }} {{ path }} {{ masthead }}">
+
+    {% include header.html %}
+
+    {{ content }}
+    <!-- Custom Layouts have everything between header and footer completely defined within the custom page -->
+
+    {% include footer.html %}
+    {% include modules/module-nav-overlay.html %}
+    {% include javascripts.html %}
+
+  </body>
+</html>

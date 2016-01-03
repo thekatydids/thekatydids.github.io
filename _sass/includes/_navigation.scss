@@ -9,7 +9,7 @@
   border-left: 0;
   border-right: 0;
   border-top: 0;
-  border-bottom: 1px solid $kt-orange-dark;
+  border-bottom: 1px solid $brand-primary;
 
   @media (min-width: $screen-sm-min) {
     border-bottom: 0;
@@ -170,6 +170,13 @@
 
 }
 
+.navbar-toggle{
+}
+
+.navbar-toggle:hover{
+}
+
+
 /*!
 *
 * Subnavigation
@@ -217,7 +224,7 @@
   height: 100%;
   top: 0;
   left: 0;
-  background: $kt-orange-dark;
+  background: #3a3053;
 
   z-index: 900;
 }
@@ -277,7 +284,7 @@
 
 .overlay ul li a:hover,
 .overlay ul li a:focus {
-  color: $kt-tangerine;
+//  color: $navbar-transparent-link-active-color;
 }
 
 /* Effects */

@@ -1,0 +1,7 @@
+{% capture layout %}{% if page.layout %}layout-{{ page.layout }}{% endif %}{% endcapture %}
+{% capture path %}{% if page.path %}page-{{ page.path | remove:'_' | replace:'/', '-' | replace: '.html'}}{% endif %}{% endcapture %}
+{% capture id %}{% if page.id %}id-{{ page.id }}{% endif %}{% endcapture %}
+{% capture title %}{% if page.title %}{{ page.title }}{% endif %}{% endcapture %}
+{% capture categories %}{% if page.categories %}cat-{{ page.categories }}{% endif %}{% endcapture %}
+{% capture tags %}{% if page.tags %}tag-{{ page.tags }}{% endif %}{% endcapture %}
+{% capture masthead %}{% if page.masthead %}has-masthead{% endif %} {% for slide in page.masthead %}masthead-type-{{ slide.type }}{% endfor %}{% endcapture %}

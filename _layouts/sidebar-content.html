@@ -1,0 +1,37 @@
+<!doctype html>
+<html class="no-js" lang="en-us">
+
+  {% include head.html %}
+  {% include capture-body-classes.html %}
+
+  <body class="{{ layout }} {{ path }} {{ masthead }}">
+
+    {% include header.html %}
+
+    <div class="site-container" id="site-container">
+      <div class="site-content" id="site-content">
+        <main class="site-main" id="site-main" role="main">
+
+          <article class="entry entry-type-page">
+            <header class="entry-header">
+              <h1 class="entry-title">{{ page.title }}</h1>
+            </header>
+            <div class="entry-content">
+              {{ content }}
+            </div>
+          </article>
+
+        </main>
+
+        {% include sidebars/sidebar-primary.html %}
+
+      </div>
+    </div>
+
+    {% include footer.html %}
+    {% include modules/module-nav-overlay.html %}
+    {% include modules/module-photoswipe-root.html %}
+    {% include javascripts.html %}
+
+  </body>
+</html>

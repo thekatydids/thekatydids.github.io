@@ -1,0 +1,227 @@
+/*!
+*
+* Mastheads
+*
+*/
+
+.masthead {
+  color: $white !important;
+  h1{ color: $white; -webkit-font-smoothing: antialiased; }
+
+  // Needed for vertical and horizontal centering
+  position: relative;
+  //  overflow: hidden;
+}
+
+.masthead-inner,
+.carousel-inner{
+  // Bootstrap Carousel Styles
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.masthead-item,
+.item,
+.masthead-item-partition {
+
+  // Bootstrap Carousel Styles
+  position: relative;
+//  transition: none !important;
+
+  min-height: $masthead-height-small;
+  height: $masthead-height-small;
+
+  @media (min-width: $screen-md-min) {
+    min-height: $masthead-height-medium;
+    height: $masthead-height-medium;
+  }
+
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-position: 50% 0% !important;
+}
+
+.masthead-item-container {
+  @extend .container;
+}
+
+.masthead-item-body {
+  @include make-row();
+}
+
+.masthead-item-partition{
+  @include make-xs-column(10);
+  @include make-xs-column-offset(1);
+
+  @include make-sm-column(10);
+  @include make-sm-column-offset(1);
+
+  @include make-md-column(8);
+  @include make-md-column-offset(2);
+  text-align: center;
+}
+
+.masthead-item-content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+
+.masthead-item-type-featured-image,
+.masthead-item-type-featured-video,
+.masthead-item-type-background-video{
+
+  min-height: inherit !important;
+  height: auto !important;
+  text-align: center;
+
+  .masthead-item-container{  }
+
+  .masthead-item-body{  }
+
+  .masthead-item-partition{  }
+
+  .masthead-item-content{  }
+
+}
+
+.masthead-item-type-html,
+.masthead-item-type-partitions,
+.masthead-item-type-background-image,
+.masthead-item-type-background-color{
+
+}
+
+
+// Background Image Masthead & Background Image Overlap
+.masthead-item-type-background-image-overlap {
+
+  // Still WIP with new masthead structure
+  // Reference: http://blog.learningspaces.io/flexible-cover-images-using-intrinsic-ratio/
+
+  // &::before {
+  //   content: '';
+  //   display: block;
+  //   padding-bottom: 56.25%;
+  // }
+}
+
+
+// When using a "background-image-overlap" type masthead, pull the site container
+// up into the masthead to create an overlap effect
+
+body.masthead-type-background-image-overlap {
+
+  @media (min-width: $screen-md-min) {
+    .site-container{
+      margin-top: -($baseline * 10);
+      background: $white !important;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+    }
+
+    .site-content{
+      padding-top: $baseline * 4;
+    }
+  }
+
+}
+
+
+.masthead-figure{
+  margin: 0;
+
+  img{
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+  }
+
+}
+
+
+.masthead-headline {
+    font-family: $font-family-display;
+    font-weight: $font-weight-normal;
+
+    font-size: 80px;
+    line-height: 0.7;
+
+    margin-bottom: 0;
+
+  // @media (min-width: $screen-sm-min) {
+  // }
+
+  @media (min-width: $screen-md-min) {
+    font-size: 120px;
+    line-height: 0.7;
+  }
+
+  @media (min-width: $screen-lg-min) {
+    font-size: 140px;
+    line-height: 0.7;
+  }
+}
+
+.masthead-subheadline {
+  @extend .h2;
+  color: $white;
+  margin-bottom: $baseline * 2;
+  font-weight: $font-weight-normal;
+
+  // @media (min-width: $screen-sm-min) {
+  // }
+
+  // @media (min-width: $screen-md-min) {
+  // }
+
+  // @media (min-width: $screen-lg-min) {
+  // }
+}
+
+.masthead-divider{
+  @extend .center-block;
+
+  width: 100px;
+  border-width: 2px;
+
+  // margin-top: $baseline;
+  // margin-bottom: $baseline;
+
+  // @media (min-width: $screen-sm-min) {
+  //  margin-top: $baseline * 2;
+  //  margin-bottom: $baseline * 2;
+  // }
+}
+
+.masthead-button{
+  @extend .btn;
+  @extend .btn-lg;
+  @extend .btn-secondary;
+
+  // @extend .btn-default;
+
+  // margin-top: $baseline * 2;
+}
+
+.masthead-navbar-overlap{
+  // position: relative;
+
+  // @media (min-width: $screen-sm-min) {
+  //   top: -54px; // ~ Navbar height
+  //   margin-bottom: -54px; // Navbar height
+  // }
+}
+
+.carousel-indicators li{
+  border-color: $white;
+}
+
+.carousel-indicators .active{
+  border-color: $white;
+  background: $white;
+}

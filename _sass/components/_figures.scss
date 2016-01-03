@@ -1,0 +1,70 @@
+/*!
+*
+* Figures
+*
+*/
+
+figure{
+  margin-top: ($baseline * 2);
+  margin-bottom: ($baseline * 2);
+
+  margin-left: -15px;
+  margin-right: -15px;
+
+  @media (min-width: $screen-sm-min){
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  img{
+    max-width: 100%;
+  }
+
+  figcaption {
+      margin-top: ($baseline / 2);
+      margin-bottom: ($baseline / 2);
+
+    p {
+      @extend .small;
+      font-family: $font-family-sans-serif;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: $gray-light;
+      margin-left: 15px;
+      margin-right: 15px;
+      margin-bottom: 0;
+
+      @media (min-width: $screen-sm-min){
+        margin-left: 0;
+        margin-right: 0;
+      }
+    }
+  }
+
+
+  &.figure-spotlight{
+
+    figcaption{
+      background: $brand-primary;
+
+      margin-top: 0;
+      margin-bottom: 0;
+      padding: $baseline * 2;
+
+      @media (min-width: $screen-sm-min){
+        padding: $baseline * 4;
+      }
+
+      p{
+        @extend .lead;
+        letter-spacing: 0;
+        text-transform: none;
+        color: $white;
+      }
+    }
+
+  }
+
+
+
+}

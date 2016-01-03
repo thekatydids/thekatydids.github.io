@@ -1,0 +1,15 @@
+/*!
+*
+* Fonts
+*
+*/
+
+@font-face {
+  font-family: 'Hazelnut';
+  src: url('assets/fonts/hazelnut/hazelnut_typeface-webfont.eot'); /* IE9 Compat Modes */
+  src: url('assets/fonts/hazelnut/hazelnut_typeface-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('assets/fonts/hazelnut/hazelnut_typeface-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+       url('assets/fonts/hazelnut/hazelnut_typeface-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('assets/fonts/hazelnut/hazelnut_typeface-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('assets/fonts/hazelnut/hazelnut_typeface-webfont.svg#hazelnut_typeface-webfont') format('svg'); /* Legacy iOS */
+}

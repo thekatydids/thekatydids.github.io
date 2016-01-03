@@ -2,25 +2,24 @@
 <html class="no-js" lang="en-us">
 
   {% include head.html %}
+  {% include capture-body-classes.html %}
 
-  <body class="layout-{{ page.layout }} page-{{page.url | remove:'/' | remove: '.html' }} {% if page.slug =='index' %}page-index{% endif %}">
+  <body class="{{ layout }} {{ path }} {{ masthead }}">
 
     {% include header.html %}
 
-    <div class="site-wrapper" id="site-wrapper">
-      <div class="site-container" id="site-container">
-        <div class="site-content" id="site-content">
-          <div class="site-content-area content-area" id="primary">
-            <main class="site-main" id="main" role="main">
-              {{ content }}
-            </main>
-          </div>
-        </div>
+    <div class="site-container" id="site-container">
+      <div class="site-content" id="site-content">
+        <main class="site-main" id="site-main" role="main">
+
+          {{ content }}
+
+        </main>
       </div>
     </div>
 
     {% include footer.html %}
-    {% include nav-overlay.html %}
+    {% include modules/module-nav-overlay.html %}
     {% include javascripts.html %}
 
   </body>

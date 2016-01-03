@@ -1,0 +1,11 @@
+{% if page.subnav %}
+  <nav class="navbar navbar-default nav-on-page">
+    <div class="container">
+      <ul class="nav navbar-nav">
+        {% for link in page.subnav %}
+          <li><a href="{{link.anchor}}"{% if link.window == "new" %} target="_blank"{%endif%}>{{ link.text }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+  </nav>
+{% endif %}

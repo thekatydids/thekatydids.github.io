@@ -1,0 +1,14 @@
+/*!
+*
+* Lists
+*
+*/
+
+.list-social-links{
+  @extend .list-unstyled;
+  margin-bottom: 0;
+
+  a{
+    text-decoration: none;
+  }
+}

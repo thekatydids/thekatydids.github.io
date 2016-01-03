@@ -4,46 +4,50 @@
 *
 */
 
-// Colors
+// Default Colors
 
-$montrose-red:              #892915;
-$montrose-gray:             #efefef;
-
-$white:                     #fff;
+$placeholder-blue:          #535C6D;
+$white:                     #FFF;
 $off-white:                 #FEFEFC;
 
+$gray:                      #777;
 $gray-dark:                 #444;
-$gray:                      #777777;
-$gray-light:                #BBBBBB;
+$gray-darker:               #222;
+$gray-light:                #AAA;
+$gray-lighter:              #CCC;
 
-$kt-peach:                  #EFDAC9;
-$kt-tangerine:              #FFCC87;
-$kt-aqua-light:             #D7ECE6;
-$kt-aqua:                   #92D5D3;
-$kt-pink:                   #F1AEB6;
+$neutral:                   #F5F1E3;
+$neutral-dark:              darken($neutral, 5%);
+$neutral-light:             lighten($neutral, 5%);
 
-$kt-orange-dark:            #FF8B29;
 
-$brand-primary:             $kt-orange-dark;
+// Brand Colors
 
-$btn-brand-color:           #fff;
-$btn-brand-bg:              $brand-primary;
-$btn-brand-border:          darken($btn-brand-bg, 5%);
+$kd-pink:                   #EC2B8C;
+$kd-gold:                   #CCA665;
+$kd-charcoal:               #24201E;
 
-//** Global text color on <body>.
-$text-color:                $gray-dark;
+// Primary, Secondary and Neutral Colors
 
-//** Global textual link color.
-$link-color:                $brand-primary;
+$brand-primary:             $kd-charcoal;
+$brand-primary-dark:        darken($brand-primary, 5%);
+$brand-primary-light:       lighten($brand-primary, 5%);
 
-//** Link hover color set via darken() function.
-$link-hover-color:          darken($link-color, 15%);
+$brand-secondary:           $kd-gold;
+$brand-secondary-dark:      darken($brand-secondary, 5%);
+$brand-secondary-light:     lighten($brand-secondary, 5%);
+
 
 // Buttons
 
 $btn-primary-color:         $white;
 $btn-primary-bg:            $brand-primary;
 $btn-primary-border:        darken($brand-primary, 10%);
+
+$btn-brand-color:           $white;
+$btn-brand-bg:              $brand-primary;
+$btn-brand-border:          darken($btn-brand-bg, 5%);
+
 
 
 //** Font Families
@@ -55,39 +59,49 @@ $font-family-sans-serif:    "Lato", "Helvetica Neue", "Helvetica", "Arial", sans
 $font-family-serif:         "Domine", serif;
 
 // Display Fonts
-$font-family-display:       "Rancho", serif;
-//$font-family-display:       $font-family-serif;
+//$font-family-display:       "Rancho", serif;
+$font-family-display:       $font-family-serif;
 
+
+//** Typography
 
 //** Typography
 
 // Setting new Base variables for responsive typography
 $font-size-base-xs:         16px;
 $font-size-base-sm:         16px;
-$font-size-base-md:         18px;
-$font-size-base-lg:         18px;
+$font-size-base-md:         16px;
+$font-size-base-lg:         16px;
 
 $line-height-base-xs:       1.5;
 $line-height-base-sm:       1.5;
 $line-height-base-md:       1.5;
 $line-height-base-lg:       1.5;
 
-
 // Overriding Bootstrap Variables
-$font-size-base:            $font-size-base-xs;
-$font-size-small:           $font-size-base-xs - 2;
-$font-size-large:           $font-size-base-md;
+$font-size-base:            16px;
+$font-size-small:           14px;
+$font-size-large:           18px;
 $line-height-base:          1.5;
 $line-height-computed:      floor(($font-size-base * $line-height-base));
 
 
 // Basic unit for vertical rhythm
 $baseline:                  floor(($font-size-base * $line-height-base) / 2);
-
 $baseline-xs:               floor(($font-size-base-xs * $line-height-base-xs) / 2);
 $baseline-sm:               floor(($font-size-base-sm * $line-height-base-sm) / 2);
 $baseline-md:               floor(($font-size-base-md * $line-height-base-md) / 2);
 $baseline-lg:               floor(($font-size-base-lg * $line-height-base-lg) / 2);
+
+
+//** Mastheads
+$masthead-height-extra-small: $baseline * 15;
+$masthead-height-small:   $baseline * 30;
+$masthead-height-medium:  $baseline * 40;
+$masthead-height-large:   $baseline * 50;
+
+$masthead-height-special: 480px; // For special uses, like content overlapping the masthead
+
 
 // Font Weights
 $font-weight-thin:          100;
@@ -100,104 +114,132 @@ $font-weight-extra-bold:    800;
 $font-weight-ultra-bold:    900;
 
 // Heading Basics
-$headings-font-family:      $font-family-sans-serif;
+$headings-font-family:      $font-family-serif;
 $headings-font-weight:      $font-weight-bold;
-$headings-line-height:      1.0;
+$headings-line-height:      1.125;
 $headings-color:            inherit;
 
 
 // Font Sizes by Device
 
 // Extra Small Devices (<768px)
-$font-size-h1-xs:           2.0em;
-$line-height-h1-xs:         1.3;
 
-$font-size-h2-xs:           1.625em;
+$font-size-masthead-title-xs:       2.0em;
+$line-height-masthead-title-xs:     1.125;
+
+$font-size-masthead-subtitle-xs:    1.5em;
+$line-height-masthead-subtitle-xs:  1.0;
+
+$font-size-h1-xs:           1.75em;
+$line-height-h1-xs:         1.285714;
+
+$font-size-h2-xs:           1.5em;
 $line-height-h2-xs:         1.3;
 
-$font-size-h3-xs:           1.375em;
-$line-height-h3-xs:         1.25;
+$font-size-h3-xs:           1.3125em;
+$line-height-h3-xs:         1.142857;
 
 $font-size-h4-xs:           1.125em;
-$line-height-h4-xs:         1.3;
+$line-height-h4-xs:         1.333333;
 
-$font-size-lead-xs:         1.11111em;
-$line-height-lead-xs:       1.4;
+$font-size-lead-xs:         1.125em;
+$line-height-lead-xs:       1.5;
 
-$font-size-blockquote-xs:   1.25em;
-$line-height-blockquote-xs: 1.25;
+$font-size-blockquote-xs:   1.3125em;
+$line-height-blockquote-xs: 1.714286;
 
-$font-size-large-xs:        1.11111em;
-$font-size-small-xs:        0.88888em;
+$font-size-large-xs:        1.125em;
+$font-size-small-xs:        0.875em;
 
 
 // Small Devices (>= 768px)
-$font-size-h1-sm:           2.0em;
-$line-height-h1-sm:         1.3;
 
-$font-size-h2-sm:           1.625em;
-$line-height-h2-sm:         1.3;
+$font-size-masthead-title-sm:       $font-size-masthead-title-xs;
+$line-height-masthead-title-sm:     $line-height-masthead-title-xs;
 
-$font-size-h3-sm:           1.375em;
-$line-height-h3-sm:         1.25;
+$font-size-masthead-subtitle-sm:    $font-size-masthead-subtitle-xs;
+$line-height-masthead-subtitle-sm:  $line-height-masthead-subtitle-xs;
 
-$font-size-h4-sm:           1.125em;
-$line-height-h4-sm:         1.3;
+$font-size-h1-sm:           $font-size-h1-xs;
+$line-height-h1-sm:         $line-height-h1-xs;
 
-$font-size-lead-sm:         1.11111em;
-$line-height-lead-sm:       1.4;
+$font-size-h2-sm:           $font-size-h2-xs;
+$line-height-h2-sm:         $line-height-h2-xs;
 
-$font-size-blockquote-sm:   1.25em;
-$line-height-blockquote-sm: 1.25;
+$font-size-h3-sm:           $font-size-h3-xs;
+$line-height-h3-sm:         $line-height-h3-xs;
 
-$font-size-large-sm:        1.2em;
-$font-size-small-sm:        0.8em;
+$font-size-h4-sm:           $font-size-h4-xs;
+$line-height-h4-sm:         $line-height-h4-xs;
+
+$font-size-lead-sm:         $font-size-lead-xs;
+$line-height-lead-sm:       $line-height-lead-xs;
+
+$font-size-blockquote-sm:   $font-size-blockquote-xs;
+$line-height-blockquote-sm: $line-height-blockquote-xs;
+
+$font-size-large-sm:        $font-size-large-xs;
+$font-size-small-sm:        $font-size-small-xs;
 
 
 // Medium Devices (>= 992px)
-$font-size-h1-md:           2.5em;
-$line-height-h1-md:         1.2;
 
-$font-size-h2-md:           2.0em;
-$line-height-h2-md:         1.25;
+$font-size-masthead-title-md:       2.625em;
+$line-height-masthead-title-md:     1.428571;
 
-$font-size-h3-md:           1.5em;
-$line-height-h3-md:         1.25;
+$font-size-masthead-subtitle-md:    2.0em;
+$line-height-masthead-subtitle-md:  1.125;
+
+$font-size-h1-md:           3.0em;
+$line-height-h1-md:         1.25;
+
+$font-size-h2-md:           1.5em;
+$line-height-h2-md:         1.5;
+
+$font-size-h3-md:           1.3125em;
+$line-height-h3-md:         1.142857;
 
 $font-size-h4-md:           1.125em;
-$line-height-h4-md:         1.3;
+$line-height-h4-md:         1.333333;
 
-$font-size-lead-md:         1.4em;
-$line-height-lead-md:       1.4;
+$font-size-lead-md:         1.5em;
+$line-height-lead-md:       1.5;
 
 $font-size-blockquote-md:   1.5em;
-$line-height-blockquote-md: 1.45833333;
+$line-height-blockquote-md: 1.5;
 
-$font-size-large-md:        1.2em;
-$font-size-small-md:        0.88888em;
+$font-size-large-md:        1.5em;
+$font-size-small-md:        0.875em;
 
 
 // Large Devices (>= 1200px)
-$font-size-h1-lg:           3.0em;
-$line-height-h1-lg:         1.2;
 
-$font-size-h2-lg:           2.25em;
-$line-height-h2-lg:         1.25;
+$font-size-masthead-title-lg:       $font-size-masthead-title-md;
+$line-height-masthead-title-lg:     $line-height-masthead-title-md;
 
-$font-size-h3-lg:           1.75em;
-$line-height-h3-lg:         1.25;
+$font-size-masthead-subtitle-lg:    $font-size-masthead-subtitle-md;
+$line-height-masthead-subtitle-lg:  $line-height-masthead-subtitle-md;
 
-$font-size-h4-lg:           1.125em;
-$line-height-h4-lg:         1.3;
+$font-size-h1-lg:           $font-size-h1-md;
+$line-height-h1-lg:         $line-height-h1-md;
 
-$font-size-lead-lg:         1.4em;
-$line-height-lead-lg:       1.4;
+$font-size-h2-lg:           $font-size-h2-md;
+$line-height-h2-lg:         $line-height-h2-md;
 
-$font-size-blockquote-lg:   1.5em;
-$line-height-blockquote-lg: 1.458333333;
+$font-size-h3-lg:           $font-size-h3-md;
+$line-height-h3-lg:         $line-height-h3-md;
 
-$font-size-large-lg:        1.2em;
-$font-size-small-lg:        0.88888em;
+$font-size-h4-lg:           $font-size-h4-md;
+$line-height-h4-lg:         $line-height-h4-md;
+
+$font-size-lead-lg:         $font-size-lead-md;
+$line-height-lead-lg:       $line-height-lead-md;
+
+$font-size-blockquote-lg:   $font-size-blockquote-md;
+$line-height-blockquote-lg: $line-height-blockquote-md;
+
+$font-size-large-lg:        $font-size-large-md;
+$font-size-small-lg:        $font-size-small-md;
 
 
 //** Navbar
@@ -215,6 +257,28 @@ $fixed-navbar-offset:         $navbar-height;
 
 // Breakpoints
 $screen-xl-min:               1400px;
+
+
+//** Inverse Navbar Variables
+
+$navbar-inverse-bg:                   $brand-primary;
+$navbar-inverse-link-color:           $kd-gold;
+
+$navbar-inverse-brand-color:          $kd-gold;
+$navbar-inverse-brand-hover-color:    $kd-pink;
+$navbar-inverse-brand-hover-bg:       transparent;
+
+$navbar-inverse-link-active-color:    $kd-pink;
+$navbar-inverse-link-active-bg:       transparent;
+
+$navbar-inverse-link-hover-color:     $kd-pink;
+$navbar-inverse-link-hover-bg:        transparent;
+
+$navbar-inverse-toggle-color:         $kd-gold;
+$navbar-inverse-toggle-hover-color:   $kd-pink;
+$navbar-inverse-toggle-border-color:  $kd-gold;
+$navbar-inverse-toggle-hover-bg:      $kd-gold;
+$navbar-inverse-toggle-icon-bar-bg:   $kd-pink;
 
 
 //** Transparent Navbar Variables

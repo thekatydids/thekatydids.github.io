@@ -1,0 +1,21 @@
+/*!
+*
+* Layout: Full Width
+*
+*/
+
+.layout-fullwidth {
+
+	.site-container {
+		@extend .container;
+	}
+
+	.site-content {
+		@include make-row();
+	}
+
+	.site-main {
+		@include make-sm-column(12);
+    @include make-sm-column-offset(0);
+	}
+}

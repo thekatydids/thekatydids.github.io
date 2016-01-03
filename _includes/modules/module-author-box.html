@@ -1,0 +1,19 @@
+{% assign author = site.authors[page.author] %}
+
+<section class="section-author-box" id="author-box">
+	<a href="http://twitter.com/{{ author.twitter }}" target="_blank">
+		<img class="avatar" src="{{author.img}}">
+	</a>
+
+	<div class="author">
+
+		<span class="author-name">{{ author.name }}</span>
+		<p class="author-bio">{{ author.bio }}</p>
+
+    <a href="https://twitter.com/{{ author.twitter }}" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @{{ author.twitter }}</a>
+
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+	</div>
+
+</section>

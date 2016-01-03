@@ -1,0 +1,44 @@
+/*!
+*
+* Page: Press
+*
+*/
+
+.page-press{
+
+  .masthead.masthead-partitions{
+
+        .masthead-partition-content{
+          @include make-sm-column(6);
+          @include make-sm-column-pull(6);
+
+          text-align: left;
+
+          height: 288px;
+
+          @media (min-width: $screen-sm-min) {
+            height: 500px;
+          }
+        }
+
+        .masthead-partition-image{
+          @include make-sm-column(6);
+          @include make-sm-column-push(6);
+
+          background-position: 50% 0%;
+          background-size: cover;
+
+          padding-left: 0;
+          padding-right: 0;
+
+          height: 320px;
+
+          @media (min-width: $screen-sm-min) {
+            height: 500px;
+            background-position: 50% 0%;
+          }
+
+        }
+      }
+
+}

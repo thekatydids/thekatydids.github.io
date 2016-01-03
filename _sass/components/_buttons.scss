@@ -3,3 +3,27 @@
 * Buttons
 *
 */
+
+.btn-brand{
+  background: $btn-brand-bg;
+  color: $btn-brand-color;
+  border-color: $btn-brand-border;
+
+  &:hover,
+  &:active{
+    color: $white;
+    background: darken($btn-brand-bg, 10%);
+  }
+}
+
+.btn-secondary{
+  background: $brand-secondary;
+  color: darken($brand-secondary, 70%);
+  border-color: darken($brand-secondary, 10%);
+
+  &:hover,
+  &:active{
+    color: darken($brand-secondary, 70%);
+    background: darken($brand-secondary, 10%);
+  }
+}

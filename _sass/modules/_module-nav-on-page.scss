@@ -1,0 +1,16 @@
+ // On-Page Section Navigation
+
+.nav-on-page{
+  border-bottom: 1px solid $gray-light;
+  border-top: 1px solid $gray-light;
+
+  ul{
+    li{
+      a{
+        text-decoration: none !important;
+        text-align: center;
+      }
+    }
+  }
+
+}

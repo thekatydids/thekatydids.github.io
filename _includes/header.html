@@ -1,34 +1,35 @@
-{% include browser-update.html %}
+{% include modules/module-browser-update.html %}
 
 <header class="site-header" id="site-header" role="banner" {%if page.background-image %} style="background-image: url('{{page.background-image}}');" {% endif %}>
 
-  <nav id="site-navigation" class="site-navigation navbar navbar-transparent primary-navbar">
-      <div class="container-fluid">
+  <nav id="site-navigation" class="site-navigation navbar navbar-inverse primary-navbar">
+    <div class="container">
 
-          <div class="navbar-header">
-              <a class="navbar-brand site-title" href="{{ site.baseurl }}/">{{ site.name }}</a>
-              <button class="navbar-toggle" type="button" id="trigger-overlay">
-                  <span class="menu-button">Menu</span>
-                  <span class="sr-only">Toggle navigation</span>
-              </button>
-          </div>
+        <div class="navbar-header">
+          <a class="navbar-brand site-title" href="{{ site.baseurl }}/">{{ site.name }}</a>
+          <button class="navbar-toggle" type="button" id="trigger-overlay">
+            <span class="menu-button">Menu</span>
+            <span class="sr-only">Toggle navigation</span>
+          </button>
+        </div>
 
-          <div class="navbar-collapse collapse" role="navigation">
-            <ul class="nav navbar-nav navbar-right">
-              {% assign url = page.url|remove:'index.html' %}
-              {% for page in site.nav %}
-                {% if page.title %}
-                  <li class="menu-item{% if url == page.url %} active{% endif %}">
-                    <a class="page-link" href="{{ page.url | prepend: site.baseurl }}" title="{{page.title}}">{{ page.title }}</a>
-                  </li>
-                {% endif %}
-              {% endfor %}
-            </ul>
-          </div>
+        <div class="navbar-collapse collapse" role="navigation">
+          <ul class="nav navbar-nav navbar-right">
+            {% assign url = page.url|remove:'index.html' %}
+            {% for page in site.nav %}
+              {% if page.title %}
+                <li class="menu-item{% if url == page.url %} active{% endif %}">
+                  <a class="page-link" href="{{ page.url | prepend: site.baseurl }}" title="{{page.title}}">{{ page.title }}</a>
+                </li>
+              {% endif %}
+            {% endfor %}
+          </ul>
+        </div>
 
-      </div>
+    </div>
   </nav>
 
-  {% include masthead.html %}
+  {% include modules/module-masthead.html %}
+  {% include modules/module-nav-on-page.html %}
 
 </header>

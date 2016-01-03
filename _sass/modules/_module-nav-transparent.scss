@@ -1,0 +1,177 @@
+// Navbar Overlap Styles
+
+.navbar-overlap{
+  // border-left: 0;
+  // border-right: 0;
+  // border-top: 0;
+  // border-bottom: 1px solid $brand-primary;
+
+  // margin-bottom: 0;
+
+  // background: $mf-blue-dark;
+
+  z-index: 1; // make sure it stays on top of masthead
+
+  width: 100%;
+  position: static;
+
+  @media (min-width: $screen-sm-min) {
+    background: transparent;
+    position: absolute;
+
+    // border-bottom: 0;
+  }
+}
+
+// Transparent Navbar
+
+.navbar-transparent {
+  background-color: $navbar-transparent-bg-xs;
+  border-color: $navbar-transparent-border;
+
+  @media (min-width: $screen-sm-min) {
+    background-color: transparent;
+    background: transparent;
+  }
+
+  .navbar-brand {
+//    letter-spacing: 1px; // Generalize
+//    font-size: 23px; // Generalize
+
+    //color: $navbar-transparent-brand-color-xs;
+    color: $navbar-transparent-link-color-xs;
+
+    &:hover,
+    &:focus {
+      color: $navbar-transparent-brand-hover-color-xs;
+      background-color: $navbar-transparent-brand-hover-bg;
+    }
+
+    @media (min-width: $screen-sm-min) {
+//      color: $navbar-transparent-brand-color;
+      color: $navbar-transparent-link-color;
+
+//      font-size: 26px; // Generalize
+//      letter-spacing: 1px;
+
+      &:hover,
+      &:focus {
+        color: $navbar-transparent-brand-hover-color;
+        background-color: $navbar-transparent-brand-hover-bg;
+      }
+
+    }
+  }
+
+  .navbar-text {
+    color: $navbar-transparent-color;
+  }
+
+  .navbar-nav {
+    > li > a {
+
+      font-size: $font-size-base-xs;
+      color: $navbar-transparent-link-color-xs;
+
+      -webkit-font-smoothing: antialiased;
+      text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.4);
+
+      @media (min-width: $screen-sm-min) {
+        color: $navbar-transparent-link-color;
+        font-size: $font-size-base-md - 2;
+      }
+
+      &:hover,
+      &:focus {
+        color: $navbar-transparent-link-hover-color;
+        background-color: $navbar-transparent-link-hover-bg;
+      }
+    }
+    > .active > a {
+      &,
+      &:hover,
+      &:focus {
+        color: $navbar-transparent-link-active-color;
+        background-color: $navbar-transparent-link-active-bg;
+      }
+    }
+    > .disabled > a {
+      &,
+      &:hover,
+      &:focus {
+        color: $navbar-transparent-link-disabled-color;
+        background-color: $navbar-transparent-link-disabled-bg;
+      }
+    }
+  }
+
+  .navbar-toggle {
+    color: $navbar-transparent-toggle-color;
+    border-color: $navbar-transparent-toggle-border-color;
+
+    &:hover,
+    &:focus {
+      color: $navbar-transparent-toggle-hover-color;
+      background-color: $navbar-transparent-toggle-hover-bg;
+    }
+    .icon-bar {
+      background-color: $navbar-transparent-toggle-icon-bar-bg;
+    }
+
+    // Site-specific tweaks
+    font-size: $font-size-base-xs - 2;
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    font-weight: $font-weight-semi-bold;
+  }
+
+  .navbar-collapse,
+  .navbar-form {
+    border-color: $navbar-transparent-border;
+  }
+
+  // Dropdown menu items
+  .navbar-nav {
+    // Remove background color from open dropdown
+    > .open > a {
+      &,
+      &:hover,
+      &:focus {
+        background-color: $navbar-transparent-link-active-bg;
+        color: $navbar-transparent-link-active-color;
+      }
+    }
+
+    @media (max-width: $grid-float-breakpoint-max) {
+      // Dropdowns get custom display when collapsed
+      .open .dropdown-menu {
+        > li > a {
+          color: $navbar-transparent-link-color;
+          &:hover,
+          &:focus {
+            color: $navbar-transparent-link-hover-color;
+            background-color: $navbar-transparent-link-hover-bg;
+          }
+        }
+        > .active > a {
+          &,
+          &:hover,
+          &:focus {
+            color: $navbar-transparent-link-active-color;
+            background-color: $navbar-transparent-link-active-bg;
+          }
+        }
+        > .disabled > a {
+          &,
+          &:hover,
+          &:focus {
+            color: $navbar-transparent-link-disabled-color;
+            background-color: $navbar-transparent-link-disabled-bg;
+          }
+        }
+      }
+    }
+  }
+
+}

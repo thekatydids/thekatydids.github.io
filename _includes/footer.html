@@ -1,13 +1,13 @@
 <footer class="site-footer" id="colophon" role="contentinfo">
-
   <div class="site-info">
     <div class="container">
 
-      <span class="site-copyright">Copyright 2015, The Katydids <span class="hidden-xs">&mdash;</span> <br class="visible-xs"><a href="{{site.baseurl}}/contact/">Contact</a> | <a href="https://twitter.com/{{ site.twitter }}" target="_blank"><i class="fa fa-twitter-square"></i> Twitter</a> | <a href="https://www.facebook.com/{{ site.facebook }}/" target="_blank"><i class="fa fa-facebook-official"></i> Facebook</a> | <a href="https://www.youtube.com/user/{{ site.youtube }}" target="_blank"><i class="fa fa-youtube-play"></i> YouTube</a></span>
+      <span class="site-copyright">Copyright 2015, {{ site.name }}
+      {% if site.email %}<span class="hidden-xs"> | </span><br class="visible-xs">{{ site.email }}{% endif %}
+      </span>
 
       <span class="site-credits">Handcrafted by <a href="http://mapandfire.com" target="_blank">Map &amp; Fire</a></span>
 
     </div>
   </div>
-
 </footer>

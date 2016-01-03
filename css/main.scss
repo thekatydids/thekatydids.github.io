@@ -1,6 +1,10 @@
 ---
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
+
+// Import locally hosted font
+@import "includes/_fonts.scss";
+
 // Import Bootstrap SCSS files as components
 
 // Bootstrap Core variables
@@ -12,7 +16,7 @@
 //@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_glyphicons.scss";
 
 // Theme Variables - Override Bootstrap variables
-@import "base/_variables.scss";
+@import "../_sass/base/_variables.scss";
 
  // Bootstrap Mixins - Load after Variable Override
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_mixins.scss";
@@ -53,7 +57,7 @@
 //@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_modals.scss";
 //@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_tooltip.scss";
 //@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_popovers.scss";
-// @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_carousel.scss";
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_carousel.scss";
 
 // Bootstrap Utility classes
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_utilities.scss";
@@ -63,7 +67,8 @@
 // Theme SCSS Files
 //-----------------------------------------
 
-// Theme Variables override some Bootstrap Variables at the top of this file
+// Variables
+// -- Theme Variables override some Bootstrap Variables at the top of this file
 
 // Base Styles
 @import "base/_mixins.scss";
@@ -72,37 +77,62 @@
 
 // Global Styles
 @import "global/_global.scss";
+@import "global/_accessibility.scss";
 
 // Include Styles
-@import "includes/_navigation.scss";
-@import "includes/_header.scss";
+@import "includes/_archives.scss";
+@import "includes/_entries.scss";
+@import "includes/_fonts.scss";
 @import "includes/_footer.scss";
+@import "includes/_header.scss";
+@import "includes/_navigation.scss";
 @import "includes/_sidebar.scss";
 
 // Component Styles
 @import "components/_buttons.scss";
 @import "components/_callouts.scss";
-@import "components/_gallery.scss";
-@import "components/_filmstrip.scss";
-@import "components/_mastheads.scss";
-@import "components/_sections.scss";
+@import "components/_figures.scss";
+@import "components/_lists.scss";
+
+// Module Styles
+@import "modules/_module-efficient-youtube-embeds.scss";
+@import "modules/_module-filmstrip.scss";
+@import "modules/_module-gallery.scss";
+@import "modules/_module-mastheads.scss";
+@import "modules/_module-nav-on-page.scss";
+@import "modules/_module-nav-overlay.scss";
+@import "modules/_module-nav-transparent.scss";
+@import "modules/_module-sections.scss";
 
 // Layouts
+@import "layouts/_content-sidebar-sidebar.scss";
+@import "layouts/_content-sidebar.scss";
+
+@import "layouts/_cover.scss";
+@import "layouts/_custom.scss";
+
+@import "layouts/_default-archive.scss";
+@import "layouts/_default-page.scss";
+@import "layouts/_default-post.scss";
+
 @import "layouts/_fullbleed.scss";
-@import "layouts/_archive.scss";
-@import "layouts/_default.scss";
-@import "layouts/_entry.scss";
-@import "layouts/_page.scss";
-@import "layouts/_404.scss";
-@import "layouts/_style-guide.scss";
-@import "layouts/_page-index.scss";
-@import "layouts/_page-about.scss";
-@import "layouts/_page-contact.scss";
-@import "layouts/_page-teachers.scss";
-@import "layouts/_page-press.scss";
-@import "layouts/_page-media.scss";
-@import "layouts/_page-work.scss";
-@import "layouts/_page-hire-me.scss";
+@import "layouts/_fullwidth.scss";
+
+@import "layouts/_sidebar-content-sidebar.scss";
+@import "layouts/_sidebar-content.scss";
+@import "layouts/_sidebar-sidebar-content.scss";
+
+// Page Specific Styles
+
+@import "page-specific/_page-404.scss";
+@import "page-specific/_page-about.scss";
+@import "page-specific/_page-calendar.scss";
+@import "page-specific/_page-contact.scss";
+@import "page-specific/_page-index.scss";
+@import "page-specific/_page-media.scss";
+@import "page-specific/_page-press.scss";
+@import "page-specific/_page-style-guide.scss";
+@import "page-specific/_page-teachers.scss";
 
 
 //-----------------------------------------

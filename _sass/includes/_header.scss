@@ -9,6 +9,9 @@
 }
 
 // Branding
+.logo-image {
+	width: 120px;
+}
 
 .site-branding-container{
   @extend %margin-top-1-baseline;
@@ -42,8 +45,7 @@
     }
 
     .site-header-ctas {
-      @include make-sm-column(12);
-      @include make-md-column(2);
     }
+
   }
 }

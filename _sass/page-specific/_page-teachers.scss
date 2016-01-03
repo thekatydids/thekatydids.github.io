@@ -1,0 +1,27 @@
+/*!
+*
+* Page: Teachers
+*
+*/
+
+.page-teachers{
+
+  .masthead{
+  }
+
+  .masthead.masthead-background-image{
+
+    @media (min-width: $screen-lg-min) {
+//      background-position: 50% 20%;
+    }
+  }
+
+  #section-teachers{
+    padding-bottom: $baseline;
+  }
+
+  #section-katydids{
+    padding-top: $baseline * 2;
+  }
+
+}

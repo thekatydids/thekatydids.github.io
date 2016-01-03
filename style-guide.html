@@ -1,0 +1,153 @@
+---
+layout: fullbleed
+
+meta_title: "Life Revised Style Guide"
+meta_description: "The living style guide for Life Revised."
+
+title: Style Guide
+permalink: /style-guide/
+
+masthead:
+  - slide:
+    type:             html
+    headline:         "The Katydids Style Guide"
+    background-image: mastheads/masthead-teachers-g.jpg
+
+subnav:
+  - text:   Branding
+    anchor: "#guide-section-branding"
+  - text:   Colors
+    anchor: "#guide-section-colors"
+  - text:   Typography
+    anchor: "#guide-section-typography"
+  - text:   Section Styles
+    anchor: "#guide-section-styles"
+  - text:   Page Templates
+    anchor: "#guide-section-page-templates"
+---
+
+{% assign componentsByType = site.style-guide | group_by:"type" %}
+{% for type in componentsByType %}
+
+<section id="guide-section-{{ type.name }}">
+  <div class="section-container">
+
+    <header class="section-header guide-header">
+      <h1 id="guide-{{ type.name }}">{{ type.name | capitalize }}</h1>
+    </header>
+
+    {% for entry in type.items %}
+
+      <article class="guide-component">
+        <header class="guide-component-header">
+          <h2 id="guide-{{ entry.title | slugify }}">{{ entry.title }}</h2>
+
+            {% if entry.usage %}
+              <p><strong>Usage:</strong> {{ entry.usage }}</p>
+            {% endif %}
+
+            {% if entry.module %}
+              <p><strong>Include partial:</strong> <a href="{{ site.owner.github-repo }}{{ entry.module }}">{{ entry.module }}</a></p>
+            {% endif %}
+
+    <!--    {% if entry.scss %}
+              <p class="entry-last"><strong>SCSS partial:</strong> <a href="{{ site.owner.github-repo }}{{ entry.scss }}">{{ entry.scss }}</a></p>
+            {% endif %} -->
+
+        </header>
+
+        <div class="guide-component-content">
+
+          <div class="guide-component-rendered">
+            {{ entry.content }}
+          </div>
+
+          {% if type.name == "module" %}
+            <div class="guide-component-code">
+              {% highlight html %}
+                {{ entry.content }}
+              {% endhighlight %}
+            </div>
+          {% endif %}
+
+        </div>
+
+      </article>
+
+    {% endfor %}
+
+  </div>
+</section>
+
+{% endfor %}
+
+
+
+<!-- SECTION STYLES -->
+<section id="guide-section-section-styles">
+
+  <div class="section-container">
+    <header class="section-header guide-header">
+      <h1 id="guide-section-styles">Section Styles</h1>
+    </header>
+  </div>
+
+  <section class="section-style-default">
+    <div class="section-container">
+      <header class="section-header">
+        <h1>Section Style: Default</h1>
+      </header>
+
+      {% include content-blocks/block-content-test.html %}
+
+    </div>
+  </section>
+
+  <section class="section-style-neutral">
+    <div class="section-container">
+      <header class="section-header">
+        <h1>Section Style: Neutral</h1>
+      </header>
+
+      {% include content-blocks/block-content-test.html %}
+
+    </div>
+  </section>
+
+  <section class="section-style-primary">
+    <div class="section-container">
+      <header class="section-header">
+        <h1>Section Style: Brand Primary</h1>
+      </header>
+
+      {% include content-blocks/block-content-test.html %}
+
+    </div>
+  </section>
+
+  <section class="section-style-secondary">
+    <div class="section-container">
+      <header class="section-header">
+        <h1>Section Style: Brand Secondary</h1>
+      </header>
+
+      {% include content-blocks/block-content-test.html %}
+
+    </div>
+  </section>
+
+</section>
+
+
+<!-- PAGE TEMPLATES -->
+
+<section id="guide-section-page-templates">
+  <div class="section-container">
+    <header class="section-header guide-header">
+      <h1 id="guide-page-templates">Page Templates</h1>
+    </header>
+
+     {% include content-blocks/block-layout-test.html %}
+
+  </div>
+</section>
