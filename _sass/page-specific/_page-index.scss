@@ -28,7 +28,7 @@
 
 
 	.home-primary{
-		background-image: url(../img/katydids-cover-1600.jpg);
+		background-image: url(../img/katydids-cover-portrait.jpg);
 		background-repeat: no-repeat;
 		height: 100vh;
 		position: relative;
@@ -40,6 +40,8 @@
 		background-position: 65% 0px;
 
 	 	@media (min-width: $screen-sm-min) {
+			background-image: url(../img/katydids-cover-1600.jpg);
+
 //	 		background: none;
 //			height: auto;
 //			margin-top: 0px;
