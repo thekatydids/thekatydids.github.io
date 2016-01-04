@@ -6,9 +6,71 @@
 
 .page-about{
 
-  .masthead{
+  .site-content{
+    padding-top: 0;
   }
 
-  .masthead.masthead-background-image{
+  .entry-header-container{
+    display: none;
   }
+
+  #katydids-overview{
+    text-align: center;
+    padding-bottom: 0;
+
+    header{
+      padding-bottom: $baseline * 4;
+    }
+
+    h1.entry-title{
+    }
+
+    p.primary{
+    }
+
+    p.secondary{
+      font-size: 1.125em;
+      color: lighten($kd-charcoal, 50%);
+    }
+  }
+
+  .katydid-thumb{
+    overflow: hidden;
+
+    @media (min-width: $screen-sm-min) {
+      padding: 0;
+    }
+
+    figure{
+      position: relative;
+      margin-top: 0;
+      margin-bottom: 0;
+
+      figcaption{
+        position: absolute;
+        bottom: 0;
+        text-align: center;
+        background: rgba(0,0,0,0.6);
+        display: block;
+        margin-top: 0;
+        margin-bottom: 0;
+        width: 100%;
+        color: $kd-gold;
+
+        padding-top: $baseline / 2;
+        padding-bottom: $baseline / 2;
+
+        @media (min-width: $screen-sm-min) {
+          padding-top: $baseline;
+          padding-bottom: $baseline;
+        }
+
+      }
+    }
+  }
+
+  #katydids-bios{
+    padding-bottom: 0;
+  }
+
 }

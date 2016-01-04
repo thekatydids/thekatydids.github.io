@@ -268,6 +268,18 @@ small,
 }
 
 
+large,
+.large {
+    font-size: $font-size-large-xs;
+    line-height: $line-height-base-xs;
+
+    @media (min-width: $screen-md-min) {
+      font-size: $font-size-large-md;
+      line-height: $line-height-base-md;
+    }
+}
+
+
 // Blockquotes
 
 blockquote {
@@ -585,7 +597,8 @@ address {
 // Misc Elements
 
 hr {
-  margin-bottom: $baseline;
+  margin-bottom: $baseline * 2;
+  margin-top: $baseline * 2;
   display: block;
   clear: both;
 

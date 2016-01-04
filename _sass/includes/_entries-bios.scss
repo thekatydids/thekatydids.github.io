@@ -1,0 +1,52 @@
+/*!
+*
+* Entry Type: Bios
+*
+*/
+
+.entry-type-bio{
+
+  @include make-row();
+  padding-top: $baseline;
+  padding-bottom: $baseline;
+//  margin-bottom: $baseline;
+//  border-bottom: 1px solid #eee;
+
+  .entry-image{
+    @include make-sm-column(4);
+  }
+
+  .entry-description{
+    @include make-sm-column(8);
+  }
+
+  .entry-name{
+    color: $kd-pink;
+  }
+
+  .entry-image{
+    figure{
+      padding-top: 0;
+      margin-top: 0;
+
+      img{
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+  .entry-links{
+    ul{
+      @extend .list-inline;
+    }
+
+    a{
+      text-decoration: none !important;
+     }
+
+  }
+
+
+
+}

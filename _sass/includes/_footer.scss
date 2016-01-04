@@ -7,6 +7,13 @@
 .site-footer{
 	@extend .section-style-primary;
 
+	color: $kd-gold;
+
+	a{
+		color: $kd-gold !important;
+	}
+
+
 	font-family: $font-family-sans-serif;
 //	margin-top: ($baseline-xs * 2);
 

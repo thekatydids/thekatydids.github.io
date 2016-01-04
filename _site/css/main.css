@@ -280,7 +280,7 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  color: #333333;
+  color: #444;
   background-color: #fff; }
 
 input,
@@ -292,10 +292,10 @@ textarea {
   line-height: inherit; }
 
 a {
-  color: #337ab7;
+  color: #EC2B8C;
   text-decoration: none; }
   a:hover, a:focus {
-    color: #23527c;
+    color: #ba1166;
     text-decoration: underline; }
   a:focus {
     outline: thin dotted;
@@ -1436,7 +1436,7 @@ select[multiple].input-lg {
   display: block;
   margin-top: 5px;
   margin-bottom: 10px;
-  color: #737373; }
+  color: #848484; }
 
 @media (min-width: 768px) {
   .form-inline .form-group {
@@ -1727,7 +1727,7 @@ a.btn.disabled, a.disabled.masthead-button, fieldset[disabled] a.btn, fieldset[d
     background-color: #fff; }
 
 .btn-link {
-  color: #337ab7;
+  color: #EC2B8C;
   font-weight: normal;
   border-radius: 0; }
   .btn-link, .btn-link:active, .btn-link.active, .btn-link[disabled], fieldset[disabled] .btn-link {
@@ -1737,7 +1737,7 @@ a.btn.disabled, a.disabled.masthead-button, fieldset[disabled] a.btn, fieldset[d
   .btn-link, .btn-link:hover, .btn-link:focus, .btn-link:active {
     border-color: transparent; }
   .btn-link:hover, .btn-link:focus {
-    color: #23527c;
+    color: #ba1166;
     text-decoration: underline;
     background-color: transparent; }
   .btn-link[disabled]:hover, .btn-link[disabled]:focus, fieldset[disabled] .btn-link:hover, fieldset[disabled] .btn-link:focus {
@@ -1832,7 +1832,7 @@ tbody.collapse.in {
         cursor: not-allowed; }
   .nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
     background-color: #eeeeee;
-    border-color: #337ab7; }
+    border-color: #EC2B8C; }
   .nav .nav-divider {
     height: 1px;
     margin: 11px 0;
@@ -3237,6 +3237,16 @@ figure figcaption p {
       font-size: 0.875em;
       line-height: 1.5; } }
 
+large,
+.large {
+  font-size: 1.125em;
+  line-height: 1.5; }
+  @media (min-width: 992px) {
+    large,
+    .large {
+      font-size: 1.5em;
+      line-height: 1.5; } }
+
 blockquote {
   padding: 0;
   margin-bottom: 24px;
@@ -3284,11 +3294,11 @@ ol {
   padding-left: 0;
   list-style: none; }
 
-.list-inline, .subnav {
+.list-inline, .entry-type-bio .entry-links ul, .subnav {
   padding-left: 0;
   list-style: none;
   margin-left: -5px; }
-  .list-inline > li, .subnav > li {
+  .list-inline > li, .entry-type-bio .entry-links ul > li, .subnav > li {
     display: inline-block;
     padding-left: 5px;
     padding-right: 5px; }
@@ -3504,7 +3514,8 @@ address {
   line-height: 1.5; }
 
 hr {
-  margin-bottom: 12px;
+  margin-bottom: 24px;
+  margin-top: 24px;
   display: block;
   clear: both;
   border-style: solid;
@@ -3681,19 +3692,27 @@ blockquote.blockquote-display footer {
   .section-style-secondary blockquote p {
     color: #24201E; }
 
-.section-style-neutral, #newsletter {
+.section-style-neutral {
   background-color: #F5F1E3;
   border-top: 1px solid #eee8d0;
   border-bottom: 1px solid #eee8d0; }
-  .section-style-neutral hr, #newsletter hr {
+  .section-style-neutral hr {
     border-color: #e1d5ab; }
 
 .section-style-dark {
-  background-color: #444;
-  color: #AAA; }
+  background-color: #24201E;
+  color: #CCA665; }
 
-#newsletter .lead, #newsletter figure.figure-spotlight figcaption p, figure.figure-spotlight figcaption #newsletter p {
-  font-family: "Lato", "Helvetica Neue", "Helvetica", "Arial", sans-serif; }
+.divider-secondary {
+  border-color: #EC2B8C;
+  border-width: 2px;
+  width: 100px;
+  margin-left: 0; }
+
+.divider-primary {
+  border-color: #CCA665;
+  border-width: 2px;
+  width: 100px; }
 
 /*!
 *
@@ -3859,6 +3878,88 @@ blockquote.blockquote-display footer {
 
 /*!
 *
+* Entry Type: Bios
+*
+*/
+.entry-type-bio {
+  margin-left: -15px;
+  margin-right: -15px;
+  padding-top: 12px;
+  padding-bottom: 12px; }
+  .entry-type-bio:before, .entry-type-bio:after {
+    content: " ";
+    display: table; }
+  .entry-type-bio:after {
+    clear: both; }
+  .entry-type-bio .entry-image {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px; }
+    @media (min-width: 768px) {
+      .entry-type-bio .entry-image {
+        float: left;
+        width: 33.33333%; } }
+  .entry-type-bio .entry-description {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px; }
+    @media (min-width: 768px) {
+      .entry-type-bio .entry-description {
+        float: left;
+        width: 66.66667%; } }
+  .entry-type-bio .entry-name {
+    color: #EC2B8C; }
+  .entry-type-bio .entry-image figure {
+    padding-top: 0;
+    margin-top: 0; }
+    .entry-type-bio .entry-image figure img {
+      width: 100%;
+      height: auto; }
+  .entry-type-bio .entry-links a {
+    text-decoration: none !important; }
+
+/*!
+*
+* Entry Type: Events
+*
+*/
+/*!
+*
+* Entry Type: Press
+*
+*/
+.entry-content > .press-item {
+  margin-bottom: 48px; }
+  @media (min-width: 768px) {
+    .entry-content > .press-item {
+      width: 83.33333%;
+      margin-left: auto;
+      margin-right: auto; } }
+  @media (min-width: 992px) {
+    .entry-content > .press-item {
+      width: 83.33333%;
+      margin-left: auto;
+      margin-right: auto; } }
+  @media (min-width: 1200px) {
+    .entry-content > .press-item {
+      width: 66.66667%;
+      margin-left: auto;
+      margin-right: auto; } }
+
+.press-title a {
+  text-decoration: none; }
+  .press-title a:hover {
+    text-decoration: underline; }
+
+.press-date {
+  color: #777;
+  margin-bottom: 6px;
+  display: block; }
+
+/*!
+*
 * Fonts
 *
 */
@@ -3874,8 +3975,11 @@ blockquote.blockquote-display footer {
 *
 */
 .site-footer {
+  color: #CCA665;
   font-family: "Lato", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   font-size: 14px; }
+  .site-footer a {
+    color: #CCA665 !important; }
 
 .site-info {
   text-align: right; }
@@ -5379,6 +5483,46 @@ section {
 * Page: About
 *
 */
+.page-about .site-content {
+  padding-top: 0; }
+.page-about .entry-header-container {
+  display: none; }
+.page-about #katydids-overview {
+  text-align: center;
+  padding-bottom: 0; }
+  .page-about #katydids-overview header {
+    padding-bottom: 48px; }
+  .page-about #katydids-overview p.secondary {
+    font-size: 1.125em;
+    color: #a99e98; }
+.page-about .katydid-thumb {
+  overflow: hidden; }
+  @media (min-width: 768px) {
+    .page-about .katydid-thumb {
+      padding: 0; } }
+  .page-about .katydid-thumb figure {
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 0; }
+    .page-about .katydid-thumb figure figcaption {
+      position: absolute;
+      bottom: 0;
+      text-align: center;
+      background: rgba(0, 0, 0, 0.6);
+      display: block;
+      margin-top: 0;
+      margin-bottom: 0;
+      width: 100%;
+      color: #CCA665;
+      padding-top: 6px;
+      padding-bottom: 6px; }
+      @media (min-width: 768px) {
+        .page-about .katydid-thumb figure figcaption {
+          padding-top: 12px;
+          padding-bottom: 12px; } }
+.page-about #katydids-bios {
+  padding-bottom: 0; }
+
 /*!
 *
 * Calendar Page

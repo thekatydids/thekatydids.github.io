@@ -129,8 +129,8 @@ blockquote.blockquote-display {
 }
 
 .section-style-dark{
-  background-color: #444;
-  color: $gray-light;
+  background-color: $kd-charcoal;
+  color: $kd-gold;
 }
 
 .section-style-light{
@@ -138,17 +138,17 @@ blockquote.blockquote-display {
 }
 
 
+// Divider Styles
 
-// Module Styles
-
-#newsletter{
-  @extend .section-style-neutral;
-
-  .lead{
-    font-family: $font-family-sans-serif;
-  }
+.divider-secondary{
+  border-color: $kd-pink;
+  border-width: 2px;
+  width: 100px;
+  margin-left: 0;
 }
 
-#instagram{
-//  @extend .section-style-default;
+.divider-primary{
+  border-color: $kd-gold;
+  border-width: 2px;
+  width: 100px;
 }
