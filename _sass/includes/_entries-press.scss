@@ -4,30 +4,12 @@
 *
 */
 
-  .entry-content > .press-item{
+.entry-type-press {
+  margin-bottom: $baseline * 2;
+  padding-bottom: $baseline;
+  border-bottom: 1px solid #EEE;
 
-    margin-bottom: $baseline * 4;
-
-    @media (min-width: $screen-sm-min) {
-      width: 83.33333%;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    @media (min-width: $screen-md-min) {
-      width: 83.33333%;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    @media (min-width: $screen-lg-min) {
-      width: 66.66667%;
-      margin-left: auto;
-      margin-right: auto;
-    }
-  }
-
-  .press-title{
+  .entry-title{
     a{
       text-decoration: none;
 
@@ -37,8 +19,17 @@
     }
   }
 
-  .press-date{
-    color: $gray;
+  .entry-meta{
+    color: $gray-light;
     margin-bottom: $baseline / 2;
-    display: block;
   }
+
+  .entry-readmore{
+    a{
+      @extend .small;
+      color: $gray-light;
+      text-decoration: none !important;
+    }
+  }
+
+}

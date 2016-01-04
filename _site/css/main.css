@@ -2345,7 +2345,7 @@ tbody.collapse.in {
   .navbar-inverse .navbar-toggle {
     border-color: #CCA665; }
     .navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
-      background-color: #CCA665; }
+      background-color: #24201E; }
     .navbar-inverse .navbar-toggle .icon-bar {
       background-color: #EC2B8C; }
   .navbar-inverse .navbar-collapse,
@@ -3018,47 +3018,75 @@ h1, h2, h3, h4, h5, h6,
   text-rendering: optimizeLegibility; }
   h1 small,
   h1 .small,
+  h1 .entry-type-press .entry-readmore a,
+  .entry-type-press .entry-readmore h1 a,
   h1 figure figcaption p,
   figure figcaption h1 p, h2 small,
   h2 .small,
+  h2 .entry-type-press .entry-readmore a,
+  .entry-type-press .entry-readmore h2 a,
   h2 figure figcaption p,
   figure figcaption h2 p, h3 small,
   h3 .small,
+  h3 .entry-type-press .entry-readmore a,
+  .entry-type-press .entry-readmore h3 a,
   h3 figure figcaption p,
   figure figcaption h3 p, h4 small,
   h4 .small,
+  h4 .entry-type-press .entry-readmore a,
+  .entry-type-press .entry-readmore h4 a,
   h4 figure figcaption p,
   figure figcaption h4 p, h5 small,
   h5 .small,
+  h5 .entry-type-press .entry-readmore a,
+  .entry-type-press .entry-readmore h5 a,
   h5 figure figcaption p,
   figure figcaption h5 p, h6 small,
   h6 .small,
+  h6 .entry-type-press .entry-readmore a,
+  .entry-type-press .entry-readmore h6 a,
   h6 figure figcaption p,
   figure figcaption h6 p,
   .h1 small,
   .entry-type-post.entry-teaser h2.entry-title small,
   .h1 .small,
   .entry-type-post.entry-teaser h2.entry-title .small,
+  .h1 .entry-type-press .entry-readmore a,
+  .entry-type-press .entry-readmore .h1 a,
+  .entry-type-post.entry-teaser h2.entry-title .entry-type-press .entry-readmore a,
+  .entry-type-press .entry-readmore .entry-type-post.entry-teaser h2.entry-title a,
   .h1 figure figcaption p,
   figure figcaption .h1 p,
   .entry-type-post.entry-teaser h2.entry-title figure figcaption p,
   figure figcaption .entry-type-post.entry-teaser h2.entry-title p, .h2 small, .masthead-subheadline small,
   .h2 .small,
   .masthead-subheadline .small,
+  .h2 .entry-type-press .entry-readmore a,
+  .entry-type-press .entry-readmore .h2 a,
+  .masthead-subheadline .entry-type-press .entry-readmore a,
+  .entry-type-press .entry-readmore .masthead-subheadline a,
   .h2 figure figcaption p,
   figure figcaption .h2 p,
   .masthead-subheadline figure figcaption p,
   figure figcaption .masthead-subheadline p, .h3 small,
   .h3 .small,
+  .h3 .entry-type-press .entry-readmore a,
+  .entry-type-press .entry-readmore .h3 a,
   .h3 figure figcaption p,
   figure figcaption .h3 p, .h4 small,
   .h4 .small,
+  .h4 .entry-type-press .entry-readmore a,
+  .entry-type-press .entry-readmore .h4 a,
   .h4 figure figcaption p,
   figure figcaption .h4 p, .h5 small,
   .h5 .small,
+  .h5 .entry-type-press .entry-readmore a,
+  .entry-type-press .entry-readmore .h5 a,
   .h5 figure figcaption p,
   figure figcaption .h5 p, .h6 small,
   .h6 .small,
+  .h6 .entry-type-press .entry-readmore a,
+  .entry-type-press .entry-readmore .h6 a,
   .h6 figure figcaption p,
   figure figcaption .h6 p {
     line-height: 1;
@@ -3070,12 +3098,12 @@ h1, .h1, .entry-type-post.entry-teaser h2.entry-title {
 
 h2, .h2, .masthead-subheadline {
   font-family: "Domine", serif;
-  color: #444; }
+  color: #666; }
 
 h3, .h3,
 h4, .h4 {
   font-family: "Domine", serif;
-  color: #444; }
+  color: #666; }
 
 h1, .h1, .entry-type-post.entry-teaser h2.entry-title {
   margin-top: 0;
@@ -3227,12 +3255,14 @@ figure + h3, figure + h4 {
 
 small,
 .small,
+.entry-type-press .entry-readmore a,
 figure figcaption p {
   font-size: 0.875em;
   line-height: 1.5; }
   @media (min-width: 992px) {
     small,
     .small,
+    .entry-type-press .entry-readmore a,
     figure figcaption p {
       font-size: 0.875em;
       line-height: 1.5; } }
@@ -3272,7 +3302,7 @@ blockquote p {
       line-height: 1.5; } }
 
 blockquote footer {
-  color: #777;
+  color: #888;
   font-weight: 700; }
 
 blockquote.blockquote-reverse footer:before {
@@ -3767,7 +3797,7 @@ blockquote.blockquote-display footer {
     .layout-archive .entry-summary {
       right: 25%; } }
 .layout-archive .entry-excerpt {
-  color: #777; }
+  color: #888; }
 .layout-archive .entry-meta {
   position: relative;
   min-height: 1px;
@@ -3804,7 +3834,7 @@ blockquote.blockquote-display footer {
       text-decoration: underline; }
 
 .entry-meta {
-  color: #aaaaaa;
+  color: #bbbbbb;
   font-size: 14px;
   margin-bottom: 6px;
   display: block; }
@@ -3812,7 +3842,7 @@ blockquote.blockquote-display footer {
     .entry-meta {
       margin-bottom: 6px; } }
   .entry-meta a {
-    color: #aaaaaa;
+    color: #bbbbbb;
     text-decoration: underline; }
 
 .entry-link {
@@ -3930,33 +3960,20 @@ blockquote.blockquote-display footer {
 * Entry Type: Press
 *
 */
-.entry-content > .press-item {
-  margin-bottom: 48px; }
-  @media (min-width: 768px) {
-    .entry-content > .press-item {
-      width: 83.33333%;
-      margin-left: auto;
-      margin-right: auto; } }
-  @media (min-width: 992px) {
-    .entry-content > .press-item {
-      width: 83.33333%;
-      margin-left: auto;
-      margin-right: auto; } }
-  @media (min-width: 1200px) {
-    .entry-content > .press-item {
-      width: 66.66667%;
-      margin-left: auto;
-      margin-right: auto; } }
-
-.press-title a {
-  text-decoration: none; }
-  .press-title a:hover {
-    text-decoration: underline; }
-
-.press-date {
-  color: #777;
-  margin-bottom: 6px;
-  display: block; }
+.entry-type-press {
+  margin-bottom: 24px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #EEE; }
+  .entry-type-press .entry-title a {
+    text-decoration: none; }
+    .entry-type-press .entry-title a:hover {
+      text-decoration: underline; }
+  .entry-type-press .entry-meta {
+    color: #AAA;
+    margin-bottom: 6px; }
+  .entry-type-press .entry-readmore a {
+    color: #AAA;
+    text-decoration: none !important; }
 
 /*!
 *
@@ -4082,6 +4099,20 @@ blockquote.blockquote-display footer {
 
 .site-title {
   font-family: "Domine", serif; }
+
+.navbar-toggle {
+  color: #CCA665;
+  border-color: #CCA665;
+  font-size: 14px;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  font-weight: 600; }
+  .navbar-toggle:hover, .navbar-toggle:focus {
+    color: #CCA665;
+    background-color: #24201E; }
+  .navbar-toggle .icon-bar {
+    background-color: #EC2B8C; }
 
 .navbar-transparent {
   background-color: #24201E;
@@ -4886,9 +4917,13 @@ div.play-button {
   font-size: 32px;
   font-weight: 300;
   display: block;
-  color: #fff;
+  color: #CCA665;
   -webkit-transition: color 0.1s;
   transition: color 0.1s; }
+
+.overlay ul li a:hover,
+.overlay ul li a:focus {
+  color: #EC2B8C; }
 
 /* Effects */
 .overlay-slidedown {
@@ -5033,7 +5068,7 @@ section {
 .section-subtitle {
   font-family: "Lato", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   font-weight: 300;
-  color: #6a6a6a;
+  color: #7b7b7b;
   max-width: 18em;
   font-size: 22px;
   line-height: 1.4; }
@@ -5636,7 +5671,7 @@ section {
   text-align: center; }
 .page-media p.lead, .page-media figure.figure-spotlight figcaption p, figure.figure-spotlight figcaption .page-media p {
   text-align: center;
-  color: #777; }
+  color: #888; }
 .page-media #media-intro h3, .page-media #media-intro h4 {
   text-align: left;
   margin-top: 0; }

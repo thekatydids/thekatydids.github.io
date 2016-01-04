@@ -10,11 +10,13 @@ $placeholder-blue:          #535C6D;
 $white:                     #FFF;
 $off-white:                 #FEFEFC;
 
-$gray:                      #777;
-$gray-dark:                 #444;
-$gray-darker:               #222;
+$gray:                      #888;
+$gray-dark:                 #666;
+$gray-darker:               #444;
+$gray-darkest:              #222;
 $gray-light:                #AAA;
 $gray-lighter:              #CCC;
+$gray-lightest:             #DDD;
 
 $neutral:                   #F5F1E3;
 $neutral-dark:              darken($neutral, 5%);
@@ -49,7 +51,7 @@ $btn-brand-bg:              $brand-primary;
 $btn-brand-border:          darken($btn-brand-bg, 5%);
 
 //** Global text color on <body>.
-$text-color:                $gray-dark;
+$text-color:                $gray-darker;
 
 //** Global textual link color.
 $link-color:                $kd-pink;
@@ -281,9 +283,9 @@ $navbar-inverse-link-hover-color:     $kd-pink;
 $navbar-inverse-link-hover-bg:        transparent;
 
 $navbar-inverse-toggle-color:         $kd-gold;
-$navbar-inverse-toggle-hover-color:   $kd-pink;
+$navbar-inverse-toggle-hover-color:   $kd-gold;
 $navbar-inverse-toggle-border-color:  $kd-gold;
-$navbar-inverse-toggle-hover-bg:      $kd-gold;
+$navbar-inverse-toggle-hover-bg:      $kd-charcoal;
 $navbar-inverse-toggle-icon-bar-bg:   $kd-pink;
 
 

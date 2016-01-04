@@ -4,29 +4,31 @@ layout: default-page
 meta_title: The Katydids in the Press
 meta_description: "Press coverage of The Katydids and Teachers on TV Land"
 
-title: Press
+title: The Katydids in the Press
 permalink: /press/
 
 masthead:
   - slide:
-    type:             partitions
+    type:             background-image
     blockquote:       "&ldquo;Those girls, the Katydids, are incredible. They have a very interesting voice. It’s super exciting to work with up-and-coming people in comedy who are all women. They’re, like, the most talented people I know.&rdquo;"
     source:           "Alison Brie"
     citation:         "Refinery 29 Interview"
-    background-image: mastheads/partition-press.jpg
+    background-image: mastheads/masthead-press-a@2x.jpg
 ---
 
 {% for entry in site.data.press %}
 
   <article class="entry entry-type-press">
 
-    <span class="entry-date">{{ entry.date }}</span>
+    <span class="entry-meta">
+      <span class="entry-date">{{ entry.date }}</span> <span class="entry-source"> &mdash; {{ entry.title }}</span>
+    </span>
 
-    <h3 class="entry-title"><a href="{{ entry.link }}" target="_blank">{{ entry.description }}</a></h3>
+    <h2 class="entry-title"><a href="{{ entry.link }}" target="_blank">{{ entry.description }}</a></h2>
 
-    <p class="entry-source">{{ entry.title }}</p>
+<!--     <p class="entry-source">{{ entry.title }}</p> -->
 
-    <p><a class="entry-link" href="{{ entry.link }}" target="_blank">Read More</a></p>
+<!--     <p class="entry-readmore"><a href="{{ entry.link }}" target="_blank">Read More</a></p> -->
 
   </article>
 

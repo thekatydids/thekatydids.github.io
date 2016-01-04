@@ -21,6 +21,31 @@
 }
 
 
+.navbar-toggle {
+  color: $navbar-inverse-toggle-color;
+  border-color: $navbar-inverse-toggle-border-color;
+
+  &:hover,
+  &:focus {
+    color: $navbar-inverse-toggle-hover-color;
+    background-color: $navbar-inverse-toggle-hover-bg;
+  }
+  .icon-bar {
+    background-color: $navbar-inverse-toggle-icon-bar-bg;
+  }
+
+  // Site-specific tweaks
+  font-size: $font-size-base-xs - 2;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  font-weight: $font-weight-semi-bold;
+}
+
+
+
+
+
 // Transparent Navbar
 
 .navbar-transparent {
