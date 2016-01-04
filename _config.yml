@@ -43,8 +43,8 @@ nav:
     url: /teachers/
   - title: Press
     url: /press/
-  - title: Media
-    url: /media/
+  # - title: Media
+  #   url: /media/
   - title: Calendar
     url: /calendar/
   - title: Contact
