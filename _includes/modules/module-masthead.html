@@ -15,24 +15,14 @@
               <div class="masthead-item-partition">
                 <div class="masthead-item-content">
 
+                  {% if slide.background-image %}
+                    <!-- Background Image Applied to Parent; preload image here. -->
+                    <img src="{{site.baseurl}}/img/{{ slide.background-image }}" style="display: none !important; visibility: hidden !important;">
+                  {% endif %}
+
                   {% if slide.featured-image %}
                     <figure class="masthead-figure">
                       <img src="{{site.baseurl}}/img/{{ slide.featured-image }}" class="masthead-image">
-                    </figure>
-                  {% endif %}
-
-                  {% if slide.background-video-webm %}
-                    <figure class="masthead-figure">
-                      <video id="bgvid" autoplay loop poster="{{site.baseurl}}/img/{{ slide.poster }}"> <source src="{{site.baseurl}}/img/{{ slide.background-video-webm }}" type="video/webm">
-                        <source src="{{site.baseurl}}/img/{{ slide.background-video-mp4 }}" type="video/mp4">
-                      </video>
-      <!--                   <button id="vidpause">Pause</button> -->
-                    </figure>
-                  {% endif %}
-
-                  {% if slide.featured-video-id %}
-                    <figure class="masthead-figure youtube-container featured-video">
-                      <div class="youtube-player" data-id="{{ slide.featured-video-id }}"></div>
                     </figure>
                   {% endif %}
 
@@ -49,9 +39,19 @@
                     <a href="{{ slide.cta-url }}" class="masthead-button">{{ slide.cta-text }}</a>
                   {% endif %}
 
-                  {% if slide.background-image %}
-                    <!-- Background Image Applied to Parent; preload image here. -->
-                    <img src="{{site.baseurl}}/img/{{ slide.background-image }}" style="display: none !important; visibility: hidden !important;">
+                  {% if slide.background-video-webm %}
+                    <figure class="masthead-figure">
+                      <video id="bgvid" autoplay loop poster="{{site.baseurl}}/img/{{ slide.poster }}"> <source src="{{site.baseurl}}/img/{{ slide.background-video-webm }}" type="video/webm">
+                        <source src="{{site.baseurl}}/img/{{ slide.background-video-mp4 }}" type="video/mp4">
+                      </video>
+      <!--                   <button id="vidpause">Pause</button> -->
+                    </figure>
+                  {% endif %}
+
+                  {% if slide.featured-video-id %}
+                    <figure class="masthead-figure youtube-container featured-video">
+                      <div class="youtube-player" data-id="{{ slide.featured-video-id }}"></div>
+                    </figure>
                   {% endif %}
 
                   <!-- Partitions - Still WIP -->
