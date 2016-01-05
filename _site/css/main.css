@@ -5645,6 +5645,7 @@ section {
   background-position: 65% 0px; }
   @media (min-width: 768px) {
     .page-index {
+      background-color: #24201E;
       background-image: url(../img/katydids-cover-landscape@2x.jpg); } }
   .page-index .site-content {
     padding-top: 0;
