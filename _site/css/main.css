@@ -5634,6 +5634,7 @@ section {
 *
 */
 .page-index {
+  background-color: #24201E;
   background-image: url(../img/katydids-cover-portrait@2x.jpg);
   background-repeat: no-repeat;
   height: 100vh;
