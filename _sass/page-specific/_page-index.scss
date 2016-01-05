@@ -18,9 +18,15 @@
 		background-position: 65% 0px;
 
 	 	@media (min-width: $screen-sm-min) {
+//			background-color: $kd-charcoal;
+//			background-image: url(../img/katydids-cover-landscape@2x.jpg);
+		}
+
+	 	@media (min-width: $screen-md-min) {
 			background-color: $kd-charcoal;
 			background-image: url(../img/katydids-cover-landscape@2x.jpg);
 		}
+
 
 	.site-content{
 		padding-top: 0;
