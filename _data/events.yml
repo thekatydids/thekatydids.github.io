@@ -1,130 +1,186 @@
 - title:        "The Katydids on the Today Show"
-  date:         "Monday, January 11, 2016"
+  day:          "Monday"
+  date:         "January 11"
+  year:         "2016"
   time:         ""
+  timezeon:     ""
   description:  ""
-  category:     Television
+  category:     Television (NBC)
   link:         "http://www.today.com/"
 
 
-- title:        "The Katydids on Windy City Live"
-  date:         "Thursday, January 14, 2016"
-  time:         ""
-  description:  ""
-  category:     Television
-  link:         "http://abc7chicago.com/windycitylive/"
-
-
 - title:        "The Katydids on OK! TV"
+  day:          ""
   date:         "TBD"
+  year:         "2016"
   time:         ""
+  timezone:     ""
   description:  ""
   category:     Television
   link:         "http://www.reelz.com/oktv/"
 
 
 - title:        "The Katydids on Team Coco’s Monday Melee"
+  day:          ""
   date:         "TBD"
+  year:         "2016"
   time:         ""
+  timezone:     ""
   description:  ""
   category:     Streaming Video
   link:         "http://www.twitch.tv/teamcoco/v/19275451"
 
 
+- title:        "Teachers: Episode 101 Airs"
+  day:          "Wednesday"
+  date:         "January 13"
+  year:         "2016"
+  time:         "11:00pm"
+  timezone:     "PST"
+  description:  "The pilot episode of Teachers airs at a special time following the 1 hour season premiere of <em>Younger</em>."
+  category:     Television (TV Land)
+  link:         "http://www.tvland.com/shows/teachers"
+
+
 - title:        "Teachers Premier Party at the iO Theater"
-  date:         "Wednesday, January 13, 2016"
+  day:          "Wednesday"
+  date:         "January 13"
+  year:         "2016"
   time:         "8:00pm-10:00pm"
+  timezone:     "CST"
   description:  ""
   category:     Live Event
   link:         "http://ioimprov.com/chicago/show/teachers/"
   venue:
-    - name:    iO
-      address:  ""
-      phone:
-      sitelink: "http://www.ioimprov.com"
-      maplink:  #
+    - name:           "The iO Theater"
+      address_street: "1501 N. Kingsbury St."
+      address_city:   "Chicago"
+      address_state:  "IL"
+      address_zip:    "60642"
+      phone:          "(312) 929-2401"
+      sitelink:       "http://www.ioimprov.com"
+      maplink:        "https://www.google.com/maps/place/iO+Chicago/@41.90852,-87.651742,13z/data=!4m2!3m1!1s0x0:0xfd49b625b4687315?hl=en-US"
 
 
 
-- title:        "Riot LA: LA’s Alternative Comedy Festival"
-  date:         "Saturday, January 30, 2016"
-  time:         "1:00pm - 2:30pm"
-  description:  A Watch and Talk with The Katydids
-  category:     Live Show
-  link:         "http://riotla.com/event/a-watch-and-talk-with-the-katydids/"
-  venue:
-    - name:    The Downtown Independent
-      address:  "251 S. Main St, Los Angeles, CA, 90012"
-      phone:    (213) 617-1033
-      sitelink: http://www.downtownindependent.com
-      maplink:  #
-
-
-- title:        "Teachers: Episode 101 Airs"
-  date:         "Wednesday, January 13, 2016"
+- title:        "The Katydids on Windy City Live"
+  day:          "Thursday"
+  date:         "January 14"
+  year:         "2016"
   time:         ""
+  timezeon:     ""
   description:  ""
-  category:     Television
-  link:         "http://www.tvland.com/shows/teachers"
+  category:     Television (TV Land)
+  link:         "http://abc7chicago.com/windycitylive/"
+
 
 - title:        "Teachers: Episode 102 Airs"
-  date:         "Wednesday, January 20, 2016"
-  time:         ""
+  day:          "Wednesday"
+  date:         "January 20"
+  year:         "2016"
+  time:         "10:30pm"
+  timezone:     "PST"
   description:  ""
-  category:     Television
+  category:     Television (TV Land)
   link:         "http://www.tvland.com/shows/teachers"
 
 - title:        "Teachers: Episode 103 Airs"
-  date:         "Wednesday, January 27, 2016"
-  time:         ""
+  day:          "Wednesday"
+  date:         "January 27"
+  year:         "2016"
+  time:         "10:30pm"
+  timezone:     "PST"
   description:  ""
-  category:     Television
+  category:     Television (TV Land)
   link:         "http://www.tvland.com/shows/teachers"
 
+
+- title:        "Riot LA: LA’s Alternative Comedy Festival"
+  day:          "Saturday"
+  date:         "January 30"
+  year:         "2016"
+  time:         "1:00pm - 2:30pm"
+  timezone:     "PST"
+  description:  A Watch and Talk with The Katydids
+  category:     Live Event
+  link:         "http://riotla.com/event/a-watch-and-talk-with-the-katydids/"
+  venue:
+    - name:           The Downtown Independent
+      address_street: "251 S. Main St"
+      address_city:   "Los Angeles"
+      address_state:  "CA"
+      address_zip:    "90012"
+      phone:          "(213) 617-1033"
+      sitelink:       "http://www.downtownindependent.com"
+      maplink:  #
+
+
 - title:        "Teachers: Episode 104 Airs"
-  date:         "Wednesday, February 3, 2016"
-  time:         ""
+  day:          "Wednesday"
+  date:         "February 3"
+  year:         "2016"
+  time:         "10:30pm"
+  timezone:     "PST"
   description:  ""
-  category:     Television
+  category:     Television (TV Land)
   link:         "http://www.tvland.com/shows/teachers"
 
 - title:        "Teachers: Episode 105 Airs"
-  date:         "Wednesday, February 10, 2016"
-  time:         ""
+  day:          "Wednesday"
+  date:         "February 10"
+  year:         "2016"
+  time:         "10:30pm"
+  timezone:     "PST"
   description:  ""
-  category:     Television
+  category:     Television (TV Land)
   link:         "http://www.tvland.com/shows/teachers"
 
 - title:        "Teachers: Episode 106 Airs"
-  date:         "Wednesday, February 17, 2016"
-  time:         ""
+  day:          "Wednesday"
+  date:         "February 17"
+  year:         "2016"
+  time:         "10:30pm"
+  timezone:     "PST"
   description:  ""
-  category:     Television
+  category:     Television (TV Land)
   link:         "http://www.tvland.com/shows/teachers"
 
 - title:        "Teachers: Episode 107 Airs"
-  date:         "Wednesday, February 24, 2016"
-  time:         ""
+  day:          "Wednesday"
+  date:         "February 24"
+  year:         "2016"
+  time:         "10:30pm"
+  timezone:     "PST"
   description:  ""
-  category:     Television
+  category:     Television (TV Land)
   link:         "http://www.tvland.com/shows/teachers"
 
 - title:        "Teachers: Episode 108 Airs"
-  date:         "Wednesday, March 2, 2016"
-  time:         ""
+  day:          "Wednesday"
+  date:         "March 2"
+  year:         "2016"
+  time:         "10:30pm"
+  timezone:     "PST"
   description:  ""
-  category:     Television
+  category:     Television (TV Land)
   link:         "http://www.tvland.com/shows/teachers"
 
 - title:        "Teachers: Episode 109 Airs"
-  date:         "Wednesday, March 9, 2016"
-  time:         ""
+  day:          "Wednesday"
+  date:         "March 9"
+  year:         "2016"
+  time:         "10:30pm"
+  timezone:     "PST"
   description:  ""
-  category:     Television
+  category:     Television (TV Land)
   link:         "http://www.tvland.com/shows/teachers"
 
 - title:        "Teachers: Episode 110 Airs"
-  date:         "Wednesday, March 16, 2016"
-  time:         ""
+  day:          "Wednesday"
+  date:         "March 16"
+  year:         "2016"
+  time:         "10:30pm"
+  timezone:     "PST"
   description:  ""
-  category:     Television
+  category:     Television (TV Land)
   link:         "http://www.tvland.com/shows/teachers"

@@ -18,42 +18,59 @@ masthead:
 
   <article class="entry-type-event">
 
-    <span class="entry-date">{{ entry.date }}</span>
-    <span class="entry-time">{{ entry.time }}</span>
+    <div class="entry-datetime">
+      {% unless entry.date == empty %}
+        <p class="entry-date">{{ entry.date }}</p>
+      {% endunless %}
 
-    <span class="entry-category">{{ entry.category }}</span>
+      {% unless entry.time == empty %}
+        <p class="entry-time">{{ entry.time }}
+        {% unless entry.timezone == empty %}({{ entry.timezone }}){% endunless %}</p>
+      {% endunless %}
 
-    <h2 class="entry-title"><a href="{{ entry.link }}" target="_blank">{{ entry.title }}</a></h2>
+      {% unless entry.category == empty %}
+        <p class="entry-category">{{ entry.category }}</p>
+      {% endunless %}
+    </div>
 
-    <p class="entry-description">{{ entry.description }}</p>
+    <div class="entry-details">
+      <h2 class="entry-title"><a href="{{ entry.link }}" target="_blank">{{ entry.title }}</a></h2>
 
-    <p><a class="entry-link" href="{{ entry.link }}" target="_blank">Read More</a></p>
+      <p class="entry-description">{{ entry.description }}</p>
 
-    {% if entry.venue %}
+<!--       <p><a class="entry-link" href="{{ entry.link }}" target="_blank">Read More</a></p> -->
 
-      <h4>Venue</h4>
+      {% if entry.venue %}
 
-      {% for venue in entry.venue %}
-        <p class="entry-venue">Name: {{ venue.name }}</p>
+        <h4>Venue</h4>
 
-        {% if venue.phone %}
-          <p class="entry-address">Address: {{ venue.address }}</p>
-        {% endif %}
+        {% for venue in entry.venue %}
+          <p class="entry-venue">
+            {{ venue.name }}
+            {% unless venue.sitelink == empty %} (<a href="{{ venue.sitelink }}" target="_blank">Venue Website</a>){% endunless %}
+          </p>
 
-        {% if venue.phone %}
-          <p class="entry-phone">Phone: {{ venue.phone }}</p>
-        {% endif %}
+          {% unless venue.address_street == empty %}
+            <p class="entry-address">
+              {% unless venue.maplink == empty %}<a href="{{ venue.maplink }}" target="_blank">{% endunless %}
+                <span class="entry-address-street">{{ venue.address_street }}</span><br>
+                <span class="entry-address-city">{{ venue.address_city }}, </span>
+                <span class="entry-address-state">{{ venue.address_state }}</span><br>
+                <span class="entry-address-zip">{{ venue.address_zip }}</span><br>
+              {% unless venue.maplink == empty %}</a>{% endunless %}
+            </p>
+          {% endunless %}
 
-        {% if venue.sitelink %}
-          <p class="entry-venue-link"><a href="{{ venue.sitelink }}" target="_blank">Venue Website</a></p>
-        {% endif %}
+          {% unless venue.phone == empty %}
+            <p class="entry-phone">{{ venue.phone }}</p>
+          {% endunless %}
 
-        {% if venue.maplink %}
-          <p class="entry-map-link"><a href="{{ venue.maplink }}" target="_blank">Map to Venue</a></p>
-        {% endif %}
 
-      {% endfor %}
-    {% endif %}
+
+        {% endfor %}
+      {% endif %}
+
+    </div>
 
   </article>
 

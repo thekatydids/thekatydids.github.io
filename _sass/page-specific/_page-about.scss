@@ -6,6 +6,17 @@
 
 .page-about{
 
+  .masthead-item,
+  .item,
+  .masthead-item-partition{
+    background-position: 35% 0%;
+
+    @media (min-width: $screen-sm-min) {
+      background-position: 50% 0%;
+    }
+  }
+
+
   .site-content{
     padding-top: 0;
   }

@@ -3,7 +3,24 @@
     <div class="container">
 
       <span class="site-copyright">Copyright 2016, {{ site.name }}
-      {% if site.email %}<span class="hidden-xs"> | </span><br class="visible-xs">{{ site.email }}{% endif %}
+        {% if site.email %}
+          <span class="hidden-xs"> | </span><br class="visible-xs">{{ site.email }}
+        {% endif %}
+
+        {% if site.twitter %}
+          <span class="hidden-xs"> | </span><br class="visible-xs">
+          <a href="https://twitter.com/{{ site.twitter }}" target="_blank">Twitter</a>
+        {% endif %}
+
+        {% if site.facebook %}
+          <span class="hidden-xs"> | </span><br class="visible-xs">
+          <a href="https://www.facebook.com/{{ site.facebook }}/" target="_blank">Facebook</a>
+        {% endif %}
+
+        {% if site.youtube %}
+          <span class="hidden-xs"> | </span><br class="visible-xs">
+          <a href="https://www.youtube.com/user/{{ site.youtube }}" target="_blank">YouTube</a>
+        {% endif %}
       </span>
 
       <span class="site-credits">Handcrafted by <a href="http://mapandfire.com" target="_blank">Map &amp; Fire</a></span>

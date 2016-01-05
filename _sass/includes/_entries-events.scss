@@ -3,3 +3,33 @@
 * Entry Type: Events
 *
 */
+
+.entry-type-event{
+  margin-bottom: $baseline * 2;
+  padding-bottom: $baseline;
+  border-bottom: 1px solid #EEE;
+
+  @include make-row();
+
+  .entry-datetime{
+    @include make-sm-column(4);
+  }
+
+  .entry-details{
+    @include make-sm-column(8);
+  }
+
+  .entry-date,
+  .entry-time{
+    display: block;
+  }
+
+  .entry-date{
+    font-weight: $font-weight-bold;
+  }
+
+  .entry-category{
+    color: $gray-light;
+  }
+
+}

@@ -3132,6 +3132,7 @@ h1, .h1, .entry-type-post.entry-teaser h2.entry-title {
 h2, .h2, .masthead-subheadline {
   margin-top: 0;
   margin-bottom: 0;
+  color: #EC2B8C;
   font-size: 1.5em;
   line-height: 1.3;
   margin-bottom: 12px; }
@@ -3154,6 +3155,7 @@ h2, .h2, .masthead-subheadline {
 h3, .h3 {
   margin-top: 0;
   margin-bottom: 0;
+  color: #24201E;
   font-size: 1.3125em;
   line-height: 1.14286;
   margin-bottom: 12px; }
@@ -3955,6 +3957,43 @@ blockquote.blockquote-display footer {
 * Entry Type: Events
 *
 */
+.entry-type-event {
+  margin-bottom: 24px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #EEE;
+  margin-left: -15px;
+  margin-right: -15px; }
+  .entry-type-event:before, .entry-type-event:after {
+    content: " ";
+    display: table; }
+  .entry-type-event:after {
+    clear: both; }
+  .entry-type-event .entry-datetime {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px; }
+    @media (min-width: 768px) {
+      .entry-type-event .entry-datetime {
+        float: left;
+        width: 33.33333%; } }
+  .entry-type-event .entry-details {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px; }
+    @media (min-width: 768px) {
+      .entry-type-event .entry-details {
+        float: left;
+        width: 66.66667%; } }
+  .entry-type-event .entry-date,
+  .entry-type-event .entry-time {
+    display: block; }
+  .entry-type-event .entry-date {
+    font-weight: 700; }
+  .entry-type-event .entry-category {
+    color: #AAA; }
+
 /*!
 *
 * Entry Type: Press
@@ -4736,9 +4775,9 @@ div.play-button {
   position: relative;
   min-height: 360px;
   height: 360px;
-  background-size: cover !important;
-  background-repeat: no-repeat !important;
-  background-position: 50% 0% !important; }
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 0%; }
   @media (min-width: 992px) {
     .masthead-item,
     .item,
@@ -5518,6 +5557,15 @@ section {
 * Page: About
 *
 */
+.page-about .masthead-item,
+.page-about .item,
+.page-about .masthead-item-partition {
+  background-position: 35% 0%; }
+  @media (min-width: 768px) {
+    .page-about .masthead-item,
+    .page-about .item,
+    .page-about .masthead-item-partition {
+      background-position: 50% 0%; } }
 .page-about .site-content {
   padding-top: 0; }
 .page-about .entry-header-container {
@@ -5585,11 +5633,8 @@ section {
 * Index Page
 *
 */
-.page-index .site-content {
-  padding-top: 0;
-  padding-bottom: 0; }
-.page-index .home-primary {
-  background-image: url(../img/katydids-cover-portrait.jpg);
+.page-index {
+  background-image: url(../img/katydids-cover-portrait@2x.jpg);
   background-repeat: no-repeat;
   height: 100vh;
   position: relative;
@@ -5598,63 +5643,66 @@ section {
   background-size: cover;
   background-position: 65% 0px; }
   @media (min-width: 768px) {
-    .page-index .home-primary {
-      background-image: url(../img/katydids-cover-1600.jpg); } }
-.page-index .home-primary-content {
-  position: relative;
-  float: left;
-  width: 83.33333%;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: 8.33333%;
-  position: relative;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-  position: relative;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-  position: relative;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-  position: absolute;
-  bottom: 10vh;
-  text-align: center; }
-  @media (min-width: 768px) {
-    .page-index .home-primary-content {
-      float: left;
-      width: 41.66667%; } }
-  @media (min-width: 768px) {
-    .page-index .home-primary-content {
-      margin-left: 0%; } }
-  @media (min-width: 992px) {
-    .page-index .home-primary-content {
-      float: left;
-      width: 41.66667%; } }
-  @media (min-width: 992px) {
-    .page-index .home-primary-content {
-      margin-left: 0%; } }
-  @media (min-width: 1200px) {
-    .page-index .home-primary-content {
-      float: left;
-      width: 41.66667%; } }
-  @media (min-width: 1200px) {
-    .page-index .home-primary-content {
-      margin-left: 0%; } }
-  @media (min-width: 768px) {
-    .page-index .home-primary-content {
-      position: relative;
-      top: 24px;
-      text-align: left;
-      margin-top: 0; } }
-.page-index .site-footer {
-  display: none; }
-  @media (min-width: 768px) {
-    .page-index .site-footer {
-      display: none; } }
+    .page-index {
+      background-image: url(../img/katydids-cover-landscape@2x.jpg); } }
+  .page-index .site-content {
+    padding-top: 0;
+    padding-bottom: 0; }
+  .page-index .home-primary-content {
+    position: relative;
+    float: left;
+    width: 83.33333%;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: 8.33333%;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: absolute;
+    bottom: 10vh;
+    text-align: center; }
+    @media (min-width: 768px) {
+      .page-index .home-primary-content {
+        float: left;
+        width: 41.66667%; } }
+    @media (min-width: 768px) {
+      .page-index .home-primary-content {
+        margin-left: 0%; } }
+    @media (min-width: 992px) {
+      .page-index .home-primary-content {
+        float: left;
+        width: 41.66667%; } }
+    @media (min-width: 992px) {
+      .page-index .home-primary-content {
+        margin-left: 0%; } }
+    @media (min-width: 1200px) {
+      .page-index .home-primary-content {
+        float: left;
+        width: 41.66667%; } }
+    @media (min-width: 1200px) {
+      .page-index .home-primary-content {
+        margin-left: 0%; } }
+    @media (min-width: 768px) {
+      .page-index .home-primary-content {
+        position: relative;
+        top: 24px;
+        text-align: left;
+        margin-top: 0; } }
+  .page-index .site-footer {
+    display: none; }
+    @media (min-width: 768px) {
+      .page-index .site-footer {
+        display: none; } }
 
 /*!
 *
