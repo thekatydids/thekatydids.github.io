@@ -2996,7 +2996,7 @@ html {
   font-size: 16px; }
 
 body {
-  font-family: "Lato", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   font-size: 16px;
   line-height: 1.5; }
   @media (min-width: 768px) {
@@ -3246,7 +3246,7 @@ figure + h3, figure + h4 {
 
 .lead, figure.figure-spotlight figcaption p {
   margin-bottom: 24px;
-  font-family: "Lato", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   font-weight: 400;
   font-size: 1.125em;
   line-height: 1.5; }
@@ -3292,7 +3292,7 @@ blockquote {
     margin-bottom: 0; }
 
 blockquote p {
-  font-family: "Lato", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   font-weight: 400;
   color: #24201E;
   text-indent: -0.4em;
@@ -3678,7 +3678,7 @@ blockquote.blockquote-display p {
   line-height: 1.3em;
   text-indent: -0.3em; }
 blockquote.blockquote-display footer {
-  font-family: "Lato", "Helvetica Neue", "Helvetica", "Arial", sans-serif; }
+  font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif; }
 
 .section-style-primary, .site-footer {
   background-color: #24201E;
@@ -4032,7 +4032,7 @@ blockquote.blockquote-display footer {
 */
 .site-footer {
   color: #CCA665;
-  font-family: "Lato", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   font-size: 14px; }
   .site-footer a {
     color: #CCA665 !important; }
@@ -4070,7 +4070,7 @@ blockquote.blockquote-display footer {
 *
 */
 .site-header {
-  font-family: "Lato", "Helvetica Neue", "Helvetica", "Arial", sans-serif; }
+  font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif; }
 
 .logo-image {
   width: 120px; }
@@ -4551,7 +4551,7 @@ figure {
     margin-top: 6px;
     margin-bottom: 6px; }
     figure figcaption p {
-      font-family: "Lato", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+      font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
       letter-spacing: 1px;
       text-transform: uppercase;
       color: #AAA;
@@ -5105,7 +5105,7 @@ section {
   max-width: 14em; }
 
 .section-subtitle {
-  font-family: "Lato", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   font-weight: 300;
   color: #7b7b7b;
   max-width: 18em;
