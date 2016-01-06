@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>The Katydids</title>
-    <description>Official website of The Katydids</description>
+    <description>Official site of The Katydids comedy ensemble and creators of Teachers on TV Land</description>
     <link>http://thekatydids.github.io/</link>
     <atom:link href="http://thekatydids.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 06 Jan 2016 00:48:10 -0800</pubDate>
-    <lastBuildDate>Wed, 06 Jan 2016 00:48:10 -0800</lastBuildDate>
+    <pubDate>Wed, 06 Jan 2016 14:51:18 -0800</pubDate>
+    <lastBuildDate>Wed, 06 Jan 2016 14:51:18 -0800</lastBuildDate>
     <generator>Jekyll v3.0.0</generator>
     
   </channel>
