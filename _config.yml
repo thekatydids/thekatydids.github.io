@@ -2,13 +2,13 @@
 name:             The Katydids
 title:            "The Katydids"
 tagline:          "The Katydids"
-description:      "Official website of The Katydids"
+description:      "Official site of The Katydids comedy ensemble and creators of Teachers on TV Land"
 url:              "http://thekatydids.github.io" # the base hostname & protocol for your site
 baseurl:          "" # the subpath of your site, e.g. /blog/
 # canonical:        ""
-keywords:         "The Katydids"
+keywords:         "The Katydids, Teachers, TV Land, Improv Comedy, Women in Comedy"
 locale:           "United States"
-avatar:           "kathryn-renee-thomas-avatar.jpg"
+# avatar:           "avatar.jpg"
 
 # Facebook Open Graph
 #fb_admins:
