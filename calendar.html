@@ -25,7 +25,8 @@ masthead:
 
       {% unless entry.time == empty %}
         <p class="entry-time">{{ entry.time }}
-        {% unless entry.timezone == empty %}({{ entry.timezone }}){% endunless %}</p>
+        <!-- {% unless entry.timezone == empty %}({{ entry.timezone }}){% endunless %} -->
+        </p>
       {% endunless %}
 
       {% unless entry.category == empty %}

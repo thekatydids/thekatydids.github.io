@@ -421,15 +421,15 @@ hr {
     .single-page.page-template-default .site-container, .layout-default-post .site-container, .layout-fullwidth .site-container, .layout-sidebar-content-sidebar .site-container, .layout-sidebar-content .site-container, .layout-sidebar-sidebar-content .site-container, .page-media .entry-header-container {
       width: 1170px; } }
 
-.container-fluid, .section-container-fluid, .page-404 .site-container {
+.container-fluid, .section-container-fluid, .page-404 .site-container, .page-press .masthead.masthead-partitions .masthead-item-container {
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px; }
-  .container-fluid:before, .section-container-fluid:before, .page-404 .site-container:before, .container-fluid:after, .section-container-fluid:after, .page-404 .site-container:after {
+  .container-fluid:before, .section-container-fluid:before, .page-404 .site-container:before, .page-press .masthead.masthead-partitions .masthead-item-container:before, .container-fluid:after, .section-container-fluid:after, .page-404 .site-container:after, .page-press .masthead.masthead-partitions .masthead-item-container:after {
     content: " ";
     display: table; }
-  .container-fluid:after, .section-container-fluid:after, .page-404 .site-container:after {
+  .container-fluid:after, .section-container-fluid:after, .page-404 .site-container:after, .page-press .masthead.masthead-partitions .masthead-item-container:after {
     clear: both; }
 
 .row {
@@ -2016,9 +2016,11 @@ tbody.collapse.in {
 .container-fluid > .navbar-header,
 .section-container-fluid > .navbar-header,
 .page-404 .site-container > .navbar-header,
+.page-press .masthead.masthead-partitions .masthead-item-container > .navbar-header,
 .container-fluid > .navbar-collapse,
 .section-container-fluid > .navbar-collapse,
-.page-404 .site-container > .navbar-collapse {
+.page-404 .site-container > .navbar-collapse,
+.page-press .masthead.masthead-partitions .masthead-item-container > .navbar-collapse {
   margin-right: -15px;
   margin-left: -15px; }
   @media (min-width: 768px) {
@@ -2052,9 +2054,11 @@ tbody.collapse.in {
     .container-fluid > .navbar-header,
     .section-container-fluid > .navbar-header,
     .page-404 .site-container > .navbar-header,
+    .page-press .masthead.masthead-partitions .masthead-item-container > .navbar-header,
     .container-fluid > .navbar-collapse,
     .section-container-fluid > .navbar-collapse,
-    .page-404 .site-container > .navbar-collapse {
+    .page-404 .site-container > .navbar-collapse,
+    .page-press .masthead.masthead-partitions .masthead-item-container > .navbar-collapse {
       margin-right: 0;
       margin-left: 0; } }
 
@@ -2102,7 +2106,7 @@ tbody.collapse.in {
     .layout-page .navbar > .site-container .navbar-brand,
     .page.page-template-default .navbar > .site-container .navbar-brand,
     .entry-type-page.page-template-default .navbar > .site-container .navbar-brand,
-    .single-page.page-template-default .navbar > .site-container .navbar-brand, .layout-default-post .navbar > .site-container .navbar-brand, .layout-fullwidth .navbar > .site-container .navbar-brand, .layout-sidebar-content-sidebar .navbar > .site-container .navbar-brand, .layout-sidebar-content .navbar > .site-container .navbar-brand, .layout-sidebar-sidebar-content .navbar > .site-container .navbar-brand, .page-media .navbar > .entry-header-container .navbar-brand, .navbar > .container-fluid .navbar-brand, .navbar > .section-container-fluid .navbar-brand, .page-404 .navbar > .site-container .navbar-brand {
+    .single-page.page-template-default .navbar > .site-container .navbar-brand, .layout-default-post .navbar > .site-container .navbar-brand, .layout-fullwidth .navbar > .site-container .navbar-brand, .layout-sidebar-content-sidebar .navbar > .site-container .navbar-brand, .layout-sidebar-content .navbar > .site-container .navbar-brand, .layout-sidebar-sidebar-content .navbar > .site-container .navbar-brand, .page-media .navbar > .entry-header-container .navbar-brand, .navbar > .container-fluid .navbar-brand, .navbar > .section-container-fluid .navbar-brand, .page-404 .navbar > .site-container .navbar-brand, .page-press .masthead.masthead-partitions .navbar > .masthead-item-container .navbar-brand {
       margin-left: -15px; } }
 
 .navbar-toggle {
@@ -3244,14 +3248,14 @@ figure + h3, figure + h4 {
     figure + h3, figure + h4 {
       margin-top: 24px; } }
 
-.lead, figure.figure-spotlight figcaption p {
+.lead, figure.figure-spotlight figcaption p, .page-press .masthead.masthead-partitions blockquote p {
   margin-bottom: 24px;
   font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   font-weight: 400;
   font-size: 1.125em;
   line-height: 1.5; }
   @media (min-width: 992px) {
-    .lead, figure.figure-spotlight figcaption p {
+    .lead, figure.figure-spotlight figcaption p, .page-press .masthead.masthead-partitions blockquote p {
       font-size: 1.5em;
       line-height: 1.5; } }
 
@@ -4773,8 +4777,8 @@ div.play-button {
 .item,
 .masthead-item-partition {
   position: relative;
-  min-height: 360px;
-  height: 360px;
+  min-height: 300px;
+  height: 300px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 0%; }
@@ -5588,19 +5592,18 @@ section {
     margin-top: 0;
     margin-bottom: 0; }
     .page-about .katydid-thumb figure figcaption {
-      position: absolute;
-      bottom: 0;
-      text-align: center;
-      background: rgba(0, 0, 0, 0.6);
-      display: block;
-      margin-top: 0;
-      margin-bottom: 0;
-      width: 100%;
-      color: #CCA665;
-      padding-top: 6px;
-      padding-bottom: 6px; }
+      display: none; }
       @media (min-width: 768px) {
         .page-about .katydid-thumb figure figcaption {
+          position: absolute;
+          bottom: 0;
+          text-align: center;
+          background: rgba(0, 0, 0, 0.6);
+          display: block;
+          margin-top: 0;
+          margin-bottom: 0;
+          width: 100%;
+          color: #CCA665;
           padding-top: 12px;
           padding-bottom: 12px; } }
 .page-about #katydids-bios {
@@ -5719,7 +5722,7 @@ section {
 .page-media h4, .page-media h3 {
   margin-top: 48px;
   text-align: center; }
-.page-media p.lead, .page-media figure.figure-spotlight figcaption p, figure.figure-spotlight figcaption .page-media p {
+.page-media p.lead, .page-media figure.figure-spotlight figcaption p, figure.figure-spotlight figcaption .page-media p, .page-media .page-press .masthead.masthead-partitions blockquote p, .page-press .masthead.masthead-partitions blockquote .page-media p {
   text-align: center;
   color: #888; }
 .page-media #media-intro h3, .page-media #media-intro h4 {
@@ -5804,44 +5807,134 @@ section {
 * Page: Press
 *
 */
-.page-press .masthead.masthead-partitions .masthead-partition-content {
-  position: relative;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-  text-align: left;
-  height: 288px; }
-  @media (min-width: 768px) {
-    .page-press .masthead.masthead-partitions .masthead-partition-content {
-      float: left;
-      width: 50%; } }
-  @media (min-width: 768px) {
-    .page-press .masthead.masthead-partitions .masthead-partition-content {
-      right: 50%; } }
-  @media (min-width: 768px) {
-    .page-press .masthead.masthead-partitions .masthead-partition-content {
-      height: 500px; } }
-.page-press .masthead.masthead-partitions .masthead-partition-image {
-  position: relative;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-  background-position: 50% 0%;
-  background-size: cover;
-  padding-left: 0;
-  padding-right: 0;
-  height: 320px; }
-  @media (min-width: 768px) {
-    .page-press .masthead.masthead-partitions .masthead-partition-image {
-      float: left;
-      width: 50%; } }
-  @media (min-width: 768px) {
-    .page-press .masthead.masthead-partitions .masthead-partition-image {
-      left: 50%; } }
-  @media (min-width: 768px) {
-    .page-press .masthead.masthead-partitions .masthead-partition-image {
-      height: 500px;
-      background-position: 50% 0%; } }
+.page-press .masthead.masthead-partitions {
+  background: #24201E; }
+  .page-press .masthead.masthead-partitions .masthead-item,
+  .page-press .masthead.masthead-partitions .item {
+    min-height: 600px;
+    height: 600px; }
+    @media (min-width: 768px) {
+      .page-press .masthead.masthead-partitions .masthead-item,
+      .page-press .masthead.masthead-partitions .item {
+        min-height: 480px;
+        height: 480px; } }
+  .page-press .masthead.masthead-partitions .masthead-item-container {
+    width: 100%; }
+  .page-press .masthead.masthead-partitions .masthead-item-content {
+    position: static;
+    top: 0%;
+    left: 0%;
+    transform: translate(0%, 0%);
+    width: 100%; }
+  .page-press .masthead.masthead-partitions .partition-html {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%; }
+  .page-press .masthead.masthead-partitions blockquote p {
+    color: #CCA665;
+    font-style: italic;
+    font-weight: 300; }
+  .page-press .masthead.masthead-partitions blockquote footer {
+    color: #d7d2d0;
+    font-weight: 400; }
+    .page-press .masthead.masthead-partitions blockquote footer span {
+      font-weight: 700; }
+  .page-press .masthead.masthead-partitions .masthead-item-partition {
+    position: relative;
+    float: left;
+    width: 100%;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: 0%;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: left; }
+    @media (min-width: 768px) {
+      .page-press .masthead.masthead-partitions .masthead-item-partition {
+        float: left;
+        width: 100%; } }
+    @media (min-width: 768px) {
+      .page-press .masthead.masthead-partitions .masthead-item-partition {
+        margin-left: 0%; } }
+    @media (min-width: 992px) {
+      .page-press .masthead.masthead-partitions .masthead-item-partition {
+        float: left;
+        width: 100%; } }
+    @media (min-width: 992px) {
+      .page-press .masthead.masthead-partitions .masthead-item-partition {
+        margin-left: 0%; } }
+  .page-press .masthead.masthead-partitions .partition-type-html {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: left;
+    min-height: 300px;
+    height: 300px; }
+    @media (min-width: 768px) {
+      .page-press .masthead.masthead-partitions .partition-type-html {
+        float: left;
+        width: 50%; } }
+    @media (min-width: 768px) {
+      .page-press .masthead.masthead-partitions .partition-type-html {
+        right: 50%; } }
+    @media (min-width: 992px) {
+      .page-press .masthead.masthead-partitions .partition-type-html {
+        float: left;
+        width: 50%; } }
+    @media (min-width: 992px) {
+      .page-press .masthead.masthead-partitions .partition-type-html {
+        right: 50%; } }
+    @media (min-width: 768px) {
+      .page-press .masthead.masthead-partitions .partition-type-html {
+        min-height: 480px;
+        height: 480px; } }
+  .page-press .masthead.masthead-partitions .partition-type-background-image {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-position: 50% 0%;
+    background-size: cover;
+    padding-left: 0;
+    padding-right: 0;
+    min-height: 300px;
+    height: 300px; }
+    @media (min-width: 768px) {
+      .page-press .masthead.masthead-partitions .partition-type-background-image {
+        float: left;
+        width: 50%; } }
+    @media (min-width: 768px) {
+      .page-press .masthead.masthead-partitions .partition-type-background-image {
+        left: 50%; } }
+    @media (min-width: 992px) {
+      .page-press .masthead.masthead-partitions .partition-type-background-image {
+        float: left;
+        width: 50%; } }
+    @media (min-width: 992px) {
+      .page-press .masthead.masthead-partitions .partition-type-background-image {
+        left: 50%; } }
+    @media (min-width: 768px) {
+      .page-press .masthead.masthead-partitions .partition-type-background-image {
+        min-height: 480px;
+        height: 480px; } }
 
 /*!
 *

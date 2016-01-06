@@ -58,8 +58,17 @@
                   {% if slide.partitions %}
                     <div class="row">
                       {% for partition in slide.partitions %}
-                        <div class="masthead-partition-{{ forloop.index }} col-sm-4">
-                          <h1>{{ partition.text }}</h1>
+                        <div class="masthead-partition-{{ forloop.index }} partition-type-{{ partition.type }}"
+                             {% if partition.background-image %}
+                             style="background-image: url({{site.baseurl}}/img/{{partition.background-image }});"
+                             {% endif %}>
+
+                              {% if partition.html %}
+                                <div class="partition-html">
+                                  {{ partition.html }}
+                                </div>
+                              {% endif %}
+
                         </div>
                       {% endfor %}
                     </div>

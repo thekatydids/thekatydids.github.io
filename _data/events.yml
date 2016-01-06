@@ -1,4 +1,4 @@
-- title:        "The Katydids on the Today Show"
+- title:        "The Katydids on the <em>TODAY Show</em>"
   day:          "Monday"
   date:         "January 11"
   year:         "2016"
@@ -8,62 +8,38 @@
   category:     Television (NBC)
   link:         "http://www.today.com/"
 
-
-- title:        "The Katydids on OK! TV"
-  day:          ""
-  date:         "TBD"
-  year:         "2016"
-  time:         ""
-  timezone:     ""
-  description:  ""
-  category:     Television
-  link:         "http://www.reelz.com/oktv/"
-
-
-- title:        "The Katydids on Team Coco’s Monday Melee"
-  day:          ""
-  date:         "TBD"
-  year:         "2016"
-  time:         ""
-  timezone:     ""
-  description:  ""
-  category:     Streaming Video
-  link:         "http://www.twitch.tv/teamcoco/v/19275451"
-
-
-- title:        "Teachers: Episode 101 Airs"
+- title:        "<em>Teachers</em>: Episode 101 Airs"
   day:          "Wednesday"
   date:         "January 13"
   year:         "2016"
   time:         "11:00pm"
   timezone:     "PST"
-  description:  "The pilot episode of Teachers airs at a special time following the 1 hour season premiere of <em>Younger</em>."
+  description:  "The pilot episode of <em>Teachers</em> airs at a special time following the 1 hour season premiere of <em>Younger</em>."
   category:     Television (TV Land)
   link:         "http://www.tvland.com/shows/teachers"
 
 
-- title:        "Teachers Premier Party at the iO Theater"
-  day:          "Wednesday"
-  date:         "January 13"
-  year:         "2016"
-  time:         "8:00pm-10:00pm"
-  timezone:     "CST"
-  description:  ""
-  category:     Live Event
-  link:         "http://ioimprov.com/chicago/show/teachers/"
-  venue:
-    - name:           "The iO Theater"
-      address_street: "1501 N. Kingsbury St."
-      address_city:   "Chicago"
-      address_state:  "IL"
-      address_zip:    "60642"
-      phone:          "(312) 929-2401"
-      sitelink:       "http://www.ioimprov.com"
-      maplink:        "https://www.google.com/maps/place/iO+Chicago/@41.90852,-87.651742,13z/data=!4m2!3m1!1s0x0:0xfd49b625b4687315?hl=en-US"
+# - title:        "Teachers Premier Party at the iO Theater"
+#   day:          "Wednesday"
+#   date:         "January 13"
+#   year:         "2016"
+#   time:         "8:00pm-10:00pm"
+#   timezone:     "CST"
+#   description:  ""
+#   category:     Live Event
+#   link:         "http://ioimprov.com/chicago/show/teachers/"
+#   venue:
+#     - name:           "The iO Theater"
+#       address_street: "1501 N. Kingsbury St."
+#       address_city:   "Chicago"
+#       address_state:  "IL"
+#       address_zip:    "60642"
+#       phone:          "(312) 929-2401"
+#       sitelink:       "http://www.ioimprov.com"
+#       maplink:        "https://www.google.com/maps/place/iO+Chicago/@41.90852,-87.651742,13z/data=!4m2!3m1!1s0x0:0xfd49b625b4687315?hl=en-US"
 
 
-
-- title:        "The Katydids on Windy City Live"
+- title:        "The Katydids on <em>Windy City Live</em>"
   day:          "Thursday"
   date:         "January 14"
   year:         "2016"
@@ -74,7 +50,7 @@
   link:         "http://abc7chicago.com/windycitylive/"
 
 
-- title:        "Teachers: Episode 102 Airs"
+- title:        "<em>Teachers</em>: Episode 102 Airs"
   day:          "Wednesday"
   date:         "January 20"
   year:         "2016"
@@ -84,7 +60,7 @@
   category:     Television (TV Land)
   link:         "http://www.tvland.com/shows/teachers"
 
-- title:        "Teachers: Episode 103 Airs"
+- title:        "<em>Teachers</em>: Episode 103 Airs"
   day:          "Wednesday"
   date:         "January 27"
   year:         "2016"
@@ -115,7 +91,7 @@
       maplink:  #
 
 
-- title:        "Teachers: Episode 104 Airs"
+- title:        "<em>Teachers</em>: Episode 104 Airs"
   day:          "Wednesday"
   date:         "February 3"
   year:         "2016"
@@ -125,7 +101,7 @@
   category:     Television (TV Land)
   link:         "http://www.tvland.com/shows/teachers"
 
-- title:        "Teachers: Episode 105 Airs"
+- title:        "<em>Teachers</em>: Episode 105 Airs"
   day:          "Wednesday"
   date:         "February 10"
   year:         "2016"
@@ -135,7 +111,7 @@
   category:     Television (TV Land)
   link:         "http://www.tvland.com/shows/teachers"
 
-- title:        "Teachers: Episode 106 Airs"
+- title:        "<em>Teachers</em>: Episode 106 Airs"
   day:          "Wednesday"
   date:         "February 17"
   year:         "2016"
@@ -145,7 +121,7 @@
   category:     Television (TV Land)
   link:         "http://www.tvland.com/shows/teachers"
 
-- title:        "Teachers: Episode 107 Airs"
+- title:        "<em>Teachers</em>: Episode 107 Airs"
   day:          "Wednesday"
   date:         "February 24"
   year:         "2016"
@@ -155,7 +131,7 @@
   category:     Television (TV Land)
   link:         "http://www.tvland.com/shows/teachers"
 
-- title:        "Teachers: Episode 108 Airs"
+- title:        "<em>Teachers</em>: Episode 108 Airs"
   day:          "Wednesday"
   date:         "March 2"
   year:         "2016"
@@ -165,7 +141,7 @@
   category:     Television (TV Land)
   link:         "http://www.tvland.com/shows/teachers"
 
-- title:        "Teachers: Episode 109 Airs"
+- title:        "<em>Teachers</em>: Episode 109 Airs"
   day:          "Wednesday"
   date:         "March 9"
   year:         "2016"
@@ -175,7 +151,7 @@
   category:     Television (TV Land)
   link:         "http://www.tvland.com/shows/teachers"
 
-- title:        "Teachers: Episode 110 Airs"
+- title:        "<em>Teachers</em>: Episode 110 Airs"
   day:          "Wednesday"
   date:         "March 16"
   year:         "2016"
@@ -184,3 +160,24 @@
   description:  ""
   category:     Television (TV Land)
   link:         "http://www.tvland.com/shows/teachers"
+
+- title:        "The Katydids on <em>OK! TV</em>"
+  day:          ""
+  date:         "TBD"
+  year:         "2016"
+  time:         ""
+  timezone:     ""
+  description:  ""
+  category:     Television
+  link:         "http://www.reelz.com/oktv/"
+
+
+- title:        "The Katydids on <em>Team Coco’s Monday Melee</em>"
+  day:          ""
+  date:         "TBD"
+  year:         "2016"
+  time:         ""
+  timezone:     ""
+  description:  ""
+  category:     Streaming Video
+  link:         "http://www.twitch.tv/teamcoco/v/19275451"

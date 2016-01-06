@@ -21,11 +21,11 @@ masthead:
         <div class="col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2">
           <h1 class="entry-title">Meet the Katydids</h1>
 
-          <p class="lead primary">The Katydids are a six woman ensemble whose names all happen to be derived from Katherine. They are creators, executive producers, writers and actors of the TV Land comedy <em>Teachers</em>.</p>
+          <p class="lead primary">The Katydids are a six member ensemble whose names all happen to be derived from Katherine. They are creators, executive producers, writers and actors of the TV Land comedy <em>Teachers</em>.</p>
 
           <hr class="divider-primary">
 
-          <p class="secondary">The Katydids have created and produced successful short videos, some of which have been featured on such sites as The Huffington Post, MTV, Perez Hilton, Smosh, Cosmopolitan, Italy’s Vanity Fair, College Humor, and The Onion. They have also performed for The Second City Touring Company, Broadway in Chicago, and TBS’ Just for Laughs.</p>
+          <p class="secondary">The Katydids have created and produced successful short videos, some of which have been featured on such sites as <em>The Huffington Post</em>, MTV, Perez Hilton, Smosh, <em>Cosmopolitan</em>, Italy’s <em>Vanity Fair</em>, College Humor, and <em>The Onion</em>. Collectively, they have performed for The Second City Touring Company, Broadway in Chicago, and TBS’ Just for Laughs.</p>
         </div>
       </div>
     </div>
@@ -80,7 +80,7 @@ masthead:
         <figure>
           <a href="#kathryn-reneé-thomas">
             <img src="{{ site.baseurl }}/img/about/katydids-thumb-kathryn-renee-thomas@2x.jpg">
-            <figcaption>Kathryn Reneé Thomas</figcaption>
+            <figcaption>Kathryn Renée Thomas</figcaption>
           </a>
         </figure>
       </div>
@@ -152,19 +152,19 @@ masthead:
               {% for manager in katydid.manager %}
 
                 {% unless manager.manager_name == blank %}
-                  <p class="entry-manager-name">Name: {{ manager.manager_name }}</p>
+                  <p class="entry-manager-name"><strong>{{ manager.manager_name }}</strong></p>
                 {% endunless %}
 
                 {% unless manager.manager_org == blank %}
-                  <p class="entry-manager-org">Company: {{ manager.manager_org }}</p>
+                  <p class="entry-manager-org">{{ manager.manager_org }}</p>
                 {% endunless %}
 
                 {% unless manager.manager_phone == blank %}
-                  <p class="entry-manager-phone">Phone: {{ manager.manager_phone }}</p>
+                  <p class="entry-manager-phone">{{ manager.manager_phone }}</p>
                 {% endunless %}
 
                 {% unless manager.manager_email == blank %}
-                  <p class="entry-manager-email">Email: <a href="mailto:{{ manager.manager_phone }}" target="_blank">{{manager.manager_email}}</a></p>
+                  <p class="entry-manager-email"><a href="mailto:{{ manager.manager_phone }}" target="_blank">{{manager.manager_email}}</a></p>
                 {% endunless %}
 
               {% endfor %}

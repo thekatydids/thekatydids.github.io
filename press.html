@@ -9,11 +9,14 @@ permalink: /press/
 
 masthead:
   - slide:
-    type:             background-image
-    blockquote:       "&ldquo;Those girls, the Katydids, are incredible. They have a very interesting voice. It’s super exciting to work with up-and-coming people in comedy who are all women. They’re, like, the most talented people I know.&rdquo;"
-    source:           "Alison Brie"
-    citation:         "Refinery 29 Interview"
-    background-image: mastheads/masthead-press-a@2x.jpg
+    type:        partitions
+    partitions:
+      - partition:
+        type:             background-image
+        background-image: mastheads/masthead-press-a@2x.jpg
+      - partition:
+        type:             html
+        html:             "<blockquote><p>&ldquo;Those girls, the Katydids, are incredible. They have a very interesting voice. It’s super exciting to work with up-and-coming people in comedy who are all women. They’re, like, the most talented people I know.&rdquo;</p><footer>&ndash; <span>Alison Brie</span>, <em>Refinery 29</em> Interview</footer></blockquote>"
 ---
 
 {% for entry in site.data.press %}
@@ -21,12 +24,12 @@ masthead:
   <article class="entry entry-type-press">
 
     <span class="entry-meta">
-      <span class="entry-date">{{ entry.date }}</span> <span class="entry-source"> &mdash; {{ entry.title }}</span>
+      <span class="entry-date">{{ entry.date }}</span> <span class="entry-source"> &mdash; <em>{{ entry.source }}</em></span>
     </span>
 
-    <h2 class="entry-title"><a href="{{ entry.link }}" target="_blank">{{ entry.description }}</a></h2>
+    <h2 class="entry-title"><a href="{{ entry.link }}" target="_blank">{{ entry.title }}</a></h2>
 
-<!--     <p class="entry-source">{{ entry.title }}</p> -->
+<!--     <p class="entry-description">{{ entry.description }}</p> -->
 
 <!--     <p class="entry-readmore"><a href="{{ entry.link }}" target="_blank">Read More</a></p> -->
 

@@ -8,22 +8,96 @@
 
   .masthead.masthead-partitions{
 
-        .masthead-partition-content{
-          @include make-sm-column(6);
-          @include make-sm-column-pull(6);
 
-          text-align: left;
+      .masthead-item,
+      .item{
+        // Account for stacked partitions on extra-small screens
+        min-height: $masthead-height-small * 2;
+        height: $masthead-height-small * 2;
 
-          height: 288px;
+        @media (min-width: $screen-sm-min) {
+          min-height: $masthead-height-medium;
+          height: $masthead-height-medium;
+        }
+      }
 
-          @media (min-width: $screen-sm-min) {
-            height: 500px;
+
+        .masthead-item-container{
+          @extend .container-fluid;
+          width: 100%;
+        }
+
+        background: $brand-primary;
+
+        // Reset positioning for item-content
+        .masthead-item-content{
+          position: static;
+          top: 0%;
+          left: 0%;
+          transform: translate(0%, 0%);
+          width: 100%;
+        }
+
+        // position inner html content
+        .partition-html{
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 80%;
+        }
+
+        blockquote{
+          p{
+            @extend .lead;
+            color: $kd-gold;
+            font-style: italic;
+            font-weight: $font-weight-light;
+          }
+          footer{
+            color: lighten($kd-charcoal, 70%);
+            font-weight: $font-weight-normal;
+            span{
+              font-weight: $font-weight-bold;
+            }
           }
         }
 
-        .masthead-partition-image{
+
+        .masthead-item-partition{
+          @include make-xs-column(12);
+          @include make-xs-column-offset(0);
+
+          @include make-sm-column(12);
+          @include make-sm-column-offset(0);
+
+          @include make-md-column(12);
+          @include make-md-column-offset(0);
+          text-align: left;
+        }
+
+        .partition-type-html{
+          @include make-sm-column(6);
+          @include make-sm-column-pull(6);
+          @include make-md-column(6);
+          @include make-md-column-pull(6);
+
+          text-align: left;
+
+          min-height: $masthead-height-small;
+          height: $masthead-height-small;
+
+          @media (min-width: $screen-sm-min) {
+            min-height: $masthead-height-medium;
+            height: $masthead-height-medium;
+          }
+        }
+
+        .partition-type-background-image{
           @include make-sm-column(6);
           @include make-sm-column-push(6);
+          @include make-md-column(6);
+          @include make-md-column-push(6);
 
           background-position: 50% 0%;
           background-size: cover;
@@ -31,11 +105,12 @@
           padding-left: 0;
           padding-right: 0;
 
-          height: 320px;
+          min-height: $masthead-height-small;
+          height: $masthead-height-small;
 
           @media (min-width: $screen-sm-min) {
-            height: 500px;
-            background-position: 50% 0%;
+            min-height: $masthead-height-medium;
+            height: $masthead-height-medium;
           }
 
         }
