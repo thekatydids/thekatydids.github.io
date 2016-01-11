@@ -5831,16 +5831,20 @@ section {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 80%; }
-  .page-press .masthead.masthead-partitions blockquote p {
-    color: #CCA665;
-    font-style: italic;
-    font-weight: 300; }
-  .page-press .masthead.masthead-partitions blockquote footer {
-    color: #d7d2d0;
-    font-weight: 400; }
-    .page-press .masthead.masthead-partitions blockquote footer span {
-      font-weight: 700; }
+    width: 80%;
+    max-width: 80%; }
+  .page-press .masthead.masthead-partitions blockquote {
+    width: 100%;
+    max-width: 100%; }
+    .page-press .masthead.masthead-partitions blockquote p {
+      color: #CCA665;
+      font-style: italic;
+      font-weight: 300; }
+    .page-press .masthead.masthead-partitions blockquote footer {
+      color: #d7d2d0;
+      font-weight: 400; }
+      .page-press .masthead.masthead-partitions blockquote footer span {
+        font-weight: 700; }
   .page-press .masthead.masthead-partitions .masthead-item-partition {
     position: relative;
     float: left;
