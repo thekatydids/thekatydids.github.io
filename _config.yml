@@ -84,3 +84,8 @@ defaults:
 version:            1.0
 github:
   repo:
+
+
+# Gems
+gems:
+  - jekyll-redirect-from
