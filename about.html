@@ -146,7 +146,7 @@ masthead:
                 {% endunless %}
 
                 {% unless link.email == empty %}
-                  <li class="entry-link-email"><a href="{{ link.email }}" target="_blank"><i class="fa fa-envelope"></i> Email</a></li>
+                  <li class="entry-link-email"><a href="mailto:{{ link.email }}"><i class="fa fa-envelope"></i> Management</a></li>
                 {% endunless %}
 
               {% endfor %}
