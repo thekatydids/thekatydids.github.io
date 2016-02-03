@@ -17,6 +17,16 @@
   description:  ""
   category:     Television (TV Land)
   link:         "http://www.tvland.com/shows/teachers"
+  
+- title:        "Katy Colloton and Kathryn Renee Thomas Co-Host <em>2 Girls 1 Pup</em>"
+  day:          "Sunday"
+  date:         "February 14"
+  year:         "2016"
+  time:         "7:00pm"
+  timezone:     "PST"
+  description:  "Katy and Kathryn Co-Host <em>2 Girls 1 Pup</em>, the comedy show you can bring your dog to, at Tailwaggers in Hollywood (1929 N. Bronson). All proceeds go to The Tailwaggers Foundation."
+  category:     Live Show
+  link:         "http://www.2girls1pupshow.com/"
 
 - title:        "<em>Teachers</em>: Episode 106 Airs"
   day:          "Wednesday"
