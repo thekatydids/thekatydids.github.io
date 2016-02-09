@@ -18,6 +18,16 @@
   category:     Playboy Radio & Playboy TV
   link:         "https://twitter.com/pbmorningshow"
   
+- title:        "Caitlin Barlow on <em>Noches con Platanito</em>"
+  day:          "Thursday"
+  date:         "February 11"
+  year:         "2016"
+  time:         "9:00pm"
+  timezone:     "PST"
+  description:  ""
+  category:     Television (Estrella TV)
+  link:         "http://platanito.estrellatv.com/"
+  
 - title:        "Katy Colloton and Kathryn Renée Thomas Co-Host <em>2 Girls 1 Pup</em>"
   day:          "Sunday"
   date:         "February 14"
@@ -107,13 +117,3 @@
   description:  ""
   category:     Television (TV Land)
   link:         "http://www.tvland.com/shows/teachers"
-
-- title:        "The Katydids on <em>OK! TV</em>"
-  day:          ""
-  date:         "TBD"
-  year:         "2016"
-  time:         ""
-  timezone:     ""
-  description:  ""
-  category:     Television
-  link:         "http://www.reelz.com/oktv/"
