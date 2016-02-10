@@ -18,16 +18,6 @@
   category:     Playboy Radio & Playboy TV
   link:         "https://twitter.com/pbmorningshow"
   
-- title:        "Caitlin Barlow on <em>Noches con Platanito</em>"
-  day:          "Thursday"
-  date:         "February 11"
-  year:         "2016"
-  time:         "9:00pm"
-  timezone:     "PST"
-  description:  ""
-  category:     Television (Estrella TV)
-  link:         "http://platanito.estrellatv.com/"
-  
 - title:        "Katy Colloton and Kathryn Renée Thomas Co-Host <em>2 Girls 1 Pup</em>"
   day:          "Sunday"
   date:         "February 14"
@@ -57,6 +47,16 @@
   description:  ""
   category:     Television (FYI Network)
   link:         "http://www.fyi.tv/shows/kocktails-with-khloe"
+  
+- title:        "Caitlin Barlow on <em>Noches con Platanito</em>"
+  day:          "Thursday"
+  date:         "February 18"
+  year:         "2016"
+  time:         "9:00pm"
+  timezone:     "PST"
+  description:  ""
+  category:     Television (Estrella TV)
+  link:         "http://platanito.estrellatv.com/"
   
 - title:        "Katy Colloton, Cate Freedman & Kate Lambert on <em>Last Call with Carson Daly</em>"
   day:          "Thursday"
