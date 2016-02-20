@@ -1,33 +1,3 @@
-- title:        "<em>Teachers</em>: Episode 106 Airs"
-  day:          "Wednesday"
-  date:         "February 17"
-  year:         "2016"
-  time:         "10:30pm"
-  timezone:     "PST"
-  description:  ""
-  category:     Television (TV Land)
-  link:         "http://www.tvland.com/shows/teachers"
-  
-- title:        "Katie O'Brien on <em>Kocktails with Khloe</em>"
-  day:          "Wednesday"
-  date:         "February 17"
-  year:         "2016"
-  time:         "10:00pm"
-  timezone:     "PST"
-  description:  ""
-  category:     Television (FYI Network)
-  link:         "http://www.fyi.tv/shows/kocktails-with-khloe"
-  
-- title:        "Caitlin Barlow on <em>Noches con Platanito</em>"
-  day:          "Thursday"
-  date:         "February 18"
-  year:         "2016"
-  time:         "9:00pm"
-  timezone:     "PST"
-  description:  ""
-  category:     Television (Estrella TV)
-  link:         "http://platanito.estrellatv.com/"
-  
 - title:        "Katy Colloton, Cate Freedman & Kate Lambert on <em>Last Call with Carson Daly</em>"
   day:          "Thursday"
   date:         "February 25"
@@ -87,3 +57,33 @@
   description:  ""
   category:     Television (TV Land)
   link:         "http://www.tvland.com/shows/teachers"
+
+- title:        "The Katydids Teach a Workshop at the Dallas Comedy Festival"
+  day:          "Saturday"
+  date:         "March 26"
+  year:         "2016"
+  time:         "10:30am"
+  timezone:     "CST"
+  description:  "Workshop Topic TBA"
+  category:     Workshop
+  link:         "http://www.dallascomedyfestival.com/"
+  
+- title:        "The Katydids Teach a Workshop at the Dallas Comedy Festival"
+  day:          "Saturday"
+  date:         "March 26"
+  year:         "2016"
+  time:         "5:00pm"
+  timezone:     "CST"
+  description:  "Workshop Topic TBA"
+  category:     Workshop
+  link:         "http://www.dallascomedyfestival.com/"
+  
+- title:        "The Katydids Perform at the Dallas Comedy Festival"
+  day:          "Saturday"
+  date:         "March 26"
+  year:         "2016"
+  time:         "10:30pm"
+  timezone:     "CST"
+  description:  ""
+  category:     Live Show
+  link:         "http://www.dallascomedyfestival.com/"
