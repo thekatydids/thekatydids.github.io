@@ -144,38 +144,8 @@ masthead:
                   <li class="entry-link-youtube"><a href="{{ link.youtube }}" target="_blank"><i class="fa fa-youtube-play"></i> YouTube</a></li>
                 {% endunless %}
 
-                {% unless link.email == empty %}
-                  <li class="entry-link-email"><a href="mailto:{{ link.email }}"><i class="fa fa-envelope"></i> Management</a></li>
-                {% endunless %}
-
               {% endfor %}
               </ul>
-            </div>
-          {% endif %}
-
-          {% if katydid.manager %}
-            <div class="entry-management">
-              <h4>Management</h4>
-
-              {% for manager in katydid.manager %}
-
-                {% unless manager.manager_name == blank %}
-                  <p class="entry-manager-name"><strong>{{ manager.manager_name }}</strong></p>
-                {% endunless %}
-
-                {% unless manager.manager_org == blank %}
-                  <p class="entry-manager-org">{{ manager.manager_org }}</p>
-                {% endunless %}
-
-                {% unless manager.manager_phone == blank %}
-                  <p class="entry-manager-phone">{{ manager.manager_phone }}</p>
-                {% endunless %}
-
-                {% unless manager.manager_email == blank %}
-                  <p class="entry-manager-email"><a href="mailto:{{ manager.manager_phone }}" target="_blank">{{manager.manager_email}}</a></p>
-                {% endunless %}
-
-              {% endfor %}
             </div>
           {% endif %}
 
